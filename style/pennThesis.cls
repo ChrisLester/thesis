@@ -14,10 +14,13 @@
 %% -----------------------------------------------------------------------------
 
 % Some standard stuff
+
 \RequirePackage{graphicx}
+\RequirePackage{epstopdf}
+\RequirePackage{epsfig}
 \RequirePackage{verbatim}
 \RequirePackage{color}
-
+\epstopdfsetup{outdir=./figs/}
 % Symbols and such
 \RequirePackage{amsmath,amssymb,bm}
 \RequirePackage{atlasphysics}
@@ -32,7 +35,7 @@
 
 % caption settings with ccaption
 % \captionnamefont{\bfseries}
-\hangcaption{}
+%\hangcaption{}
 
 % Line numbering for drafts
 \RequirePackage{lineno}

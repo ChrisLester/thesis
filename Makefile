@@ -26,17 +26,7 @@
 #         tex -> latex -> dvi -> dvips -> ps
 #     
 # AUTHOR
-#     Ryan Reece  <ryan.reece@cern.ch>
-# 
-# COPYRIGHT
-#     Copyright 2012-2013 Ryan Reece
-#     License: GPL <http://www.gnu.org/licenses/gpl.html>
-# 
-# SEE ALSO
-#     Some ideas taken from:
-#     <http://www.acoustics.hut.fi/u/mairas/UltimateLatexMakefile>
-# 
-# 2012-12-02
+#     Chris Lester  <clester@sas.upenn.edu>
 #
 ###############################################################################
 
