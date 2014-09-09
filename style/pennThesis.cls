@@ -27,7 +27,8 @@
 \RequirePackage{calc}
 
 % Note: not subfigure
-% \RequirePackage{subfig}
+\RequirePackage{subfig}
+
 
 % some tikz stuff
 % \RequirePackage{tikz}
