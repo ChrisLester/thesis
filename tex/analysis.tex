@@ -2,38 +2,47 @@
 %% -----------------------------------------------------------------------------
 \chapter[Search for the TTH Decay in the Multilepton Channel][Search for the TTH Decay in the Multilepton Channel]{Search for the TTH Decay in the Multilepton Channel}
 
-This chapter introduces the set of analyses searching for the Standard Model (SM) production of the Higgs boson in association with top quarks in multi-lepton
-final states with multiple jets (including b-quark tagged jets). Searches in $t\bar{t}H$ final states with 2 same-charge, 3 and 4 light leptons ($e, \mu$)
-are discussed in depth. These final states target specifically Higgs decays to vector bosons, $H\rightarrow W^{\pm}W^{\pm}$ and $H\rightarrow Z^{\pm}Z^{\pm}$
-and form a complement to searches for $t\bar{t}H$ production in final states targeting the $H\rightarrow b\bar{b}$ \cite{paper1}, $H\rightarrow\gamma\gamma$\cite{paper2}, and $H\rightarrow\tau\tau$
-decay modes. All will be combined into a full ATLAS Run I measurement/limit on the full SM $t\bar{t}H$ production cross-section. The chapter is divided into the following sections: description the object and event selections and optimizations, methods for estimating background contributions, discussion of systematics uncertainties, and the final result and statistical treatment. 
-
-\section{Data and Simulation Samples}
-
-\subsection{Data}
-
-The analysis searches the entire 2012 ATLAS dataset of proton-proton collisions at 8 TeV, collected
-from April to October. The size of the dataset corresponds to 20.3 \ifb, after passing data quality
-requirements, called a good run list, which ensures the proper operation of the tracking, calorimeter
-and muon subsystems. \cite{} 
-
-The datasets used in the analysis were collected with the primary electron and primary photon triggers,
-whose requirements became more stringent throughout the data taking, in order to manage the the increasing instantaneous
-luminosity. in Table
+This chapter provides an overivew of the the set of analyses searching for the Standard Model
+(SM) production of the Higgs boson in association with top quarks in
+multi-lepton final states with multiple jets (including b-quark tagged jets).
+Searches in $t\bar{t}H$ final states with 2 same-charge, 3 and 4 light leptons
+($e, \mu$) are discussed in depth. These final states target specifically Higgs
+decays to vector bosons, $H\rightarrow W^{\pm}W^{\pm}$ and $H\rightarrow
+Z^{\pm}Z^{\pm}$ and form a complement to searches for $t\bar{t}H$ production in
+final states targeting the $H\rightarrow b\bar{b}$ \cite{paper1},
+      $H\rightarrow\gamma\gamma$\cite{paper2}, and $H\rightarrow\tau\tau$ decay modes.
 
 
-\subsection{}
+Based on SM production cross-sections, observation lies just outside the sensitivity
+of the Run I dataset, even when combining all searches. The analyses provide an opportunity to 
+constrain for the first time the \ttH production mode with limits reasonably close to the
+actual production rate. As such the analysis is optimized to overall sensitivty to the 
+\tth production rather than individual decay modes, which would be more useful for
+constraining Higgs couplings. 
 
 
-\section{Analysis Overview and Signal Characteristics} 
+Detailed description of the event and objection section are provided in Chapter \ref{chapter:selection},
+background modelling in Chapter \ref{chapter:background}, the effect of syetmatic errors and the 
+statistical analysis in Chapter \ref{chapter:systematics} and final results in Chapter \ref{chapter:results}.
 
-The signal 
+
+\section{Signal Characteristics} 
+\tth can be observed in a number of different final states realted to the
+the Higgs boson and the top quark decay modes.
+
+Three Higgs boson decays are relevant for this analysis: \WW,
+\twotau and \ZZ. The top and anti-top quarks decay  in
+\Wb. Each \W boson decays either 
+leptonically (l=$e^\pm$, $\mu^\pm$,$\tau^\pm$) with missing energy or hadronically. 
+Table \ref{ana:table_decay} provides the fractional contribution of the main 
+Higgs decay modes at the generator level to \tth search channels. These
+numbers will be modified by lepton acceptances. 
 
 \begin{table}[htbp]
   \begin{center} 
-    \caption{Contributions of the main Higgs decay modes to the 5 multilepton
+    \caption{Contributions of the main Higgs decay modes to the 3 multilepton
       \tth signatures at generation level.
-      }\label{tab:summary} {\small
+      }\label{ana:table_decay} {\small
     \begin{tabular}{l|c|c|c} 
       \hline\hline
   Signature & $H \rightarrow WW$  & $H\rightarrow \tau\tau$  & $H \rightarrow
@@ -47,14 +56,63 @@ The signal
 \end{table}
 
 
+All modes are generally dominated by the $WW$ signature, though the 3l and 4l
+channnels possess some contribution from the$\tau\tau$ and $ZZ$ decays. 
+
+
+The signal is expected to be characterized by the presence of 2 b-quark jets from
+the top quark decays, leptons from vector boson and tau decays,
+a high jet multiplicity, and missing energy. In general, the number of leptons is anti-correlated 
+with the number of jets, since a vector boson can either decay leptonically 
+or hadronically. For \hww, the light quark multiplicity, $N_q$, and the
+number of leptons, $N_l$, follow this relation: $2N_l+N_q+N_b=10$.
+
+\begin{itemize}
+\item In the same-sign channel, the \tth final state contains 6 quarks. These events
+are then characterised by a large jet multiplicity.
+
+\item In the 3 lepton channel, the \tth final state contains 4 quarks from the hard scatter.
+
+\item In the 4 lepton channel, the \tth final state contains a small number of light
+quarks, 0 (\hww case), 2 or 4 (\hzz case).
+
+
+\end{itemize} 
+
+\section{Background Overview}
+
+Background processes can be sorted into two categories:
+
+\begin{itemize}
+
+\item Events with a non prompt or a fake lepton selected as prompt
+  lepton. These processes cannot lead to a final state compatible with the
+  signal signature without a misreconstructed object. This category includes
+  events with a prompt lepton but with misreconstructed charge and events
+  with jets that "fake" leptons. 
+
+  The main backgrounds of this sort are: \ttbar and \zj.
+  Data-driven techniques are used to control some of these processes.
+  Their importance varies depending on the channel.
+
+\item Events which can lead to the same final state as the signal (irreducible
+  backgrounds).
+ The main background of this category are: \ttV, \WZ, and \ZZ.
+ They are modeled using the Monte Carlo simulations.
+
+\end{itemize}
+
+
+\section{Analysis Strategy} 
+
+
+The analysis search is conducted in 3 channels, based on counting of fully identified
+leptons: 2 SS leptons, 3 leptons,and 4 leptons. The lepton counting occurs before additional object cuts are made in each individual 
+channel to ensure orthoganility. The division into lepton channels rather than channels targeting specific decay modes
+allows channels with different sensitivities to considered separately. We further divide the 2l SS into sub channels
+based on the number of jets and flavor of the leptons and the 4l channel into subchannels enriched and depleted in OS leptons arrising from Z decays. 
+
+The channels are fed into a posson model 
 
 
 
-
-\section{Object Selection}
-\section{Event Selection}
-\section{Optimization}
-\section{Background Measurements}
-\section{Systematic Assessment}
-\section{Results}
-\section{Combination}

@@ -27,32 +27,6 @@
 \begin{document}
 \begin{fmffile}{thesis-feyn}
 
-\newcommand{\ie}{{\it i.e.}~} 
-\newcommand{\Wj}{{$W$+jets}~} 
-\newcommand{\W}{$W^{\pm}$~} 
-\newcommand{\WW}{$W^{+}W^{-}$~} 
-\newcommand{\WZ}{$W^{\pm}Z$~} 
-\newcommand{\SWW}{$W^{\pm}W^{\pm}$~} 
-\newcommand{\twotau}{$\tau^{+}\tau^{-}$~} 
-\newcommand{\ZZ}{$ZZ$~} 
-\newcommand{\tth}{$t\bar{t}H$~} 
-\newcommand{\ttV}{$t\bar{t}V$~} 
-\newcommand{\tZ}{$tZ$~} 
-\newcommand{\ttW}{$t\bar{t}W^{\pm}$~} 
-\newcommand{\ttWW}{$t\bar{t}W^{\pm}W^{\pm}$~} 
-\newcommand{\ttZ}{$t\bar{t}Z$~} 
-\newcommand{\hww}{$H\rightarrow W^+W^-$~} 
-\newcommand{\hzz}{$H\rightarrow ZZ$~} 
-\newcommand{\htt}{$H\rightarrow \tau^+\tau^-$~} 
-\newcommand{\Wb}{$W^{\pm}b$~} 
-\newcommand{\taupm}{$\tau^{\pm}$~} 
-\newcommand{\zj}{{$Z$+jets}~} 
-\newcommand{\zg}{{$Z\gamma$}~} 
-\newcommand{\wg}{{$W^{\pm}\gamma$}~} 
-\newcommand{\lumi}{$\mathcal{L}$~} 
-\newcommand{\btt}{\ttbar background~} 
- 
-
 %%--------------------------------------------------------------------
 %% title page
 %% copyright
