@@ -1,0 +1,106 @@
+\chapter[Object and Event Selection][Object and Event Selection]{Object and Event Selection}
+\label{chapter:selection}
+
+As stated in Chapter \ref{chapter:analysis}, the analysis is divided into 3 channels based
+on lepton counting: 2 same-charge leptons, 3 leptons and 4 leptons. The lepton
+counting occurs for fully identified leptons with full overlap removal with
+transverse momentum over 10 \gev to ensure orthoganality. Lepton selections are tightened
+afterward within each channel.
+
+The cuts for each channel are provided in Table \ref{} and the object selections are detailed in the
+following selections. The selections are based on optimizations of the channel sensitivity
+performed using MC (event for data driven backgrounds) and adhoc values for normalization systematic errors. The optimziation is
+detailed in Section \ref{section:Optimization}.All channels are comprised of three basic requirements: the presence of b-tagged
+jets, the presence of additional light jets, and a veto of same flavor opposite sign leptons with an
+invariant mass within the Z window. Additional requirements on the invariant mass of the leptons, the missing transverse energy
+in the event, and the total object energy ($\rm H_{T}$) proved to have negligble additional benefit at our level of 
+statistics.
+
+
+\section{2l SS Channel}
+
+\section{3l Channel}
+
+\section{4l Channel}
+
+\section{Electron Selection}
+
+The electrons are reconstructed by a standard algorithm of the
+experiment~\cite{EgammaSF} and the electron cluster is required to be fiducial 
+to the barrel or endcap calorimeters: $|\eta_{cluster}| < $ 2.47. Electrons
+in the transition region, $1.37 < |\eta_{cluster}| < 1.52$, are vetoed.
+Electron reconstruction and identification is discussed in depth in Chapter \ref{chapter:electron}
+Electrons must pass the the \textsc{VeryTight} likelihood identification criteria.
+
+In order to reject jets (b-quark jets in particular) misidentified as electrons,
+electron candidated  must also be well isolated from additional tracks and
+calorimeter energy around the electron cluster. Both the tracking 
+and calorimeter energy within $\Delta R=0.2$ of the electron
+cluster must be less than 10\% of the electron transverse momentum: $ptcone20/P_t <$ 0.1 and $Etcone20/E_T <$ 0.1.
+All quality tracks with momentum greater than 400 MeV contribute to the isolation
+energy.  Calorimeter isolation energy is calculated
+using topological clusters with corrections for energy leaked from the
+electron cluster~\cite{Topo}. Pile-up and underlying event corrections are applied using
+a median ambient energy density correction, developed in~\cite{PileupCorrections}. 
+
+The electron track must also match the primary vertex. The longitudinal projection 
+of the track along the beam line, $z0\sin{\theta}$, must be less than 1 cm) and the transverse projection divided by the
+parameter error, $d0$ significance,must be less than 4. These cuts are used in particular to suppress backgrounds
+from conversions, heavy-flavor jets and electron charge-misidentifications. 
+
+
+The electron selection is provided in Table~\ref{selection:table_object}. 
+
+
+\section{Muon Selection}
+
+Muons used in the analysis are formed by matching reconstructed inner detector
+tracks with either a complete track or a track-segment reconstructed in the muon spectrometer (MS).
+The muons must satisify $\abs{\eta} < 2.5$.
+The muon track are required to be a good quality combined fit of inner detector hits and muon
+spectrometer segments, unless the muon is not fiducial to the
+inner detector, $\abs{\eta > 2.4}$.  Muons with inner detector tracks are further required
+to pass standard inner detector track hit requirements~\cite{MCP2012}.  
+
+As with electrons, muons are required to be isolated from 
+additional tracking or calorimeter energy: $ptcone20/P_t <$ 0.1, $Etcone20/E_T <$ 0.1) A cell-based $Etcone20/P_T$ relative
+isolation variable is used. A pile-up energy subtraction based 
+on the number of reconstructed verticies in the event is applied. The
+subtraction is derived from a Z boson control sample.
+
+
+The muons must also originate from the primary vertex and have impact parameter requirements, $d0$ significance $<$ 3, and $z0\sin{\theta} <$ 0.1 cm, similar to the electrons. 
+
+
+The muon selection is provided in Table~\ref{selection:table_object}. 
+
+\section{Jet and b-Tagged Jet Selection}
+
+Jets are reconstructed in the calorimeter using the anti-$k_t$~\cite{Cacciari:2008gp} algorithm
+with a distance parameter of 0.4 using locally calibrated
+topologically clusters as input (LC Jets). 
+
+Events with any LooserBad jet are vetoed. Jets near a hot Tile cell in data periods
+B1/B2 are rejected. The local hadronic calibration is used for
+the jet energy scale, and ambient energy corrections are applied to account
+for energy due to pileup.
+
+\pt~ and $\eta$~ cuts are tuned based on the sensitivity to \tth
+as explained in section~\ref{sec:optim-jets}. 
+
+For jets within $|\eta| < 2.4$ and $p_T <$ 50~GeV, are required to be
+associated with the primary vertex, the ``jet vertex fraction'' (or JVF),
+which is the fraction of track $p_T$ associated with the jet that comes from the primary vertex,
+must exceed 0.5 (or there must be no track associated to the jet). 
+
+B-jets are tagged using a Multi-Variate Analysis (MVA) method called MV1 and relying on information
+of the impact parameter and the reconstruction of the displaced vertex of the
+hadron decay inside the jet.%~\cite{ATLAS-CONF-2011-102}.
+ The output of the tagger is required to be above 0.8119 which corresponds to a $70\%$ Working Point (WP).
+
+
+
+\section{Optimization}
+
+\label{section:optimization}
+
