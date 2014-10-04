@@ -42,8 +42,8 @@ numbers will be modified by lepton acceptances.
   \begin{center} 
     \caption{Contributions of the main Higgs decay modes to the 3 multilepton
       \tth signatures at generation level.
-      }\label{ana:table_decay} {\small
-    \begin{tabular}{l|c|c|c} 
+      }\label{ana:table_decay} 
+      \begin{tabular}{l|c|c|c} 
       \hline\hline
   Signature & $H \rightarrow WW$  & $H\rightarrow \tau\tau$  & $H \rightarrow
   ZZ$  \\\hline
@@ -51,7 +51,7 @@ numbers will be modified by lepton acceptances.
   3 leptons  &  $71\%$ & $20\%$ & $9\%$ \\
   4 leptons  &  $53\%$ & $30\%$ & $17\%$  \\
      \hline
-    \end{tabular}}
+    \end{tabular}
   \end{center}
 \end{table}
 
@@ -88,8 +88,13 @@ Background processes can be sorted into two categories:
 \item Events with a non prompt or a fake lepton selected as prompt
   lepton. These processes cannot lead to a final state compatible with the
   signal signature without a misreconstructed object. This category includes
-  events with a prompt lepton but with misreconstructed charge and events
-  with jets that "fake" leptons. 
+  events with a prompt lepton but with misreconstructed charge\footnote{Charge mis-identification is almost exlusively a phenomenon of electrons at our energy scales. While it is
+  is possible for both electrons and muons to have an extremely straight track, whose direction of curvature is difficult to measure, the happens only at extremely high momentum. 
+  Electrons on the other hand may interact with the detector material, resulting in bremmstrahlumg. The bremstrahlung photon may subsequently convert resulting in 2 additional
+  tracks near the original electron. This process, called a trident process, may cause a mismatching of the electron cluster with the original electron track and thus
+  a charge-mis identification and happens also at low energies}and events
+  with jets that "fake" leptons.  These processes are rejected with tight object isolation and identification criteria, requiring a large jet multiplicty, and veto-ing events
+  consistent with a leptonically decaying Z boson. 
 
   The main backgrounds of this sort are: \ttbar and \zj.
   Data-driven techniques are used to control some of these processes.
@@ -98,7 +103,10 @@ Background processes can be sorted into two categories:
 \item Events which can lead to the same final state as the signal (irreducible
   backgrounds).
  The main background of this category are: \ttV, \WZ, and \ZZ.
- They are modeled using the Monte Carlo simulations.
+ They are modeled using the Monte Carlo simulations. In general,
+ these backgrounds are combatted with jet and b-tagged jet requirements. 
+ Although the jet multiplicty of \ttV is high, the multiplicity of \tth 
+ events is still higher. 
 
 \end{itemize}
 

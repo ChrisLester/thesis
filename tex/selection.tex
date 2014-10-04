@@ -1,27 +1,113 @@
 \chapter[Object and Event Selection][Object and Event Selection]{Object and Event Selection}
 \label{chapter:selection}
 
-As stated in Chapter \ref{chapter:analysis}, the analysis is divided into 3 channels based
+As stated in Chapter \ref{chapter:analysis}, the analysis is divided into 3 signal regions based
 on lepton counting: 2 same-charge leptons, 3 leptons and 4 leptons. The lepton
 counting occurs for fully identified leptons with full overlap removal with
 transverse momentum over 10 \gev to ensure orthoganality. Lepton selections are tightened
-afterward within each channel.
+afterward within each region.
 
-The cuts for each channel are provided in Table \ref{} and the object selections are detailed in the
-following selections. The selections are based on optimizations of the channel sensitivity
+The cuts for each signal region are provided in Table \ref{} and the object selections are detailed in the
+following selections. The selections are based on optimizations of the region sensitivity
 performed using MC (event for data driven backgrounds) and adhoc values for normalization systematic errors. The optimziation is
-detailed in Section \ref{section:Optimization}.All channels are comprised of three basic requirements: the presence of b-tagged
+detailed in Section \ref{section:Optimization}.All signal regions are comprised of three basic requirements: the presence of b-tagged
 jets, the presence of additional light jets, and a veto of same flavor opposite sign leptons with an
 invariant mass within the Z window. Additional requirements on the invariant mass of the leptons, the missing transverse energy
 in the event, and the total object energy ($\rm H_{T}$) proved to have negligble additional benefit at our level of 
 statistics.
 
+\begin{table}[htbp]
+  \begin{center} 
+    \caption{Selections in the 2l SS, 3l and 4l Signal Regions}
+      \label{table:selection}
+   {\small
+    \begin{tabular}{|l|c|c|c|} 
+  
+  \hline 
+  Signal Region   & 2l SS & 3l  & 4l \\\hline\hline
+  Trigger Matched Lepton   & Yes & Yes    & Yes \\ \hline
+  N$_{l}$\footnote{lepton counting is for \pt $=$ 10 \gevc leptons, based on the standard criteria outlined in the sections that follow}& $=$2 &  $=$3       & $=$4 \\\hline
+  Lepton Charge Sum & $+$2 or $-$2     & $+$1 or $-$1 & 0 \\ \hline
+  Lepton Momentum (\gevc)\footnote{lepton (0,1,2,3) are \pt ordered, with the exception of the 3l case} & \pt$_0>$ 25   &  \pt$_0>$ 10 & \pt$_0>$ 25   \\
+  & \pt$_1 >$ 20 &  \pt$_{1,2}>$25,20 & \pt$_1>$ 20 \\
+  &                   &                          &  \pt$_{2,3}>$ 10 \\\hline
+  Jet Counting    & N$_{b}\geq 1$, N$_{Jet} =$  4 & N$_{b}\geq 1$, N$_{Jet} \geq$ 4 & N$_{b}\geq 1$, N$_{Jet} \geq$ 2   \\
+                  &                               &        or N$_{b}\geq 2$, N$_{Jet} =$ 3         &                                   \\\hline
+  Mass Variables (\gevcc) & $|M_{ee} - M_{Z}| <$ 10  &  $|M_{SFOS}-M_Z| <$ 10  &  $M_{SFOS} >$ 10   \\
+  &   &     & $150 <M_{4l} <500$    \\
+  &   &     & $|M_{SFOS}-M_Z| <$ 10     \\\hline
+  Sub-channels     & 2 (N$_{Jet}=4$, N$_{Jet}\geq$ 5) &  none  &  2 (No SFOS leps,    \\
+  &  x 3(ee,e$\mu$,$\mu\mu$)  &     & SFOS leps)    \\\hline
+    \end{tabular}} 
+  \end{center}
+\end{table}
 
-\section{2l SS Channel}
 
-\section{3l Channel}
 
-\section{4l Channel}
+\section{2l Same-Charge Signal Region}
+
+The 2 lepton same-charge signal region (2l SS) requires two leptons similar charge. The signal is symmetric in charge but
+the background from \ttbar di-lepton production is overwhemling, necessitating the same-sign cut. Requiring
+only two leptons allows the extra 2 W bosons in the event to decay hadronically, resulting in on average 4 additional
+light jets plus 2 additional b-quark jets from the top decays. 
+
+A leading lepton with transverse momentum of at least 25 \gevc that matches to a
+trigger and a subleading lepton of at least 20 \gevc, a b-tagged jet, and at least 4 jets in
+total are required.  
+
+In order to suppress non-prompt backgrounds, the lepton isolation criteria for tracking and 
+calorimeter are tightened from less than 10\% of the lepton momentum to 5\%. To suppress
+charge mis-indentification, the electron is required to be extremely central ($|\eta| < 1.37$) 
+to avoid the material-rich regions of the detector. Additionally, $ee$ events with a 
+lepton pair invariant mass within 10 \gevcc of the Z pole are removed. 
+
+In order to maintain orthoganality with the $\tau$ analyses, events with fully identified
+taus are vetoed.
+
+For the statistical combination the channel is divided into 6 sub-channels:
+2 jets counting bins (N$_{Jet}$ $=$ 4, N$_{Jet}$ $\geq$ 5) x 3 lepton flavor bins (ee,$\mu\mu$,e$\mu$). 
+The splitting allows
+
+\section{3l Signal Region}
+
+The 3 lepton channel requires 3 leptons, whose summed charge is either
+$-$1 or $+$1. 
+The leptons are ordered in this way:
+
+\begin{itemize}
+\item {\bf lep0}: the lepton that is opposite in charge to the other two leptons
+\item {\bf lep1}: the lepton that is closer in $\Delta R$ to lep0
+\item {\bf lep2}: the lepton that is farther in $\Delta R$ from lep1
+\end{itemize}
+
+Since events with a "fake" lepton arise from di-lepton processes, \ttbar and Z+jets, where additinal jets are 
+mis-identified as the third lepton, lep0 is never the fake lepton. As a result, the transverse momentum 
+requirement of lep0 is lower that the other two, $>$ 25 \gevc. For the additional two leptons, one must
+must match a trigger and have $p_T >$ 25 \gevc and the other must have $p_T >$ 10 \gevc. 
+
+
+The 3l channel further requires at least one b-tagged jets and at least 4 jets in total, or two b-tagged jets and exactly 3 jets in 
+total. Additonally, to suppress \WZ and Z+jet events, events with same-flavor opposite sign pairs
+within 10 \gevcc of the Z pole are vetoed.
+
+Additional cuts, including an $M_ll$ cut, and splittings were investigated but low statistics proved to wash out any advantages. 
+
+\section{4l Signal Region}
+
+In the four lepton signal region, selected events must have exactly four leptons with a total charge of zero. 
+At least one leptons with must be matched to one of the applied single lepton trigger. 
+The leading and sub-leading leptons are required to have a \pt of 25 and 15 GeV respectively. 
+In order to suppress background contributions from low-mass resonances and Drell-Yan radiation, all opposite-sign-same-flavour (OS-SF) lepton pairs are required to have a dilepton invariant mass of at least 10 GeV. 
+
+The four-lepton invariant mass is required to be between 100 and 500 GeV. 
+This choice of mass window suppresses background from the on-shell $Z\to4\ell$ peak and exploits the high-mass differences between the signal and the dominant \ttZ background. 
+Events containing an OS-SF lepton pair within 10 GeV of the Z boson mass are discarded. 
+This Z-veto procedure greatly reduces background contributions from \ZZ production as well as \ttZ and while it also affects the signal by vetoing \hzzstar, $Z\to\ell^+\ell^-$, these events constitute a small amount of the total expected signal. 
+Finally, selected events are required to have at least two jets, at least one of which must be tagged as a b-quark initiated jet.  
+
+The contribution from \ttZ comprises approximately 75\% of the total background in the inclusive signal region. 
+A signal region categorization which factorizes \ttZ from the remaining backgrounds is thus beneficial. 
+The signal region is accordingly divided into two categories based on the presence of OS-SF lepton pairs in the final state. 
 
 \section{Electron Selection}
 
@@ -36,7 +122,7 @@ In order to reject jets (b-quark jets in particular) misidentified as electrons,
 electron candidated  must also be well isolated from additional tracks and
 calorimeter energy around the electron cluster. Both the tracking 
 and calorimeter energy within $\Delta R=0.2$ of the electron
-cluster must be less than 10\% of the electron transverse momentum: $ptcone20/P_t <$ 0.1 and $Etcone20/E_T <$ 0.1.
+cluster must be less than 5\% of the electron transverse momentum: $ptcone20/P_t <$ 0.05 and $Etcone20/E_T <$ 0.05.
 All quality tracks with momentum greater than 400 MeV contribute to the isolation
 energy.  Calorimeter isolation energy is calculated
 using topological clusters with corrections for energy leaked from the
@@ -56,10 +142,10 @@ The electron selection is provided in Table~\ref{selection:table_object}.
 
 Muons used in the analysis are formed by matching reconstructed inner detector
 tracks with either a complete track or a track-segment reconstructed in the muon spectrometer (MS).
-The muons must satisify $\abs{\eta} < 2.5$.
+The muons must satisify $|\eta| < 2.5$.
 The muon track are required to be a good quality combined fit of inner detector hits and muon
 spectrometer segments, unless the muon is not fiducial to the
-inner detector, $\abs{\eta > 2.4}$.  Muons with inner detector tracks are further required
+inner detector, $|\eta| > 2.4$.  Muons with inner detector tracks are further required
 to pass standard inner detector track hit requirements~\cite{MCP2012}.  
 
 As with electrons, muons are required to be isolated from 
@@ -80,7 +166,8 @@ Jets are reconstructed in the calorimeter using the anti-$k_t$~\cite{Cacciari:20
 with a distance parameter of 0.4 using locally calibrated
 topologically clusters as input (LC Jets). 
 
-Events with any LooserBad jet are vetoed. Jets near a hot Tile cell in data periods
+Jets must pass loose quality requirement,ensuring the proper
+functioning of the calorimeter at the time of data taking. Jets near a hot Tile cell in data periods
 B1/B2 are rejected. The local hadronic calibration is used for
 the jet energy scale, and ambient energy corrections are applied to account
 for energy due to pileup.
@@ -96,7 +183,62 @@ must exceed 0.5 (or there must be no track associated to the jet).
 B-jets are tagged using a Multi-Variate Analysis (MVA) method called MV1 and relying on information
 of the impact parameter and the reconstruction of the displaced vertex of the
 hadron decay inside the jet.%~\cite{ATLAS-CONF-2011-102}.
- The output of the tagger is required to be above 0.8119 which corresponds to a $70\%$ Working Point (WP).
+The output of the tagger is required to be above 0.8119 which corresponds to a $70\%$ efficient Working Point (WP).
+
+\section{Tau Selection} 
+
+The tau selection is important only in the 2l SS channel, due the tau veto to ensure orthoganality
+with analyses searching for tau final states for a future combination.  
+\section{Object Summary and Overlap}
+
+
+\begin{table}[htbp]
+  \begin{center}
+    {\small
+    \begin{tabular}{l|c|c}
+      \hline
+      Parameter     &  Values & Remarks \\
+      \hline
+      \multicolumn{3}{c}{\bf Electrons}\\
+      \hline
+      \pt~ & $>10~\GeV$ & \\ 
+      $|\eta|$~ & $< 2.47 $ veto crack & $<1.37$ for 2l SS channel \\ 
+      ID & Very Tight Likelihood &  \\ \hline
+      Isolation & \etrel,\ptrel $<0.05$   &   \\ \hline
+      Jet overlap removal & $\Delta R>0.3$  &  \\ \hline
+      $|d_0^{\rm sig}|$ & $<4\sigma$  &  \\ \hline
+      $z_0 sin\theta$ & $<1~cm$   &   \\ \hline\hline
+
+      \multicolumn{3}{c}{\bf Muons}\\
+      \hline
+      \pt~ & $>10~\GeV$ & \\ 
+      $|\eta|$~ & $< 2.5 $ \\ 
+      ID & Tight &  \\ \hline
+      Jet overlap removal & $\Delta R>0.04+10\GeV/p_{T}$  &  \\ \hline
+      Isolation & \etrel,\ptrel $<0.1$  & $<0.05$ for 2 leptons \\ \hline
+      $|d_0^{\rm sig}|$ & $<3\sigma$  &  \\ \hline
+      $z_0$ & $<1~cm$   &   \\ \hline\hline
+      \multicolumn{3}{c}{\bf Taus}\\
+      \hline
+     \pt~ & $>25\GeV$ &  \\ \hline
+      ID & Medium BDT &  \\ \hline
+      Isolation &   &  \\ \hline\hline
+      Jet overlap removal & $\Delta R>0.3$  &  \\ \hline
+      e/$\mu$ vetoes & Medium electron veto  &  \\ \hline\hline
+
+      \multicolumn{3}{c}{\bf Jets}\\
+      \hline
+      \pt~ & $>25\GeV$ &  \\ \hline
+      $|\eta|$ & $<2.5$ &  \\ \hline
+      JVF & JVF$>0.5$ or no associated track or \pt$>50~{\rm GeV}$ &  \\ \hline\hline
+      b-Tag & MV1 70\% operating point&  \\ \hline\hline
+    \end{tabular}
+    }
+    \caption{\label{tab:obj-final} Object identification and selection used to define the 5 channels of the
+    multilepton \tth analysis. Some channels use a sub-sample of objects as
+    precised in the {\it Remarks} column.}
+  \end{center}
+\end{table}
 
 
 
