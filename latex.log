@@ -1,0 +1,602 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2014) (preloaded format=pdflatex)
+ restricted \write18 enabled.
+entering extended mode
+(./thesis.tex
+LaTeX2e <2014/05/01>
+Babel <3.9k> and hyphenation patterns for 21 languages loaded.
+(./style/pennThesis.cls
+Document Class: pennThesis 11/04/20142011 UPenn HEP Thesis Class
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/memoir/memoir.cls
+Document Class: memoir 2013/05/30 v3.7b configurable book, report, article docu
+ment class
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/ifpdf.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/ifxetex/ifxetex.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/ifluatex.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/etex-pkg/etex.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/memoir/mem10.clo)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/memoir/mempatch.sty))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/ifthen.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/keyval.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/trig.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/graphics.cfg)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/pdftex-def/pdftex.def
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/infwarerr.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/ltxcmds.sty))))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/epstopdf.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/grfext.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty)
+) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/etexcmds.sty)))
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+))) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/epsfig.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/color.cfg))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsmath.sty
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/tools/bm.sty)
+(./style/atlasphysics.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/tools/calc.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/subfig/subfig.sty
+
+Class memoir Warning: You are using the caption package with the memoir class. 
+To prepare we will now reset all captioning macros and configurations to kernel
+ defaults, and then let the caption package take over. Please remember to use t
+he caption package interfaces in order to configure your captions. .
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/caption/caption.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/caption/caption3.sty)))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/lineno/lineno.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.s
+ty
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/hobsub-generic.st
+y)) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/hyperref/backref.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty)
+) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/url/url.sty))
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/memoir/memhfixc.sty)
+
+Package hyperref Message: Driver (autodetected): hpdftex.
+
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/hyperref/hpdftex.def)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/rotating/rotating.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/graphics/lscape.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/tools/longtable.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/ncctools/dcounter.sty)
+(./style/cleveref.sty)
+
+******************************************************
+Stock height and width: 794.96999pt by 614.295pt
+Top and edge trims: 0pt and 0pt
+Page height and width: 794.96999pt by 614.295pt
+Text height and width: 598pt by 440pt
+Spine and edge margins: 86.72377pt and 86.7238pt
+Upper and lower margins: 101.17755pt and 95.79243pt
+Headheight and headsep: 13pt and 13pt
+Footskip: 26pt
+Columnsep and columnseprule: 10pt and 0pt
+Marginparsep and marginparwidth: 7pt and 72.7238pt
+Sidecapsep and sidecapwidth: 7pt and 71pt
+Sidebarhsep and sidebarwidth: 7pt and 71pt
+Sidebarvsep and sidebartopsep: 12pt and 0pt
+Sidebarheight: 548.39996pt
+Sidefoothsep and sidefootwidth: 7pt and 71pt
+Sidefootvsep and sidefootheight: 12pt and 548.39996pt
+******************************************************
+
+)
+\@input{tex/docdefs.aux}
+(./tex/docdefs.tex)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/feynmf/feynmf.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/multirow/multirow.sty)
+(./thesis.aux (./tex/preface.aux) (./tex/introduction.aux) (./tex/theory.aux)
+(./tex/lhc.aux) (./tex/electron.aux) (./tex/analysis.aux) (./tex/data.aux
+
+LaTeX Warning: Label `analyis:table_MCbackground' multiply defined.
+
+
+LaTeX Warning: Label `cref@analyis:table_MCbackground' multiply defined.
+
+) (./tex/selection.aux) (./tex/background.aux) (./tex/conclusion.aux))
+(/usr/local/texlive/2014basic/texmf-dist/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+) (/usr/local/texlive/2014basic/texmf-dist/tex/latex/caption/ltcaption.sty)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/hyperref/nameref.sty
+(/usr/local/texlive/2014basic/texmf-dist/tex/generic/oberdiek/gettitlestring.st
+y))
+Redoing nameref's sectioning
+Redoing nameref's label
+(./thesis.out) (./thesis.out)
+feynmf: File thesis-feyn.tfm found.
+feynmf: Nevertheless, if the picture has changed, reprocess thesis-feyn.mf.
+feynmf: If dimension have changed, reprocess thesis-feyn.mf and thesis.tex.
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/local/texlive/2014basic/texmf-dist/tex/latex/amsfonts/umsb.fd) [1{/usr/lo
+cal/texlive/2014basic/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2]
+(./tex/acknowledgements.tex
+Overfull \hbox (0.27849pt too wide) in paragraph at lines 3--10
+\OT1/cmr/m/n/10 knowl-edge-ments ac-knowl-edge-ments ac-knowl-edge-ments ac-kno
+wl-edge-ments ac-knowl-edge-ments ac-knowl-
+
+Overfull \hbox (1.66733pt too wide) in paragraph at lines 11--18
+[]\OT1/cmr/m/n/10 Acknowledgements ac-knowl-edge-ments ac-knowl-edge-ments ac-k
+nowl-edge-ments ac-knowl-edge-ments ac-
+
+Overfull \hbox (0.27849pt too wide) in paragraph at lines 11--18
+\OT1/cmr/m/n/10 knowl-edge-ments ac-knowl-edge-ments ac-knowl-edge-ments ac-kno
+wl-edge-ments ac-knowl-edge-ments ac-knowl-
+
+Overfull \hbox (1.66733pt too wide) in paragraph at lines 19--26
+[]\OT1/cmr/m/n/10 Acknowledgements ac-knowl-edge-ments ac-knowl-edge-ments ac-k
+nowl-edge-ments ac-knowl-edge-ments ac-
+
+Overfull \hbox (0.27849pt too wide) in paragraph at lines 19--26
+\OT1/cmr/m/n/10 knowl-edge-ments ac-knowl-edge-ments ac-knowl-edge-ments ac-kno
+wl-edge-ments ac-knowl-edge-ments ac-knowl-
+) [3] (./tex/abstract.tex) [4] (./thesis.toc
+Overfull \hbox (0.15265pt too wide) detected at line 4
+ [][]\OT1/cmr/bx/n/10 viii[][]
+[5] [6]) [7] (./tex/preface.tex) [8] (./tex/introduction.tex
+
+LaTeX Warning: Citation `1999.ATLAS.Physics-TDR' on page 1 undefined on input l
+ine 5.
+
+) [1] (./tex/theory.tex
+
+LaTeX Warning: Citation `np_22_579' on page 2 undefined on input line 20.
+
+
+LaTeX Warning: Citation `prl_19_1264' on page 2 undefined on input line 20.
+
+
+LaTeX Warning: Citation `1964.Salam-Ward.gauge-theory' on page 2 undefined on i
+nput line 20.
+
+
+LaTeX Warning: Citation `1973.Weinberg.SM-with-QCD' on page 2 undefined on inpu
+t line 20.
+
+
+LaTeX Warning: Citation `1973.Gross-Wilczek.Asymptotic_freedom_0' on page 2 und
+efined on input line 29.
+
+[2]
+
+LaTeX Warning: Citation `1972.tHooft-Veltman.regularization_and_renormalization
+' on page 3 undefined on input line 36.
+
+
+LaTeX Warning: Citation `Higgs:1964pj' on page 3 undefined on input line 73.
+
+
+LaTeX Warning: Citation `Higgs:1966ev' on page 3 undefined on input line 73.
+
+
+LaTeX Warning: Citation `Englert:1964et' on page 3 undefined on input line 73.
+
+[3]
+
+LaTeX Warning: Citation `lepew:2010vi' on page 4 undefined on input line 117.
+
+
+LaTeX Warning: Citation `GFitter' on page 4 undefined on input line 124.
+
+<figs/HiggsScan.pdf, id=369, 569.12625pt x 385.44pt> <use figs/HiggsScan.pdf>
+<figs/TopScan.pdf, id=370, 569.12625pt x 385.44pt> <use figs/TopScan.pdf>
+<figs/WMassScan.pdf, id=371, 569.12625pt x 385.44pt> <use figs/WMassScan.pdf>
+<figs/Sin2ThetaScan.pdf, id=372, 569.12625pt x 385.44pt>
+<use figs/Sin2ThetaScan.pdf> [4]
+
+LaTeX Warning: Citation `1985.Collins.factorization-theorem' on page 5 undefine
+d on input line 170.
+
+[5 <./figs/HiggsScan.pdf> <./figs/TopScan.pdf> <./figs/WMassScan.pdf> <./figs/S
+in2ThetaScan.pdf>]
+<figs/mstw2008nlo68cl_allpdfs.pdf, id=412, 569.12625pt x 382.42876pt>
+<use figs/mstw2008nlo68cl_allpdfs.pdf>
+
+LaTeX Warning: Citation `lhcProposal' on page 6 undefined on input line 189.
+
+
+LaTeX Warning: Citation `lepew:2010vi' on page 6 undefined on input line 193.
+
+<figs/ggF.pdf, id=413, 209.78375pt x 117.43875pt> <use figs/ggF.pdf>
+<figs/vh.pdf, id=414, 221.82875pt x 91.34125pt> <use figs/vh.pdf>
+<figs/vbf.pdf, id=415, 237.88875pt x 174.6525pt> <use figs/vbf.pdf>
+<figs/tth.pdf, id=416, 209.78375pt x 168.63pt> <use figs/tth.pdf>
+
+LaTeX Warning: Citation `Dittmaier:2012vm' on page 6 undefined on input line 21
+8.
+
+[6 <./figs/mstw2008nlo68cl_allpdfs.pdf>]
+<figs/Higgs_XS_8TeV_lx.pdf, id=429, 569.12625pt x 408.52625pt>
+<use figs/Higgs_XS_8TeV_lx.pdf>
+<figs/Higgs_BR.pdf, id=430, 569.12625pt x 546.04pt> <use figs/Higgs_BR.pdf>
+
+LaTeX Warning: Citation `ATLAS-CONF-2014-009' on page 7 undefined on input line
+ 247.
+
+
+LaTeX Warning: Citation `CMS-PAS-HIG-14-009' on page 7 undefined on input line 
+247.
+
+
+LaTeX Warning: Citation `Aad:2014aba' on page 7 undefined on input line 248.
+
+
+LaTeX Warning: Citation `tagkey2013120' on page 7 undefined on input line 248.
+
+[7 <./figs/ggF.pdf> <./figs/vh.pdf> <./figs/vbf.pdf> <./figs/tth.pdf>]
+<figs/atlas_higgs.pdf, id=463, 569.12625pt x 736.7525pt>
+<use figs/atlas_higgs.pdf>
+<figs/atlas_coupling.pdf, id=464, 569.12625pt x 738.76pt>
+<use figs/atlas_coupling.pdf>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 282.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 282.
+
+
+LaTeX Warning: Citation `Dawson:2013bba' on page 8 undefined on input line 290.
+
+
+
+LaTeX Warning: Citation `Eberhardt:2012gv' on page 8 undefined on input line 29
+5.
+
+
+LaTeX Warning: Citation `Carena:2013iba' on page 8 undefined on input line 296.
+
+
+
+LaTeX Warning: Citation `ArkaniHamed:2012kq' on page 8 undefined on input line 
+296.
+
+
+LaTeX Warning: Citation `Carmi:2012yp' on page 8 undefined on input line 296.
+
+
+LaTeX Warning: Citation `Dawson:2013bba' on page 8 undefined on input line 310.
+
+
+[8 <./figs/Higgs_XS_8TeV_lx.pdf, page is rotated 90 degrees> <./figs/Higgs_BR.p
+df>]
+
+LaTeX Warning: Citation `Degrassi:2012ry' on page 9 undefined on input line 321
+.
+
+[9 <./figs/atlas_higgs.pdf> <./figs/atlas_coupling.pdf>]
+<figs/SMstability.pdf, id=544, 180.675pt x 177.16188pt>
+<use figs/SMstability.pdf>
+<figs/runLambda.pdf, id=545, 250.9375pt x 244.92404pt>
+<use figs/runLambda.pdf>) [10 <./figs/SMstability.pdf> <./figs/runLambda.pdf>]
+(./tex/lhc.tex
+
+LaTeX Warning: Citation `1748-0221-3-08-S08001' on page 11 undefined on input l
+ine 20.
+
+
+LaTeX Warning: Citation `Pettersson:291782' on page 11 undefined on input line 
+20.
+
+
+LaTeX Warning: Citation `Linnecar:1176380' on page 11 undefined on input line 2
+0.
+
+
+LaTeX Warning: Citation `ATLAS_detector' on page 11 undefined on input line 26.
+
+
+
+LaTeX Warning: Citation `748-0221-3-08-S08004' on page 11 undefined on input li
+ne 26.
+
+
+LaTeX Warning: Citation `1748-0221-3-08-S08005' on page 11 undefined on input l
+ine 26.
+
+
+LaTeX Warning: Citation `1748-0221-3-08-S08002)' on page 11 undefined on input 
+line 26.
+
+
+LaTeX Warning: Citation `Team:40525' on page 11 undefined on input line 27.
+
+<figs/lhc.pdf, id=586, 614.295pt x 794.97pt> <use figs/lhc.pdf> [11] [12 <./fig
+s/lhc.pdf>]) [13] (./tex/electron.tex) [14] (./tex/analysis.tex
+
+LaTeX Warning: Citation `paper1' on page 15 undefined on input line 12.
+
+
+LaTeX Warning: Citation `paper2' on page 15 undefined on input line 13.
+
+
+LaTeX Warning: Reference `chapter:systematics' on page 15 undefined on input li
+ne 26.
+
+
+LaTeX Warning: Reference `chapter:results' on page 15 undefined on input line 2
+6.
+
+[15] (/usr/local/texlive/2014basic/texmf-dist/tex/latex/base/omscmr.fd)
+[16]) [17] (./tex/data.tex
+
+LaTeX Warning: Citation `Aad:2013ucp' on page 18 undefined on input line 9.
+
+
+LaTeX Warning: Citation `Carli:1424362' on page 18 undefined on input line 12.
+
+<figs/intlumivstime2011-2012DQ.pdf, id=639, 569.12625pt x 408.52625pt>
+<use figs/intlumivstime2011-2012DQ.pdf>
+<figs/mu_2011_2012-dec.pdf, id=640, 569.12625pt x 408.52625pt>
+<use figs/mu_2011_2012-dec.pdf> [18]
+
+LaTeX Warning: Citation `Aad:2010ah' on page 19 undefined on input line 53.
+
+
+LaTeX Warning: Citation `Agostinelli:2002hh' on page 19 undefined on input line
+ 53.
+
+[19 <./figs/intlumivstime2011-2012DQ.pdf> <./figs/mu_2011_2012-dec.pdf>]
+
+LaTeX Warning: Citation `Heinemeyer:2013tqa' on page 20 undefined on input line
+ 62.
+
+
+LaTeX Warning: Citation `Garzelli:2011vp' on page 20 undefined on input line 64
+.
+
+
+LaTeX Warning: Citation `Sjostrand:2007gs' on page 20 undefined on input line 6
+5.
+
+
+LaTeX Warning: Citation `Lai:2010vv' on page 20 undefined on input line 65.
+
+
+LaTeX Warning: Citation `Heinemeyer:2013tqa' on page 20 undefined on input line
+ 67.
+
+
+LaTeX Warning: Reference `ana:table_MCbackground' on page 20 undefined on input
+ line 89.
+
+
+LaTeX Warning: Citation `Mangano:2002ea' on page 20 undefined on input line 89.
+
+
+
+LaTeX Warning: Citation `Maltoni:2002qb' on page 20 undefined on input line 89.
+
+
+
+LaTeX Warning: Citation `Kersevan:2004yg' on page 20 undefined on input line 89
+.
+
+
+LaTeX Warning: Citation `Nadolsky:2008zw' on page 20 undefined on input line 89
+.
+
+
+LaTeX Warning: Citation `Frixione:2007vw' on page 20 undefined on input line 90
+.
+
+
+LaTeX Warning: Citation `Gleisberg:2008ta' on page 20 undefined on input line 9
+0.
+
+
+LaTeX Warning: Citation `Martin:2009iq' on page 20 undefined on input line 91.
+
+[20]) [21] (./tex/selection.tex
+
+LaTeX Warning: Reference `' on page 22 undefined on input line 10.
+
+
+LaTeX Warning: Reference `section:Optimization' on page 22 undefined on input l
+ine 13.
+
+[22] [23]
+
+LaTeX Warning: Citation `EgammaSF' on page 24 undefined on input line 115.
+
+
+LaTeX Warning: Citation `Topo' on page 24 undefined on input line 129.
+
+
+LaTeX Warning: Citation `PileupCorrections' on page 24 undefined on input line 
+130.
+
+[24]
+
+LaTeX Warning: Reference `selection:table_object' on page 25 undefined on input
+ line 138.
+
+
+LaTeX Warning: Citation `MCP2012' on page 25 undefined on input line 149.
+
+
+LaTeX Warning: Reference `selection:table_object' on page 25 undefined on input
+ line 161.
+
+
+LaTeX Warning: Citation `Cacciari:2008gp' on page 25 undefined on input line 16
+5.
+
+[25]
+
+LaTeX Warning: Reference `sec:optim-jets' on page 26 undefined on input line 17
+6.
+
+) [26] [27] (./tex/background.tex
+
+LaTeX Warning: Reference `table:background_summary' on page 28 undefined on inp
+ut line 6.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\pm' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 36.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 36.
+
+[28]
+
+LaTeX Warning: Citation `Garzelli:2012bn' on page 29 undefined on input line 46
+.
+
+
+LaTeX Warning: Citation `Campbell:2012dh' on page 29 undefined on input line 49
+.
+
+
+LaTeX Warning: Citation `Martin:2009iq' on page 29 undefined on input line 50.
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 61--63
+[]|\OT1/cmr/m/n/10 Total sym-metrised
+
+Overfull \hbox (9.18451pt too wide) in paragraph at lines 58--71
+ [] 
+
+Underfull \hbox (badness 7649) in paragraph at lines 71--71
+[]\OT1/cmr/m/n/10 Table 8.1: |NLO cross sec-tion and the-o-ret-i-cal un-cer-tai
+nty cal-cu-la-tions de-rived from
+
+LaTeX Warning: Citation `Campbell:2013yla' on page 29 undefined on input line 7
+6.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 79.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 79.
+
+[29] <figs/ttZ/ttz_3l_CR_nelec.pdf, id=730, 569.12625pt x 385.44pt>
+<use figs/ttZ/ttz_3l_CR_nelec.pdf>
+<figs/ttZ/ttz_3l_CR_nJets_and_nbJets_lin.pdf, id=731, 569.12625pt x 385.44pt>
+<use figs/ttZ/ttz_3l_CR_nJets_and_nbJets_lin.pdf>
+<figs/ttZ/ttz_3l_CR_Mll01.pdf, id=732, 569.12625pt x 385.44pt>
+<use figs/ttZ/ttz_3l_CR_Mll01.pdf>
+<figs/ttZ/ttz_3l_CR_Mll02.pdf, id=733, 569.12625pt x 385.44pt>
+<use figs/ttZ/ttz_3l_CR_Mll02.pdf>
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `superscript' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `\pm' on input line 97.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
+(hyperref)                removing `math shift' on input line 97.
+
+[30 <./figs/ttZ/ttz_3l_CR_nelec.pdf> <./figs/ttZ/ttz_3l_CR_nJets_and_nbJets_lin
+.pdf> <./figs/ttZ/ttz_3l_CR_Mll01.pdf> <./figs/ttZ/ttz_3l_CR_Mll02.pdf>])
+[31] (./tex/conclusion.tex) [32] (./thesis.bbl (./thesis.brf)
+bibitemlist
+
+LaTeX Warning: Empty `thebibliography' environment on input line 3.
+
+) [33] (./thesis.aux (./tex/preface.aux) (./tex/introduction.aux)
+(./tex/theory.aux) (./tex/lhc.aux) (./tex/electron.aux) (./tex/analysis.aux)
+(./tex/data.aux) (./tex/selection.aux) (./tex/background.aux)
+(./tex/conclusion.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+ )
+(see the transcript file for additional information)pdfTeX warning (dest): name
+{Hfootnote.7} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Hfootnote.6} has been referenced but does not exist
+, replaced by a fixed one
+
+</usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.
+pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmb
+x12.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmbx9.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmcsc10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi10.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2014basic/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2014basic/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2014basic/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2014basic/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2014basic/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2014basic/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2014basic/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2014basic/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2014basi
+c/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2014ba
+sic/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texlive/201
+4basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
+ive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/t
+exlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/loca
+l/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/l
+ocal/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></u
+sr/local/texlive/2014basic/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb
+>
+Output written on thesis.pdf (41 pages, 5807300 bytes).
+Transcript written on thesis.log.

@@ -1,0 +1,290 @@
+\chapter[Background Estimation][Background Estimation]{Background Estimation}
+\label{chapter:background}
+
+The \tth multi-lepton signal regions discussed in Chapter \ref{chapter:analysis} are contaminted by background contributions at a similar order of magnitude to the signal. The dominant background for each region is vector boson production in association with top quarks (\ttV). Sub-dominant but important backgrounds include the production of vector boson pairs in associated with jets and b-quark jets (VV) and \ttbar production with a jet misidentified as a lepton. The 2l SS regions possesses a unique background of charge misidentification from Z and top events. The methods for estimating these backgrounds are discussed in this chapter. Monte Carlo simulation is used for the prompt \ttV and VV contributions. Systematic uncerainties on the overall normalization of these backgrounds in the signal region are provided from theoretical studies and past ATLAS analyses and are verified in data-based validation regions. The non-prompt backgrounds from \ttbar jet-misidentification and charge-misidentification are estimated using data-driven methods. 
+
+For reference, Table \ref{table:background_summary} provides a summary of the \tth signal and background expectation for each of the signal regions, including the data-driven estimates discussed in this section. For each region, the background contribution exceeds the size of the signal. 
+
+
+%\begin{table}
+%\caption{Expected number of signal and backgroudn events in 2l SS, 3l and 4l signal regions. For data-driven backgrounds, monte-carlo only numbers are given for reference. The expected sensitivy $\frac{s}{\sqrt{s+b}}$ is provided for data-driven, mc only and for the inclusion of ad-hoc systematic uncertainties (20\% for \ttV and 30\% for \ttbar fake).}  
+%\resizebox{1.0\textwidth}{!}{
+%\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline 
+%                                       & \multicolumn{6}{c|}{Same-sign}                                         &  3 leptons    & \multicolumn{2}{c|}{4 leptons} \\
+%                                       &   \multicolumn{3}{c|}{$\geq 5$ jets}  &\multicolumn{3}{c|}{4 jets}     &                  & Z enriched & Z depleted \\ \hline
+%                                       &   \ee   &  \emu   & \mumu   &    \ee   &  \emu   & \mumu                &                       &  &           \\ \hline
+%\bf\tth                                & $0.73\pm0.03$  &  $2.13\pm0.05$ & $1.41\pm0.04$ & $0.44\pm0.02$ & $1.16\pm0.03$& $0.74\pm0.03$ & $2.34 \pm 0.04$   & $0.19 \pm 0.01$ & $0.03 \pm 0.00$     \\ \hline
+%\ttV                                   & $2.60\pm0.13$  & $7.42\pm0.17$  & $5.01\pm0.16$ & $3.05\pm0.13$ & $8.39\pm0.24$ & $5.79\pm0.20$ & $7.21 \pm 0.24$  & $0.74 \pm 0.05$ & $0.00 \pm 0.00$     \\ \hline
+%tZ                                     & $$             & $$             & $$            &               &               &               & $0.71 \pm 0.03$ &   {\it incl. in \ttV}   & {\it incl. in \ttV} \\ \hline
+%VV                                     & $0.48\pm0.25$  & $0.37\pm0.23$  & $0.68\pm0.30$ & $0.77\pm0.27$ & $1.93\pm0.80$ & $0.54\pm0.30$ & $0.89 \pm 0.25$ &  $0.08 \pm 0.01$ & $0.00 \pm 0.00$     \\ \hline
+%\ttbar, $tX$ (MC)                      & $1.31\pm0.67$  & $2.55\pm0.84$  & $1.76\pm0.67$ & $4.99\pm1.19$ & $8.19\pm1.41$ & $3.70\pm1.03$ & $2.46 \pm 0.19$ &  $0.00 \pm 0.00$ & $0.00 \pm 0.00$     \\ \hline
+%\zj (MC)                               & $0.16\pm0.16$  & $0.28\pm0.20$  & $0.12\pm0.12$ & $1.37\pm0.78$ & $0$           & $0.23\pm0.23$ & $0$             &  $0.00 \pm 0.00$ & $0.00 \pm 0.00$      \\ \hline
+%fake leptons (DD)                      & $2.31\pm0.97$  & $3.87\pm1.01$  & $1.24\pm0.41$ & $3.43\pm1.38$ & $6.82\pm1.63$ & $2.38\pm0.78$ & $2.62 \pm 0.51$ &  $(1.1\pm0.6)\cdot10^{-3}$ & $(0.09\pm0.03)\cdot10^{-3}$ \\ \hline
+%Q misid (DD)                           & $1.10\pm0.09$  & $0.85\pm0.08$  & $-$  & $1.82\pm0.11$            & $1.39\pm0.08$ &  $-$  & $-$             &       $-$             & $-$                  \\ \hline \hline
+%Tot Background (fake MC)               & $4.56\pm1.17$  & $10.62\pm1.54$ & $7.57\pm1.31$ & $10.18\pm2.43$& $18.51\pm2.54$& $10.26\pm1.82$& $11.27 \pm 0.40$&  $0.83 \pm 0.07$ & $0.01 \pm 0.00$    \\ \hline
+%Tot Background (fake DD)               & $6.49\pm1.04$  & $12.51\pm1.04$ & $6.93\pm0.52$ & $9.07\pm1.42$ & $18.53\pm1.83$& $8.71\pm0.88$ & $11.43 \pm 0.62$&  $0.831\pm 0.075$& $0.0110\pm0.0003$  \\ \hline \hline
+%$s/\sqrt{b}$ (fake MC)                 & $0.34$  & $0.65$  & $0.51$  & $0.14$ & $0.27$ & $0.23$ & $0.70$      &    $0.21$  & $0.30$	  \\ \hline
+%$s/\sqrt{b}$ (fake DD)                 & $0.29$  & $0.60$  & $0.54$  & $0.15$ & $0.27$ & $0.25$ & $0.69$      &    $0.21$  & $0.29$	 \\ \hline \hline
+%$s/\sqrt{b} \oplus 0.3{\rm fake(MC)} \oplus 0.2{\rm ttV}$  & $0.33$  & $0.58$ & $0.47$ & $0.12$ & $0.22$ & $0.21$ &  $0.63$    & $0.207$ & $0.30$ 	 \\ \hline
+%$s/\sqrt{b} \oplus 0.3{\rm fake(DD)} \oplus 0.2{\rm ttV}$  & $0.27$  & $0.53$ & $0.50$ & $0.14$ & $0.23$ & $0.23$ &  $0.62$    & $0.207$ & $0.286$	 \\ \hline
+%\end{tabular}
+%\label{table:background_summary}
+%}
+%\end{table} 
+
+
+\section{Vector Boson ($W^{\pm}$, $Z$) production in association with top quarks: \ttV, \tZ}  
+
+This section describes the estimation  and \ttV productions. 
+Production of top quarks plus vector boson is an important background in all multilepton channels.   A large part of the \ttV component, arising from on-shell $Z\to\ell\ell$, can be removed via a $Z$ mass veto on like-flavour, opposite sign leptons.  However the $Z \to \tau\tau$ and $\gamma^*$ components remain. The \ttW and \tZ processes generally require extra jets to reach the multiplicity of our signal regions.  Uncertainties from the choice of the factorization ($\mu_{\rm F}$) and renormalisation $\mu_{\rm R}$ scales as well as from the PDF sets are considered evaluating their impacts on both the production cross sections and on the event selection efficiencies (particularly resulting from effects on the shape of number of jets spectrum). 
+
+Monte Carlo events for these processes are generated with MadGraph 5 and showered with Pythia 6.  \ttW events are generated with up to two extra partons at matrix element level, while for \ttZ up to one extra parton at matrix-element level is produced.  The \tZ process is simulated without extra partons.  The next-to-leading-order (NLO) cross sections are implemented by applying a uniform $k$-factor to the leading-order (LO) events for each process.  For \ttZ, there is a large component of off-shell production, and for the 3 and 4 $\ell$ channels low mass $\gamma^*/Z \to \ell\ell$ is an important background after on-shell production is removed with a $Z$ veto.  In this case the $k$-factor is determined by comparing LO and NLO cross sections for on-shell $Z$ production only.   
+
+The \ttV uncertainties are calculated
+using the internal QDC scale and PDF reweighting that is available with
+{\tt MadGraph5\_aMC@NLO}. The prescription for the scale envelope is taken from
+\cite{Garzelli:2012bn}: the central value $\mu=\mu_{R}=\mu_{F}=m_t+m_V/2$
+and the uncertainty envelope is $[\mu_{0}/2,2\mu_{0}]$. The PDF
+uncertainty prescription used is the recipe from
+\cite{Campbell:2012dh}: calculate the PDF uncertaintly using the {\tt
+MSTW2008nlo}~\cite{Martin:2009iq} PDF for the central value and then the final PDF
+uncertainty envelope is derived from three PDF error sets each with
+different $\alpha_S$ values (the central value and the upper and lower
+90\% CL values). The final NLO cross section central values and
+uncertainties are given in Table~\ref{tab:ttVXSunc}.
+
+\begin{table}%[ht!!!]
+\begin{center}
+\begin{tabular}{l|p{0.15\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}}
+\hline
+Process & $\sigma_{NLO}$ [$fb$] & \multicolumn{2}{c|}{Scale
+Uncertainty [\%]} & \multicolumn{2}{c|}{PDF Uncertainty [\%]} & Total
+symmetrised uncertainty [\%] \\
+\hline
+\hline
+$t\bar{t}W^{+}$ & 144.9 & +10 & -11 & +7.7 & -8.7 & 13.3 \\
+$t\bar{t}W^{-}$ & 61.4  & +11 & -12 & +6.3 & -8.4 & 13.6 \\
+$t\bar{t}Z$     & 206.7 & +9  & -13 & +8.0 & -9.2 & 14.0 \\
+$tZ$            & 160.0 & +4  & -4  & +7   & -7   & 8.0 \\
+$\bar{t}Z$      & 76.0  & +5  & -4  & +7   & -7   & 8.6 \\
+\hline
+\end{tabular}
+\caption{NLO cross section and theoretical uncertainty
+  calculations derived from {\tt MadGraph5\_aMC@NLO}.}
+\label{tab:ttVXSunc}
+\end{center}
+\end{table}
+
+The \tZ process is normalized to NLO based on the calculation in Ref.~\cite{Campbell:2013yla}.  Here the scales are set to $\mu_0 = m_t$ and the scale variations are by a factor of four; the scale dependence is found to be quite small.
+
+%What is the tZ error? 
+
+\subsection{\ttZ Validation Region}
+
+Unlike \ttW, a \ttZ validation region can be obtained by simply inverting the veto on same-flavor opposite sign lepton pairs near the Z pole in the 3 lepton signal region. This region thus requires 3 leptons (with momentum and identification cuts discussed in Chapter \ref{chapter:selection}, at least one opposite sign, same-flavor pair of leptons within 10 \gevcc of the Z mass, and either 4 jets and at least 1 b-tagged jet or exacly 3 jet and 2 or more b-tagged jets. The resulting region has low statistics and is not used as a control region but is instead used as a validation to demonstrate that the normalization uncertainty, discussed above, is properly evaluated. 
+
+The region defined by this is predicted to be 67\% \ttZ, 17\% $WZ$, and 13\% \tZ.  We predict $19.3 \pm 0.5$ events and observe 28, giving a observed-to-predicted ratio of $1.45 \pm 0.27 \pm 0.03$ (where the errors are from data and simulation statistics, respectively).Given the large errors, the region is still in agreement with the predictions to within 1-1.5 $\sigma$.  Distributions of various variables are shown in Fig.~\ref{figure:background_ttZCRA}.  
+
+\begin{figure}
+ \begin{center}
+\includegraphics[width=.5\linewidth]{figs/ttZ/ttz_3l_CR_nelec}%
+\includegraphics[width=.5\linewidth]{figs/ttZ/ttz_3l_CR_nJets_and_nbJets_lin}\\
+\includegraphics[width=.5\linewidth]{figs/ttZ/ttz_3l_CR_Mll01}%
+\includegraphics[width=.5\linewidth]{figs/ttZ/ttz_3l_CR_Mll02}\\
+  \caption{\label{figure:background_ttZCRA}Data/MC comparison plots for \ttZ control region A ($\ge4$ jets, $\ge1$ $b$-tag and 3 jets, $\ge 2$ $b$-tag). In all plots, the rightmost bin contains any overflows.  Top left: number of electrons.  Top right: 10*the number of $b$-tags + the total number of jets. Middle left: the invariant mass of the (0,1) lepton pair (see the text for the definition of the lepton ordering).  Middle right: the invariant mass of the (0,2) lepton pair.}
+ \end{center}
+\end{figure}
+
+
+
+\section{Di-boson Background Estimation: \WZ,\ZZ }
+
+$W^{\pm}Z$ and $ZZ$ di-boson production with additional and b-tagged jets constitute small contributions to 
+the 3- and 4-lepton channels respectively. In the 3-lepton case $W^{\pm}Z$ comprises $\sim$ 1 event of $\sim$ 10 
+total background events while the $ZZ$ contribution accounts for approximately 10\% of the total background in the 
+4-lepton channel. Because of the small size of these contributions, each of the above processes can be assigned a 
+non-aggressive uncertainty based on similar previous analyses with ATLAS and cross-checked with data validation 
+regions and MC truth studies. We assign an overall 50\% error on both the $W^{\pm}Z$ 3-lepton signal region 
+contribution and the $ZZ$ 4-lepton signal region contribution. The details of this error assignment are discussed below.
+ 
+Both $W^{\pm}Z$ and $ZZ$ production have been studied by ATLAS \cite{WZAtlas}\cite{ZZAtlas} but neither process
+has been investigated thoroughly in association with multiple jets and b-quark jets. However, both $W+b$ \cite{WbAtlas} 
+and $Z+b$ \cite{ZbAtlas} production in 7 TeV data have been shown to agree with MC models to within 20-30\%. 
+A single $W$ produced in association with b-tagged jets possesses a similar topology to the $W^{\pm}Z+b$ 
+process at a different energy scale and has been shown to be dominated by charm mis-tags and b-jets from gluon splitting 
+and multiple parton interaction. The $W+b$ analysis unfortunately uses Alpgen MC with Herwig PS modeling and only provides
+results to 1 additional jet and therefore is not directly applicable to this \tth analysis (where $W^{\pm}Z$ is modeled 
+using Sherpa with massive $c$ and $b$ quarks). $Z+b$ production originates from slightly different diagrams than $ZZ+b$ 
+however the sources of the b-tags are similar and the analysis above provides results with Sherpa MC with an agreement 
+of $\sim$ 30\%.
+ 
+ 
+Figure \ref{fig:wz_zb} shows the spectrum of the number of reconstructed and selected jets (NJet) in a 
+$Zb$ validation region, defined by 2 tight-isolated leptons within 10 \gevcc of the Z mass and with at 
+least one b-tagged jet, using the \tth analysis definitions. The level of agreement in this region confirms 
+at the  30\% level seen in the 7 TeV analysis, discussed above. 
+
+\begin{figure}[!htbp]
+\centering \includegraphics[width=0.5\textwidth]{Figures/wz/ZbVR}
+\caption{NJet spectrum for 2 tight-isolation leptons with 1 b-tagged jet (MV1\_70)} 
+\label{fig:wz_zb}
+\end{figure} 
+
+In the following two sections the uncertainty assignments for each of these two di-boson processes will be reviewed in turn. 
+
+\subsection{$W^{\pm}Z$ Uncertainty} 
+The \tth analyses has two validation regions to test the Sherpa agreement with data for $W^{\pm}Z$: one inclusive 3 lepton region, using the three-lepton channel object and \pt\ cuts; and a $W^{\pm}Z+b$ region with 1 b-tagged jet, fewer than 4 jets (to remove \ttV), and a requirement that at least one same-flavor opposite sign pair have an invariant mass within 10 \gevcc of the Z mass. Figure \ref{fig:wz_incl} shows kinematic varibles for the inclusive region \footnote{the fakes are taken directly from MC}. The NJet spectrum shows good agreement within statistics across the full spectrum, giving confidence about the Sherpa high NJet SR extrapolation. Figure \ref{fig:wz_z_b} shows NJet spectrum for the $W^{\pm}Z+b$ validation region with good agreement in the 1 and 2 jet bins, but a slight data-MC discrepancy in the 3 jet bin. The region has low stats and around $\sim$ 60\% purity. 
+
+We assign a conservative 50\% systematic error to cover MC modeling based on these distributions and the agreement seen in similar $W+b$ and $Z+b$ analyses and use the MC central value for the final $W^{\pm}Z$ in the SR. 
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_NJet}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Mlll}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Mll01ML}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Mll02ML}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Mll12ML}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Lep0MLPt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Lep1MLPt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Lep2MLPt}
+  \end{minipage}\hfill
+
+\caption{Inclusive 3 lepton $W^{\pm}Z$ validation region using the \tth lepton identification and momentum cuts: mass, number of jet and lepton momentum variables} 
+\label{fig:wz_incl}
+\end{figure} 
+
+
+
+\begin{figure}[!htbp]
+
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/wz/wz_b_NJet}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/wz/plotCand_3lep_VVb_BJet0MV1}
+  \end{minipage}\hfill
+\caption{$W^{\pm}Z+b$ validation region: NJet and BJet MV1 variable} 
+\label{fig:wz_z_b}
+\end{figure} 
+
+A cross-check is undertaken by examining the $W^{\pm}Z$ truth origins of the b-jet in the $W^{\pm}Z+b$ validation region (VR) and the signal region using the sherpa sample available. Table \ref{table:wz_truth} shows these fractions. As expected the charm and b contributions dominate, though there is a small dependence on the number of jets. The composition of the VR is fairly similar to that of the signal region, especially in the 3-jet bin.
+
+\begin{table}[htbp]
+\centering 
+\begin{tabular}{|c|c|c|c|} 
+  \hline
+  & Bottom  & Charm & Light \\
+  \hline
+  $W^{\pm}Z+b$ VR 1 Jet& 0.25 $\pm$ 0.03 & 0.054  $\pm$ 0.04 & 0.20 $\pm$ 0.03 \\ 
+  $W^{\pm}Z+b$ VR 2 Jet& 0.34 $\pm$ 0.04 & 0.052  $\pm$ 0.06 & 0.13 $\pm$ 0.03 \\ 
+  $W^{\pm}Z+b$ VR 3 Jet& 0.40 $\pm$ 0.07 & 0.041  $\pm$ 0.07 & 0.18 $\pm$ 0.04 \\
+  3$l$ SR              & 0.43 $\pm$ 0.14 & 0.038  $\pm$ 0.17 & 0.18 $\pm$ 0.11 \\
+  \hline 
+\end{tabular}
+\caption{Truth Origin of highest energy b-tagged jet in the $W^{\pm}Z+b$ VR and 3$l$ SR} 
+\label{table:wz_truth}
+\end{table} 
+
+We fit the background-subtracted distribution of the $W^{\pm}Z+b$ using three templates based on the relative fractions of the bottom, charm and light components in Table \ref{table:wz_truth}. The subtraction of the \ttV\ (plus \tZ\ ) and fake backgrounds come with a 20\% and 30\% error respectively. We allow only the $b$ component to float because of the trend in the truth jet b-fraction and we obtain a preferred scale-factor of 1.87 $\pm$ 0.87 on the $b$ component from the fit. When applied to the signal region b-component this would result in a re-normalization that is within the 50\% error we assigned. The actual fit is show in Figure \ref{figure:wz_fit}.
+
+
+\begin{figure}[!htbp]
+\centering \includegraphics[width=0.5\textwidth]{Figures/wz/wz_fit}
+\caption{Template fit to background-subtracted data from the first three bins of the $W^{\pm}Z+b$ validation region. Charm (red), light (yellow) and bottom (blue) templates are used based on the numbers in Table \ref{table:wz_truth}. The background subtraction is done with a 20\% error on the \ttV\ and \tZ\ components and 30\% error on the fake components} 
+\label{fig:wz_z_b}
+\end{figure} 
+
+\subsection{$ZZ$ Uncertainty}
+In order to investigate the MC agreement with data in the $ZZ$ case, two validation regions similar to the $W^{\pm}Z$ case are defined. 
+Firstly, a 4 lepton $ZZ$ region is constructed using the object selections for the 4-lepton channel and requiring exactly two pairs of 
+opposite sign-same flavour leptons with a di-lepton invariant mass within 10 \gevcc of the $Z$ mass. Additionally, the $ZZ+b$ process 
+is investigated directly using a similar validation region which again requires exactly two Z-candidate lepton pairs as well as at least 
+1 b-tagged jet. Some kinematic distributions are shown in Figure \ref{fig:zz_incl}, and particular attention should be paid to the NJet spectrum 
+which shows good data-MC agreement in the high-jet bins, with a slight discrepancy in the 1-jet bin. The agreement for the region with at least 
+2 jets yields confidence in the NJet MC modelling in this region which lies close to the 4-lepton signal region. 
+
+%\begin{figure}[!htbp]
+%\centering \includegraphics[width=0.5\textwidth]{Figures/wz/zz_incl_NJet}
+%\includegraphics[width=0.5\textwidth]{Figures/wz/zz_incl_NJetBTag}
+%\caption{Jet-inclusive 4-lepton $ZZ$ validation region using the \tth lepton identification and momentum cuts } 
+%\label{fig:zz_incl}
+%\end{figure} 
+
+\begin{figure}[htbp]
+        \centering
+        \mbox{
+        \subfigure[Jet multiplicity]{fig{file=Figures/wz/zz_incl_NJet,width=7cm}}
+        \subfigure[b-Tagged jet multiplicity]{fig{file=Figures/wz/zz_incl_NJetBTag,width=7cm}}
+        }\vspace*{-0.1cm}
+        \mbox{
+        \subfigure[Leading jet $p_T$]{fig{file=Figures/wz/zz_incl_Jet0Pt,width=7cm}}
+        \subfigure[Sub-leading jet $p_T$]{fig{file=Figures/wz/zz_incl_Jet1Pt,width=7cm}}
+        }\vspace*{-0.1cm}
+        \caption{Jet-inclusive 4-lepton $ZZ$ validation region using the \tth lepton identification and momentum cuts }
+        \label{fig:zz_incl}
+\end{figure}
+
+\begin{figure}[htbp]
+        \centering
+        \mbox{
+        \subfigure[Jet multiplicity]{fig{file=Figures/wz/zz_b_NJet,width=7cm}}
+        \subfigure[b-Tagged jet multiplicity]{fig{file=Figures/wz/zz_b_NJetBTag,width=7cm}}
+        }\vspace*{-0.1cm}
+        \mbox{
+        \subfigure[Leading jet $p_T$]{fig{file=Figures/wz/zz_b_Jet0Pt,width=7cm}}
+        \subfigure[Sub-leading jet $p_T$]{fig{file=Figures/wz/zz_b_Jet1Pt,width=7cm}}
+        }\vspace*{-0.1cm}
+        \caption{$ZZ+b$ validation region using the \tth lepton identification and momentum cuts }
+        \label{fig:zz_z_b}
+\end{figure}
+
+\begin{figure}[!htbp]
+\centering \includegraphics[width=0.5\textwidth]{Figures/wz/zz_b_trueflavour}
+\caption{True flavour of leading (highest energy) b-tagged jet in $ZZ+b$ validation region} 
+\label{fig:zz_b_truth}
+\end{figure} 
+  
+Recall that in the $W^{\pm}Z$ case an overall systematic uncertainty of 50\% was assigned to cover the MC modeling. Based on the study of the $ZZ$ and 
+$ZZ+b$ validation regions and the overall agreement noted with the $Z+b$ analysis, we expect a similar error to be appropriate in the $ZZ$ case.  
+A similar truth origin study is undertaken in MC to demonstate a similar b-jet origin to the $W^{\pm}Z$ case. The true origin of the leading (highest energy) b-tagged jet is shown in 
+Table \ref{table:zz_truth} for the 4-lepton signal region as well as the $ZZ+b$ validation region described above divided into jet bins. It can be seen 
+that in case, as it was in the $W^{\pm}Z$ case above, the true origin of the b-jet in $ZZ+b$ is dominated by $c$ and $b$. Taking this study in tandem with 
+the results from the $W^{\pm}Z$ investigation, it is appropriate to take the central value of the $ZZ+b$ background contribution in the 4-lepton SR from 
+MC and to assign an overall systematic of 50\% in order to account for the MC modeling limitations. 
+
+\begin{table}[htbp]
+\centering 
+\begin{tabular}{|c|c|c|c|} 
+  \hline
+                 & Bottom      & Charm       & Light \\
+  \hline
+  $ZZ+b$ VR 1 Jet& 0.50  $\pm$ 0.02  & 0.21  $\pm$ 0.01  & 0.18  $\pm$ 0.01 \\ 
+  $ZZ+b$ VR 2 Jet& 0.25  $\pm$ 0.02  & 0.12  $\pm$ 0.01  & 0.11  $\pm$ 0.01 \\ 
+  $ZZ+b$ VR 3 Jet& 0.085 $\pm$ 0.014 & 0.040 $\pm$ 0.011 & 0.036 $\pm$ 0.011 \\
+  4$l$ SR        & 0.020 $\pm$ 0.008 & 0.025 $\pm$ 0.008 & 0.014 $\pm$ 0.005 \\
+  \hline 
+\end{tabular}
+\caption{Truth Origin of highest energy b-tagged jet in the $ZZ+b$ VR and 4$l$ SR} 
+\label{table:zz_truth}
+\end{table} 
+
+
+
+\section{Fake Lepton Backgrounds: \ttbar}
+
+
+\section{Charge-Misidentification Background }
