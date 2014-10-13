@@ -55,6 +55,9 @@ uncertainties are given in Table~\ref{tab:ttVXSunc}.
 
 \begin{table}%[ht!!!]
 \begin{center}
+\caption{NLO cross section and theoretical uncertainty
+  calculations derived from {\tt MadGraph5\_aMC@NLO}.}
+\label{tab:ttVXSunc}
 \begin{tabular}{l|p{0.15\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.1\textwidth}|p{0.2\textwidth}}
 \hline
 Process & $\sigma_{NLO}$ [$fb$] & \multicolumn{2}{c|}{Scale
@@ -69,15 +72,11 @@ $tZ$            & 160.0 & +4  & -4  & +7   & -7   & 8.0 \\
 $\bar{t}Z$      & 76.0  & +5  & -4  & +7   & -7   & 8.6 \\
 \hline
 \end{tabular}
-\caption{NLO cross section and theoretical uncertainty
-  calculations derived from {\tt MadGraph5\_aMC@NLO}.}
-\label{tab:ttVXSunc}
 \end{center}
 \end{table}
 
 The \tZ process is normalized to NLO based on the calculation in Ref.~\cite{Campbell:2013yla}.  Here the scales are set to $\mu_0 = m_t$ and the scale variations are by a factor of four; the scale dependence is found to be quite small.
 
-%What is the tZ error? 
 
 \subsection{\ttZ Validation Region}
 
@@ -118,41 +117,29 @@ using Sherpa with massive $c$ and $b$ quarks). $Z+b$ production originates from 
 however the sources of the b-tags are similar and the analysis above provides results with Sherpa MC with an agreement 
 of $\sim$ 30\%.
  
-Figure \ref{fig:wz_zb} shows the spectrum of the number of reconstructed and selected jets (NJet) in a 
-$Zb$ validation region, defined by 2 tight-isolated leptons within 10 \gevcc of the Z mass and with at 
-least one b-tagged jet, using the \tth analysis definitions. The level of agreement in this region confirms 
-at the  30\% level seen in the 7 TeV analysis, discussed above. 
-
-\begin{figure}[!htbp]
-\centering \includegraphics[width=0.5\textwidth]{figs/WZ/ZbVR}
-\caption{NJet spectrum for 2 tight-isolation leptons with 1 b-tagged jet (MV1\_70)} 
-\label{fig:wz_zb}
-\end{figure} 
-
 In the following two sections the uncertainty assignments for each of these two di-boson processes will be reviewed in turn. 
 
 \subsection{$W^{\pm}Z$ Uncertainty} 
-The \tth analyses has two validation regions to test the Sherpa agreement with data for $W^{\pm}Z$: one inclusive 3 lepton region, using the three-lepton channel object and \pt\ cuts; and a $W^{\pm}Z+b$ region with 1 b-tagged jet, fewer than 4 jets (to remove \ttV), and a requirement that at least one same-flavor opposite sign pair have an invariant mass within 10 \gevcc of the Z mass. Figure \ref{fig:wz_incl} shows kinematic varibles for the inclusive region \footnote{the fakes are taken directly from MC}. The NJet spectrum shows good agreement within statistics across the full spectrum, giving confidence about the Sherpa high NJet SR extrapolation. Figure \ref{fig:wz_z_b} shows NJet spectrum for the $W^{\pm}Z+b$ validation region with good agreement in the 1 and 2 jet bins, but a slight data-MC discrepancy in the 3 jet bin. The region has low stats and around $\sim$ 60\% purity. 
+The \tth analyses has two validation regions to test the Sherpa agreement with data for $W^{\pm}Z$: one inclusive 3 lepton region, using the three-lepton channel object and \pt\ cuts; and a $W^{\pm}Z+b$ region with 1 b-tagged jet, fewer than 4 jets (to remove \ttV), and a requirement that at least one same-flavor opposite sign pair have an invariant mass within 10 \gevcc of the Z mass. Figure \ref{figure:background_wz_incl} shows kinematic varibles for the inclusive region \footnote{the fakes are taken directly from MC}. The NJet spectrum shows good agreement within statistics across the full spectrum, giving confidence about the Sherpa high NJet SR extrapolation. Figure \ref{figure:background_wz_z_b} shows NJet spectrum for the $W^{\pm}Z+b$ validation region with good agreement in the 1 and 2 jet bins, but a slight data-MC discrepancy in the 3 jet bin. The region has low stats and around $\sim$ 60\% purity. 
 
 We assign a conservative 50\% systematic error to cover MC modeling based on these distributions and the agreement seen in similar $W+b$ and $Z+b$ analyses and use the MC central value for the final $W^{\pm}Z$ in the SR. 
 
 \begin{figure}[!htbp]
   \begin{minipage}[h]{0.5\textwidth}
-    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_NJet}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_VV_NJet}
   \end{minipage}\hfill
   \begin{minipage}[h]{0.5\textwidth}
-    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_NElec}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_VV_NElec}
   \end{minipage}\hfill
   \begin{minipage}[h]{0.5\textwidth}
-    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Mlll}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_VV_Mlll}
   \end{minipage}\hfill
   \begin{minipage}[h]{0.5\textwidth}
-    \centering \includegraphics[width=\textwidth]{figs/wz/plotCand_3lep_VV_Mll01ML}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_VV_Mll01ML}
   \end{minipage}\hfill
- \end{minipage}\hfill
 
 \caption{Inclusive 3 lepton $W^{\pm}Z$ validation region using the \tth lepton identification and momentum cuts: mass, number of jet and flavor variables} 
-\label{fig:wz_incl}
+\label{figure:background_wz_incl}
 \end{figure} 
 
 
@@ -160,10 +147,10 @@ We assign a conservative 50\% systematic error to cover MC modeling based on the
 \begin{figure}[!htbp]
 
   \begin{minipage}[h]{0.5\textwidth}
-    \centering \includegraphics[width=\textwidth]{figs/WZ/wz_b_NJet}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_VVb_NJet}
   \end{minipage}\hfill
   \begin{minipage}[h]{0.5\textwidth}
-    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_NElec}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_VVb_NElec}
   \end{minipage}\hfill
   \begin{minipage}[h]{0.5\textwidth}
     \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_VVb_BJet0MV1}
@@ -172,7 +159,7 @@ We assign a conservative 50\% systematic error to cover MC modeling based on the
     \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_3lep_VVb_Mlll}
   \end{minipage}\hfill
 \caption{$W^{\pm}Z+b$ validation region: NJet, NElec, BJet MV1 and Mass Variables} 
-\label{fig:wz_z_b}
+\label{figure:background_wz_z_b}
 \end{figure} 
 
 A cross-check is undertaken by examining the $W^{\pm}Z$ truth origins of the b-jet in the $W^{\pm}Z+b$ validation region (VR) and the signal region using the sherpa sample available. Table \ref{table:wz_truth} shows these fractions. As expected the charm and b contributions dominate, though there is a small dependence on the number of jets. The composition of the VR is fairly similar to that of the signal region, especially in the 3-jet bin. Importantly, also the tagged jet composition is also similar to the composition in the $V+b$ analysis, already measured by ATLAS and discussed above. 
@@ -194,48 +181,46 @@ A cross-check is undertaken by examining the $W^{\pm}Z$ truth origins of the b-j
 \end{table} 
 
 \subsection{$ZZ$ Uncertainty}
+
 In order to investigate the MC agreement with data in the $ZZ$ case, two validation regions similar to the $W^{\pm}Z$ case are defined. 
 Firstly, a 4 lepton $ZZ$ region is constructed using the object selections for the 4-lepton channel and requiring exactly two pairs of 
 opposite sign-same flavour leptons with a di-lepton invariant mass within 10 \gevcc of the $Z$ mass. Additionally, the $ZZ+b$ process 
 is investigated directly using a similar validation region which again requires exactly two Z-candidate lepton pairs as well as at least 
-1 b-tagged jet. Some kinematic distributions are shown in Figure \ref{fig:zz_incl}, and particular attention should be paid to the NJet spectrum 
+1 b-tagged jet. Some kinematic distributions are shown in Figures \ref{figure:background_zz_incl} and \ref{figure:background_zz_z_b}, and particular attention should be paid to the NJet spectrum 
 which shows good data-MC agreement in the high-jet bins, with a slight discrepancy in the 1-jet bin. The agreement for the region with at least 
 2 jets yields confidence in the NJet MC modelling in this region which lies close to the 4-lepton signal region. 
 
 \begin{figure}[htbp]
-        \centering
-        \mbox{
-        \subfigure[Jet multiplicity]{fig{file=figs/WZ/zz_incl_NJet,width=7cm}}
-        \subfigure[b-Tagged jet multiplicity]{fig{file=figs/WZ/zz_incl_NJetBTag,width=7cm}}
-        }\vspace*{-0.1cm}
-        \mbox{
-        \subfigure[Leading jet $p_T$]{fig{file=figs/WZ/zz_incl_Jet0Pt,width=7cm}}
-        \subfigure[Sub-leading jet $p_T$]{fig{file=figs/WZ/zz_incl_Jet1Pt,width=7cm}}
-        }\vspace*{-0.1cm}
-        \caption{Jet-inclusive 4-lepton $ZZ$ validation region using the \tth lepton identification and momentum cuts }
-        \label{fig:zz_incl}
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_4lep_ZZ_CR_Njet}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_4lep_ZZ_CR_NElec}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_4lep_ZZ_CR_Mllll}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/plotCand_4lep_ZZ_CR_Mll01}
+  \end{minipage}\hfill
+
+  \caption{Jet-inclusive 4-lepton $ZZ$ validation region using the \tth lepton identification and momentum cuts }
+  \label{figure:background_zz_incl}
 \end{figure}
+
 
 \begin{figure}[htbp]
-        \centering
-        \mbox{
-        \subfigure[Jet multiplicity]{fig{file=figs/WZ/zz_b_NJet,width=7cm}}
-        \subfigure[b-Tagged jet multiplicity]{fig{file=figs/WZ/zz_b_NJetBTag,width=7cm}}
-        }\vspace*{-0.1cm}
-        \mbox{
-        \subfigure[Leading jet $p_T$]{fig{file=figs/WZ/zz_b_Jet0Pt,width=7cm}}
-        \subfigure[Sub-leading jet $p_T$]{fig{file=figs/WZ/zz_b_Jet1Pt,width=7cm}}
-        }\vspace*{-0.1cm}
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/zz_b_NJet}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/WZ/zz_b_NJetBTag}
+  \end{minipage}\hfill
         \caption{$ZZ+b$ validation region using the \tth lepton identification and momentum cuts }
-        \label{fig:zz_z_b}
+        \label{figure:background_zz_z_b}
 \end{figure}
 
-\begin{figure}[!htbp]
-\centering \includegraphics[width=0.5\textwidth]{figs/WZ/zz_b_trueflavour}
-\caption{True flavour of leading (highest energy) b-tagged jet in $ZZ+b$ validation region} 
-\label{fig:zz_b_truth}
-\end{figure} 
-  
+ 
 Recall that in the $W^{\pm}Z$ case an overall systematic uncertainty of 50\% was assigned to cover the MC modeling. Based on the study of the $ZZ$ and 
 $ZZ+b$ validation regions and the overall agreement noted with the $Z+b$ analysis, we expect a similar error to be appropriate in the $ZZ$ case.  
 A similar truth origin study is undertaken in MC to demonstate a similar b-jet origin to the $W^{\pm}Z$ case. The true origin of the leading (highest energy) b-tagged jet is shown in 
@@ -263,34 +248,34 @@ that in case, as it was in the $W^{\pm}Z$ case above, the true origin of the b-j
 
 Charge-misidentification contributes to the background for 2l SS case and only for flavor channels, which include electrons. The same-sign require is useful in removing large SM opposite sign-backgrounds, but because of their size even small charge mis-identification rates result in contamination in same-sign regions. For the 2l SS signal regions and low NJet control regions, charge-misidentification backround arise primarly from \ttbar di-lepton events with a smaller contribution from leptonic $Z$ decays. 
 
-In general, charge-misidentification can arise in two ways. The first occurs for ultra-high energy electrons and muons, which leave tracks in the detector that are too straight for the fit detetermine the direction of curvature with high confidence. This type of charge mis-identification is not a concern to the \tth multi-lepton analysis, as most of the leptons have momentum $\gt$ 150 \gevc. The second source of charge misidentification is from 'tridents', which only occurs for electrons, because their low mass allows for high rate bremmstrahlung in the detector material. In some cases, after an electron releases a photon through bremstrahlung, the photon may convert nearby resulting in three electron tracks. The reconstruction algorithms may sometimes match the wrong track to the calorimeter energy deposit, resulting in a possible charge mis-identifcation. As discussed in the selection, tight track-cluster geometric and energy matching requirements are applied on the electron candidates to reduce the overall rate and the electron acceptance is narrowed to ($|\eta| < 1.37$), since most of the material is concentrated more forward in the detector. For this reason, muon charge-misidentification is considered neglibible for this analysis.
+In general, charge-misidentification can arise in two ways. The first occurs for ultra-high energy electrons and muons, which leave tracks in the detector that are too straight for the fit detetermine the direction of curvature with high confidence. This type of charge mis-identification is not a concern to the \tth multi-lepton analysis, as most of the leptons have momentum $>$ 150 \gevc. The second source of charge misidentification is from 'tridents', which only occurs for electrons, because their low mass allows for high rate bremmstrahlung in the detector material. In some cases, after an electron releases a photon through bremstrahlung, the photon may convert nearby resulting in three electron tracks. The reconstruction algorithms may sometimes match the wrong track to the calorimeter energy deposit, resulting in a possible charge mis-identifcation. As discussed in the selection, tight track-cluster geometric and energy matching requirements are applied on the electron candidates to reduce the overall rate and the electron acceptance is narrowed to ($|\eta| < 1.37$), since most of the material is concentrated more forward in the detector. For this reason, muon charge-misidentification is considered neglibible for this analysis.
 
 We estimate the contribution of charge-misidentification events in our 2l SS signal regions and relevant control regions by appling a weight per electron in the opposite-sign region with otherwise same cuts. The weight is related to the charge-misidentification rates and is estimated using a likelihood method in the opposite-sign and same-sign $Z\rightarrow ee$ control regions. The rate measured from these control regions is binned in electron \pt and $\eta$, to account for dependencies in these variables. The method, validations and associated errors are discussed in detail in the following sub-sections.
 
 
 \subsection{Likelihood Method}
 
-The number of reconstruted same-sign ($N_{ss}$) and opposite sign ($N_os$) $Z\rightarrow ee$ events are related to number of produced $Z\rightarrow ee$ opposite sign events ($N$) via factors related to the charge mis-identification rate. For a single per-electron charge mis-identification rate ($\epsilon$, these quantities are related as follows (with the assumption that $\epsilon$ is very small: 
+The number of reconstruted same-sign ($N_{ss}$) and opposite sign ($N_os$) $Z\rightarrow ee$ events are related to number of produced $Z\rightarrow ee$ opposite sign events ($N$) via factors related to the charge mis-identification rate. For a single per-electron charge mis-identification rate ($ilon$, these quantities are related as follows (with the assumption that $ilon$ is very small: 
 
 \begin{itemize}
-\item $N^{os} = (1-2\epsilon+2\epsilon^2) N$ opposite-sign events,
-\item $N^{ss} = 2\epsilon(1-\epsilon) N \simeq 2\epsilon N$ same-sign events,
+\item $N^{os} = (1-2ilon+2ilon^2) N$ opposite-sign events,
+\item $N^{ss} = 2ilon(1-ilon) N \simeq 2ilon N$ same-sign events,
 \end{itemize}
 
 
-Knowing $\epsilon$, the charge-misidentification rate, and supposing we can have a different rate per-electron, it is possible to estimate the number of same-sign events from the number of opposite sign events.
+Knowing $ilon$, the charge-misidentification rate, and supposing we can have a different rate per-electron, it is possible to estimate the number of same-sign events from the number of opposite sign events.
 
 \begin{itemize}
-\item $N^{ss} = \frac{\epsilon_i +\epsilon_j -2\epsilon_i \epsilon_j}{1-\epsilon_i -\epsilon_j +2\epsilon_i \epsilon_j} N^{os}$ for the $ee$ channel,
-\item $N^{ss} = \frac{\epsilon}{1-\epsilon} N^{os}$ for the $e\mu$ channel,
+\item $N^{ss} = \frac{ilon_i +ilon_j -2ilon_i ilon_j}{1-ilon_i -ilon_j +2ilon_i ilon_j} N^{os}$ for the $ee$ channel,
+\item $N^{ss} = \frac{ilon}{1-ilon} N^{os}$ for the $e\mu$ channel,
 \end{itemize}
-where $\epsilon_i$ and $\epsilon_j$ are the charge mis-identification rates for the two
+where $ilon_i$ and $ilon_j$ are the charge mis-identification rates for the two
 different electrons.
 
 
-Althought it is impossible from a typical same-sign $Z\rightarrow ee$ to know which electron's charge was mis-identified, we can use a likelihood method over the whole sample to measure charge mis-identification rate ($\epsilon$) depends on the electron \pt and \eta.  The likelihood method \cite{Alonso:1430701} assumes that  the mis-identification rates of the electron charge are independent for different pseudorapidity regions. Therefore, the probability to have a number of same-sign events ($N^{ij}_{ss}$) with electrons in $|\eta|$ region $i$ and $j$ can be written as a function of the number of events $N^{ij}$ as follows:
+Althought it is impossible from a typical same-sign $Z\rightarrow ee$ to know which electron's charge was mis-identified, we can use a likelihood method over the whole sample to measure charge mis-identification rate ($ilon$) depends on the electron \pt and \eta.  The likelihood method assumes that  the mis-identification rates of the electron charge are independent for different pseudorapidity regions. Therefore, the probability to have a number of same-sign events ($N^{ij}_{ss}$) with electrons in $|\eta|$ region $i$ and $j$ can be written as a function of the number of events $N^{ij}$ as follows:
 \begin{equation}
-N^{ij}_{ss}=N^{ij}(\epsilon_i+\epsilon_j).
+N^{ij}_{ss}=N^{ij}(ilon_i+ilon_j).
 \end{equation}
 
 
@@ -298,29 +283,29 @@ If all the same-sign events in the $Z$ peak are produced by charge mis-identific
 \begin{equation}
 f(k,\lambda)=\frac{\lambda^k e^{-\lambda}}{k!},
 \end{equation}
-where $k$ is the observed number of occurrences of the event, i.e. $k=N^{ij}_{ss}$, and $\lambda$ is the expected number,  i.e. $\lambda=N^{ij}(\epsilon_i+\epsilon_j)$. Thus, the probability for both electrons to produce a charge mis-identification is expressed by:
+where $k$ is the observed number of occurrences of the event, i.e. $k=N^{ij}_{ss}$, and $\lambda$ is the expected number,  i.e. $\lambda=N^{ij}(ilon_i+ilon_j)$. Thus, the probability for both electrons to produce a charge mis-identification is expressed by:
 \begin{equation}
-P(\epsilon_i,\epsilon_j|N^{ij}_{ss},N^{ij})=\frac{[N^{ij}(\epsilon_i+\epsilon_j)]^{N_{ss}^{ij}}e^{-N^{ij}(\epsilon_i+\epsilon_j)}}{N^{ij}_{ss}!}.
+P(ilon_i,ilon_j|N^{ij}_{ss},N^{ij})=\frac{[N^{ij}(ilon_i+ilon_j)]^{N_{ss}^{ij}}e^{-N^{ij}(ilon_i+ilon_j)}}{N^{ij}_{ss}!}.
 \end{equation}
 
 The likelihood $L$ for all the events is obtained by evaluating all the $|\eta|$ combinations:
 
 \begin{equation}
-L(\epsilon|N_{ss},N)=\prod_{i,j}\frac{[N^{ij}(\epsilon_i+\epsilon_j)]^{N_{ss}^{ij}}e^{-N^{ij}(\epsilon_i+\epsilon_j)}}{N^{ij}_{ss}!},
+L(ilon|N_{ss},N)=\prod_{i,j}\frac{[N^{ij}(ilon_i+ilon_j)]^{N_{ss}^{ij}}e^{-N^{ij}(ilon_i+ilon_j)}}{N^{ij}_{ss}!},
 \end{equation}
-where the rates $\epsilon_i$ and $\epsilon_j$ can be obtained by minimizing the likelihood function. In this process, the $-\ln L$ is used in order to simplify and make easier the minimization. Terms which do not depend on the rates $\epsilon_i$ and $\epsilon_j$ are removed in this step. This way, the final function to minimize is given by the following expression:
+where the rates $ilon_i$ and $ilon_j$ can be obtained by minimizing the likelihood function. In this process, the $-\ln L$ is used in order to simplify and make easier the minimization. Terms which do not depend on the rates $ilon_i$ and $ilon_j$ are removed in this step. This way, the final function to minimize is given by the following expression:
 \begin{equation}
 \label{eq:like}
--\ln L(\epsilon|N_{ss},N)\approx \sum_{i,j}\ln[N^{ij}(\epsilon_i+\epsilon_j)]N^{ij}_{ss}-N^{ij}(\epsilon_i+\epsilon_j).
+-\ln L(ilon|N_{ss},N)\approx \sum_{i,j}\ln[N^{ij}(ilon_i+ilon_j)]N^{ij}_{ss}-N^{ij}(ilon_i+ilon_j).
 \end{equation}
 
 The events are selected within the $Z$ peak and stored --with the electron order by $|\eta|$-- in two triangular matrices: one for the same-sign events $N^{ij}_{ss}$,  and the other one for all events $N^{ij}$. The likelihood method takes into account
 electron pairs with all $|\eta|$ combinations, which allows to use the full available statistics  getting therefore lower statistical uncertainties. Moreover, it does not bias the kinematical properties of the
 electrons, compared to other methods like tag-and-probe.
 
-The likelihood  method can be easily extended to measure the charge mis-identification rates as a function of  two parameters. In this study, the interest lies not only on the measurement of the rates   as a function of the pseudorapidity, but also transverse momentum. Thus, the probability to find a same-sign event given the rates for each electron is ($\epsilon_{i,k}+\epsilon_{j,l}$), where the two indices represent binned $|\eta|$- and $p_{\rm T}$-dependence. Thus, the Eq.~\ref{eq:like} transforms into
+The likelihood  method can be easily extended to measure the charge mis-identification rates as a function of  two parameters. In this study, the interest lies not only on the measurement of the rates   as a function of the pseudorapidity, but also transverse momentum. Thus, the probability to find a same-sign event given the rates for each electron is ($ilon_{i,k}+ilon_{j,l}$), where the two indices represent binned $|\eta|$- and $p_{\rm T}$-dependence. Thus, the Eq.~\ref{eq:like} transforms into
 \begin{equation}
--\ln L(\epsilon|N_{ss},N)\approx \sum_{i,j,k,l}\ln[N^{ij,kl}(\epsilon_{i,k}+\epsilon_{j,l})]N^{ij,kl}_{ss}-N^{ij,kl}(\epsilon_{i,k}+\epsilon_{j,l}).
+-\ln L(ilon|N_{ss},N)\approx \sum_{i,j,k,l}\ln[N^{ij,kl}(ilon_{i,k}+ilon_{j,l})]N^{ij,kl}_{ss}-N^{ij,kl}(ilon_{i,k}+ilon_{j,l}).
 \end{equation}   
 
 The likelihood method uses only $Z$ $signal$ events. Therefore, background coming from other processes where the dilepton invariant mass corresponds to the one of the $Z$ boson needs to be subtracted. The background subtraction is done using a simple side-band method.   This method consists in dividing the $Z$ invariant mass in three regions, i.e. $A$, $B$ and $C$, where $B$ is the central region corresponding to the $Z$ peak. The number of events is counted in the regions on the sides of the peak, i.e. $n_A$ and $n_C$, and removed  from the total number of events in the peak region $B$, $n_B$. This way, the number of signal events $N_Z$ is given by
@@ -335,40 +320,54 @@ N_Z=n_B-\frac{n_A+n_C}{2}.
 
 The charge mis-identification rate is calculated in 7 $|\eta|$ bins [0.0, 0.6, 1.1, 1.37, 1.52, 1.7, 2.3, 2.47] by 4 \pt bins [15,60,90,130,1000]. For \pt bins above 130 \gevc, the $Z$ dataset becomes too small and the rates are calculated using \ttbar MC, scaled by the data-MC ratio of the rates in the lower \pt bins, [90-130] \gevc. Figure \ref{figure:background_cf} shows the extracted rates in all bins.
 
-\begin{figure}[h!]
+\begin{figure}[ht!]
 \centering
-\includegraphics[width=0.7\textwidth]{Figures/chargeMisId/Rates2D.eps}
+\includegraphics[width=0.7\textwidth]{figs/qmis/Rates2D}
   \caption{Electron charge mis-identification rates  measured in data with the likelihood method  on $Z$ events (black points, red squares and blue triangles) as a function of $|\eta|$ and parametrized in $p_{\rm T}$. The full 2012 dataset has been used to estimate the rates below 130~GeV.   Above this value, the charge mis-identification rates have been estimated by extrapolating the rates in the region where the $p_{\rm T}\in[90,130]$~GeV with a $p_{\rm T}$ dependent factor extracted from simulated $t\bar t$ events (green triangles). Statistical and systematic uncertainties  have been included in this plot. \label{figure:background_cf}}
 \end{figure}
 
 
-To validate the likelihood approach, we apply the full method to the $Z$ MC samples (extracting rates via a likelihood fit and applying them to opposite sign events) and compare to the MC predicted number of same-sign events. The invariant mass of the $Z$ from our charge mis-identification and directly from the MC can be seen on Figure~\ref{fig:clMll}. In the simulated $Z$ samples, the number of same-sign $Z$ events is $5~049$ while the estimation is $5~031^{+375}_{-365}$.  The uncertainties combine both statistical systematic uncertainties, which are discussed in depth below. The validation gives compatible results within uncertainties. 
+To validate the likelihood approach, we apply the full method to the $Z$ MC samples (extracting rates via a likelihood fit and applying them to opposite sign events) and compare to the MC predicted number of same-sign events. The invariant mass of the $Z$ from our charge mis-identification and directly from the MC can be seen on Figure~\ref{figure:background_clMll}. In the simulated $Z$ samples, the number of same-sign $Z$ events is $5~049$ while the estimation is $5~031^{+375}_{-365}$.  The uncertainties combine both statistical systematic uncertainties, which are discussed in depth below. The validation gives compatible results within uncertainties. 
  
 \begin{figure}[htb!]
 \centering
-\subfigure[\label{fig:clMlld}]{\includegraphics[width=0.49\textwidth]{Figures/chargeMisId/ClosureMllMC.eps}}
-\subfigure[\label{fig:clMllmc}]{\includegraphics[width=0.49\textwidth]{Figures/chargeMisId/ClosureMlldata.eps}}
+\begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/qmis/ClosureMllMC}
+\end{minipage}\hfill
+\begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/qmis/ClosureMlldata}
+\end{minipage}\hfill
   \caption{Closure test on simulated $Z\rightarrow e^+e^-+jets$ events (a)   and data (b). 
       The black circles show the distribution of same-sign events while the blue histograms
       show the distribution of the reweighted opposite-sign events together with the statistical and systematic uncertainties. The distributions are not
     expected to overlay exactly, due to the loss of energy of the trident electrons for the
-    same-sign peak. \label{fig:clMll}}
+    same-sign peak. \label{figure:background_clMll}}
 \end{figure}
-
 
 
 \subsection{Systematic and Statistical Uncertainties}
 
-Statistical uncertainties dominate the combined uncertainty on the charge mis-identification estimate. The statistical uncertainties come primarly from the size of the $Z$ same-sign sample in data and are especially large for central, material-poor regions where the charge mis-identification rate is extremely low. Additionaly systematic uncertainties are included for a comparison between the positron and electron rate, the per-bin MC closure test discussed above in the Results section, and for the effect of varying the invariant mass window used for the background subtraction for three different cases. The high \pt extrapolation induces a statistical error only in the last \pt bin. This bins is essentially irrelevant to the energy scales considered in this analysis. Figure \ref{} shows the relative bin uncertanties for all rate bins.
+Statistical uncertainties dominate the combined uncertainty on the charge mis-identification estimate. The statistical uncertainties come primarly from the size of the $Z$ same-sign sample in data and are especially large for central, material-poor regions where the charge mis-identification rate is extremely low. Additionaly systematic uncertainties are included for a comparison between the positron and electron rate, the per-bin MC closure test discussed above in the Results section, and for the effect of varying the invariant mass window used for the background subtraction for three different cases. The high \pt extrapolation induces a statistical error only in the last \pt bin. This bins is essentially irrelevant to the energy scales considered in this analysis. Figure \ref{figure:background_qmissyst} shows the relative bin uncertanties for all rate bins.
 
- \begin{figure}[htb!]
+
+
+ \begin{figure}[htp!] 
 \centering
-\includegraphics[width=0.7\textwidth]{Figures/chargeMisId/LikTMSyst.eps}
-  \caption{Ratio of the charge mis-identification rates for electrons  as a function of  ($|\eta|,p_{\rm T}$)  measured in simulated  $Z\rightarrow e^+e^-+jets$ events with the truth-matching and the two-dimensional likelihood methods.  \label{fig:LikTM2D1}}
-\end{figure}
+\setlength{\fboxrule}{0 pt}
+\fbox{  \includegraphics[width=0.48\textwidth]{figs/qmis/Syst1}}% \hspace{2cm}%
+\fbox{  \includegraphics[width=0.48\textwidth]{figs/qmis/Syst2}}% 
+
+\fbox{  \includegraphics[width=0.48\textwidth]{figs/qmis/Syst3}}% hspace{2cm}%
+\fbox{  \includegraphics[width=0.48\textwidth]{figs/qmis/Syst4}}% 
+\caption{Relative systematic uncertainty contributions on the
+      charge mis-identification rate, for different bins in $p_{\rm T}$ and 
+      $|\eta|$. Tight++  electrons have been used to produce this plot.}\label{figure:background_qmissyst}
+ \end{figure}
 
 
-We apply the rates to estimate the charge mis-identification background in the 2l SS signal regions, and find  $\sim$ 25\% contamination in the \ee regions and a $\sim$ 10\% contribution to the \emu regions with a 10\% systematic error overall. This can be seen in Figure \ref{}. The low overall error can be attributed to the fact that the statistical error is lowest where the bulk of charge misidentificatiosn occur.  
+
+
+We apply the rates to estimate the charge mis-identification background in the 2l SS signal regions, and find  $\sim$ 25\% contamination in the \ee regions and a $\sim$ 10\% contribution to the \emu regions with a 10\% systematic error overall. The low overall error can be attributed to the fact that the statistical error is lowest where the bulk of charge misidentifications occur.  
 
 
 \section{Fake Lepton Backgrounds}
@@ -380,12 +379,12 @@ The general method for all channels is to define a reversed object selection reg
 
 
 \begin{equation}
-\theta_e = \frac{N_{xe}}{N_xd}, \theta_{\mu} = \frac{N_{x\mu}}{N_{xp}
+\theta_e = \frac{N_{xe}}{N_xd}, \theta_{\mu} = \frac{N_{x\mu}}{N_{xp}}
 \label{equation:background_theta}
 \end{equation}
 
 \begin{equation}
-N_{fake} = \theta_e * $N^e_{CR} + \theta_{\mu} * $N^{\mu}_{CR}   
+N_{fake} = \theta_e * N^e_{CR} + \theta_{\mu} * N^{\mu}_{CR}   
 \label{equation:background_total}
 \end{equation}
 
@@ -397,11 +396,12 @@ The transfer factor is obtained in a different way for each channel, due to uniq
 The details of the methods for each channel are discussed in depth in the following sections. For all methods, the overall systematic uncertainty on the normalization of the fake estimate is in the range 30\%-50\% and arise primarly from statistics and the closure on assumptions used to obtain the transfer factor.
 
 \begin{figure}[htbp]
-   \centering
-   \mbox{
-      \subfigure[Tight over loose electrons]{\epsfig{width=0.48\textwidth,file=Figures/Truth/compare_2e_3e_NJet_ratios.eps}}
-      \subfigure[Tight over loose muons]{\epsfig{width=0.48\textwidth,file=Figures/Truth/compare_2m_3m_NJet_ratios.eps}}
-    }\vspace*{-0.1cm}
+\begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/fake/compare_2e_3e_NJet_ratios}
+\end{minipage}\hfill
+\begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/fake/compare_2m_3m_NJet_ratios}
+\end{minipage}\hfill
 \caption{Ratios of regions with tight and loose leptons in 2-lepton and 3-lepton channels}
 \label{figure:background_njetr}
 \end{figure}
@@ -409,7 +409,6 @@ The details of the methods for each channel are discussed in depth in the follow
 Because these methods do provide a per-object transfer-factor that depends on the properties of the faking object, we must use the MC to model the shapes of the fake kinematic distributions in the signal regions. This is not an essential issue, since the analysis only cconsiders only the total number of events in each signal region in the final measurement of \tth production.
 
 \subsection{2l SS Fakes}
-
 The 2l SS fake method follows the procedure outlined in general above. We define anti-tight electron and muon control regions with reversed particle identification criteria for each signal region, including the 6 flavor and jet-counting sub regions. The anti-tight muon and electron criteria are provided below:
   
 \begin{itemize}
@@ -424,7 +423,7 @@ The electron and muon transfer factors, $\theta_e$ and $\theta_{\mu}$, are calcu
 on every region, the prompt and charge-misidentification backgrounds are subtracted from the data. 
 
  \begin{equation}
- \thee = \frac{N_{ee}}{N_{ed}}({\rm \le 3 jets}) = \frac{  N^{Data}_{ee} - N^{\rm
+ \theta_{e} = \frac{N_{ee}}{N_{ed}}= \frac{  N^{Data}_{ee} - N^{\rm
  Prompt~SS}_{ee} - N^{\rm QMisId}_{ee} }{ N_{ed}^{Data} - N^{\rm
  Prompt~SS}_{ed} - N^{\rm QMisId~MC}_{ed} } 
 \end{equation}
@@ -432,9 +431,9 @@ on every region, the prompt and charge-misidentification backgrounds are subtrac
 
 
  \begin{equation}
- \them = \frac{N_{\mu\mu}}{N_{\mup}}({\rm \le 3 jets}) = \frac{ N_{\mu\mu}^{Data} - N^{\rm
- Prompt~SS}_{\mu\mu}}{ N_{\mup}^{Data} - N^{\rm
- Promt~SS}_{\mup} } 
+ \theta_{m} = \frac{N_{\mu\mu}}{N_{\mu p}}= \frac{ N_{\mu\mu}^{Data} - N^{\rm
+ Prompt~SS}_{\mu\mu}}{ N_{\mu p}^{Data} - N^{\rm
+ Promt~SS}_{\mu p} } 
 \end{equation}
 \label{equation:ss_def_thmm}
 

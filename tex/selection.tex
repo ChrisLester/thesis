@@ -7,10 +7,10 @@ counting occurs for fully identified leptons with full overlap removal with
 transverse momentum over 10 \gev to ensure orthoganality. Lepton selections are tightened
 afterward within each region.
 
-The cuts for each signal region are provided in Table \ref{} and the object selections are detailed in the
+The cuts for each signal region are provided in Table \ref{table:selection} and the object selections are detailed in the
 following selections. The selections are based on optimizations of the region sensitivity
-performed using MC (event for data driven backgrounds) and adhoc values for normalization systematic errors. The optimziation is
-detailed in Section \ref{section:Optimization}.All signal regions are comprised of three basic requirements: the presence of b-tagged
+performed using MC (event for data driven backgrounds) and adhoc values for normalization systematic errors.
+All signal regions are comprised of three basic requirements: the presence of b-tagged
 jets, the presence of additional light jets, and a veto of same flavor opposite sign leptons with an
 invariant mass within the Z window. Additional requirements on the invariant mass of the leptons, the missing transverse energy
 in the event, and the total object energy ($\rm H_{T}$) proved to have negligble additional benefit at our level of 
@@ -112,7 +112,7 @@ The signal region is accordingly divided into two categories based on the presen
 \section{Electron Selection}
 
 The electrons are reconstructed by a standard algorithm of the
-experiment~\cite{EgammaSF} and the electron cluster is required to be fiducial 
+experiment~\cite{ATLAS-CONF-2014-032} and the electron cluster is required to be fiducial 
 to the barrel or endcap calorimeters: $|\eta_{cluster}| < $ 2.47. Electrons
 in the transition region, $1.37 < |\eta_{cluster}| < 1.52$, are vetoed.
 Electron reconstruction and identification is discussed in depth in Chapter \ref{chapter:electron}
@@ -126,8 +126,8 @@ cluster must be less than 5\% of the electron transverse momentum: $ptcone20/P_t
 All quality tracks with momentum greater than 400 MeV contribute to the isolation
 energy.  Calorimeter isolation energy is calculated
 using topological clusters with corrections for energy leaked from the
-electron cluster~\cite{Topo}. Pile-up and underlying event corrections are applied using
-a median ambient energy density correction, developed in~\cite{PileupCorrections}. 
+electron cluster. Pile-up and underlying event corrections are applied using
+a median ambient energy density correction.  
 
 The electron track must also match the primary vertex. The longitudinal projection 
 of the track along the beam line, $z0\sin{\theta}$, must be less than 1 cm) and the transverse projection divided by the
@@ -172,8 +172,7 @@ B1/B2 are rejected. The local hadronic calibration is used for
 the jet energy scale, and ambient energy corrections are applied to account
 for energy due to pileup.
 
-\pt~ and $\eta$~ cuts are tuned based on the sensitivity to \tth
-as explained in section~\ref{sec:optim-jets}. 
+\pt~ and $\eta$~ cuts are tuned based on the sensitivity to \tth. 
 
 For jets within $|\eta| < 2.4$ and $p_T <$ 50~GeV, are required to be
 associated with the primary vertex, the ``jet vertex fraction'' (or JVF),
@@ -237,6 +236,7 @@ with analyses searching for tau final states for a future combination.
     \caption{\label{tab:obj-final} Object identification and selection used to define the 5 channels of the
     multilepton \tth analysis. Some channels use a sub-sample of objects as
     precised in the {\it Remarks} column.}
+    \label{selection:table_object} 
   \end{center}
 \end{table}
 
