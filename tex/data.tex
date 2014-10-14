@@ -56,15 +56,16 @@ Small corrections are then applied to the overall efficiencies to re-scale objec
 
 \subsection{Signal Simulation}
 
-The signal Monte Carlo samples are described in Table~\ref{table:data_mcsignal}.
+
+The \ttbar$H$ production is modelled using matrix elements obtained from the HELAC-Oneloop package~\cite{Helac} that corresponds to the next-to-leading order (NLO) QCD accuracy. POWHEG BOX~\cite{powheg,powbox1,powbox2} serves as an interface to the parton shower Monte Carlo programs. The samples created using this approach are referred to as {\sc PowHel} samples. {\sc CT10NLO} PDF sets are used and the factorisation ($\mu_{\rm F}$) and renormalization ($\mu_{\rm R}$) scales are set to $\mu_{0} = \mu_{\rm F} = \mu_{\rm R} = m_{t}+\mH/2$. Pile-up and the underlying events are simulated by {\sc Pythia} 8.1~\cite{PythiaManual8} with the {\sc CTEQ61L} set of parton distribution functions and AU2 underlying event tune. The Higgs boson mass is set to $125\gev$ and the Top quark mass is set to $172.5\gev$.\\
+The signal Monte Carlo samples are summarized in Table~\ref{table:data_mcsignal}.
 These large samples are generated with inclusive Higgs boson decays, with
 branching fractions set to the LHC Higgs Cross Section Working Group (Yellow Report)
-recommendation for $m_H = 125$ GeV \cite{Heinemeyer:2013tqa}.  The matrix
-element calculation is performed at next-to-leading order (NLO); we use $t\bar t H$ Les Houches event format files
-provided by the authors of the PowHel software \cite{Garzelli:2012zfa}, decayed and showered with
-Pythia8\cite{Sjostrand:2007gs}.  The CT10\cite{Lai:2010vv} parton distribution function is used for matrix element
-generation.  The inclusive cross section (129.3
+recommendation for $m_H = 125$ GeV \cite{Heinemeyer:2013tqa}.  The inclusive cross section (129.3
 fb at $m_H = 125$ GeV) is also obtained from the Yellow Report \cite{Heinemeyer:2013tqa}.
+
+
+
 \begin{table}
 \begin{center} 
     \caption{Monte Carlo samples used for signal description.}\label{table:data_mcsignal}
