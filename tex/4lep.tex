@@ -1,0 +1,162 @@
+\clearpage
+\section{4 lepton channel}
+\label{sec:4lep}
+
+\subsection{Signal region selection}
+In the four lepton signal region, selected events must have exactly four leptons with a total charge of zero. 
+At least one of these leptons much be matched to one of the applied single lepton trigger. 
+The leading and sub-leading leptons are required to have a \pt of 25 and 15 GeV respectively. 
+In order to suppress background contributions from low-mass resonances and Drell-Yan radiation, all opposite-sign-same-flavour (OS-SF) lepton pairs are required to have a dilepton invariant mass of at least 10 GeV. 
+The quadlepton invariant mass is required to be between 100 and 500 GeV. 
+This choice of mass window suppresses background from the on-shell $Z\to4\ell$ peak and exploits the high-mass differences between the signal and the dominant \ttZ background. 
+Events containing an OS-SF lepton pair within 10 GeV of the Z boson mass are discarded. 
+This Z-veto procedure greatly reduces background contributions from \ZZ production as well as \ttZ and while it also affects the signal by vetoing \hzzstar, $Z\to\ell^+\ell^-$, these events constitute a small amount of the total expected signal. 
+Finally, selected events are required to have at least two jets, at least one of which must be tagged as a b-quark initiated jet using the MV1 70\% working point. 
+
+The contribution from \ttZ comprises approximately 75\% of the total background in the inclusive signal region. 
+A signal region categorization which factorizes \ttZ from the remaining backgrounds is thus beneficial. 
+The signal region is accordingly divided into two categories based on the presence of OS-SF lepton pairs in the final state. 
+The Z-depleted region contains events with zero OS-SF lepton pairs ($e^\pm e^\pm \mu^\mp\mu^\mp$) while the remaining events comprise the Z-enriched region ($e^+e^-\mu^+\mu^-$, $eee\mu$, $\mu\mu\mu e$, $eeee$ and $\mu\mu\mu\mu$). 
+
+\subsection{Expected MC backgrounds}
+The dominant backgrounds in the four lepton channel are estimated using Monte Carlo simulations described in detail in Note 1. 
+Contributions from \ttZ and \tZ together total approximately 88\% of the total background. 
+\ZZ production is the next largest background at approximately 9\%.
+Finally, the remaining background contributions estimated from MC come from ggF $H\to4\ell$ and \ttWW.  
+The modeling and normalization of on-shell \ZZ is validated against data using a dedicated four lepton validation region (VR). 
+Similarly, the off-shell modeling of four lepton events is investigated with an inclusive four lepton VR which excludes on-shell \ZZ contributions.
+The \ttZ modeling and normalization is likewise validated with a three lepton VR. 
+These VRs are outlined in Section 8 of this note.
+ 
+\subsection{Expected data-driven backgrounds}
+Various data-driven techniques are employed in this analysis to estimate backgrounds which arise from non-prompt or fake leptons which are not modeled well in MC.
+An in-situ method is used in the four lepton channel to estimate the events from \ttbar and \zj which may contribute to the signal region in this manner. 
+However, due to the high lepton multiplicity in this channel, the expected contribution from fake lepton backgrounds is very small. 
+Estimate procedures for this background contribution are extensively outlined in Note 2. 
+Table REFERENCE lists the results of this procedure for the inclusive four lepton signal region. 
+
+
+Data yields are taken from control regions which have 2 tight leptons (those which pass all lepton selection criteria) and 2 anti-tight leptons (which explicitly fail one or a number of lepton selections). 
+These data yields are then extrapolated to the SR using two successive extrapolations. 
+First, the estimates are extrapolated in leptons using the lepton fake $\theta$ factors derived by the three lepton analysis. 
+This step of the extrapolation is performed separately for each anti-tight lepton flavour and the contributions are then summed. 
+Finally, this estimate is extrapolated in jets by using a second extrapolation factor which is derived from two lepton events and corresponds to the efficiency of fake background events passing the $N_{\mathrm{jet}}$ selection of the SR. 
+This final value is taken as the upper limit of the background contribution from fake leptons in the four lepton signal region. 
+Both steps of the extrapolation are validated using MC closure tests which are documented thoroughly in Note 2. 
+
+\subsection{Experimental sources of systematic uncertainty}
+
+\subsection{Signal region results}
+Figures \ref{fig:4lSR_leppts}, \ref{fig:4lSR_leps} and \ref{fig:4lSR_jets} include lepton and jet kinematic distributions for the MC prediction in the four lepton inclusive signal region, along with object mutiplicities and event-level variables. 
+The corresponding yields for this region are shown in Table \ref{table:4lepSR}. 
+MC prediction yields from \ttbar and \zj samples are also included here for reference, however as discussed previously the yield for both of these backgrounds will be taken together from the data-driven estimate. 
+
+\begin{table}[htbp]
+        \begin{center}
+        \caption{Cutflow including unblinded MC yield prediction for the four lepton inclusive signal region.
+The MC yields for \ttbar and \zj MC samples are included for reference however ultimately these predictions some instead from the data-driven fake estimate}
+	\resizebox{1.0\textwidth}{!}{
+	\begin{tabular}{|c||c|c|c|c|c|c|c|c||c|}
+	\hline
+            & $\mathbf{t\bar{t}H}$       & $\mathbf{t\bar{t}WW}$      & $\mathbf{tZ}$              & $\mathbf{t\bar{t}Z/\gamma^*}$       & $\mathbf{VV}$                & $\mathbf{H}$ \textbf{(ggF)}           & $\mathbf{t\bar{t}/t+X}$    & $\mathbf{Z+}$\textbf{jet}           & \textbf{Sum Bkg.}  \\
+	\hline
+	\textbf{Preselection} 						& $0.44 \pm 0.01$ & $0.03 \pm 0.00$ & $0.60 \pm 0.03$ & $4.70 \pm 0.12$ & $201.03 \pm 0.87$ & $4.42 \pm 0.06$ & $0.17 \pm 0.05$ & $0.35 \pm 0.20$ & $211.29 \pm 0.90$\\
+	$\mathbf{100<M_{4\ell}<500}$ \textbf{GeV}      & $0.42 \pm 0.01$ & $0.02 \pm 0.00$ & $0.55 \pm 0.02$ & $4.28 \pm 0.11$ & $173.98 \pm 0.69$ & $4.38 \pm 0.06$ & $0.16 \pm 0.04$ & $0.35 \pm 0.20$ & $183.70 \pm 0.73$\\
+	$\mathbf{M_{\ell\ell}^{xy}>10}$ \textbf{GeV}   	& $0.41 \pm 0.01$ & $0.02 \pm 0.00$ & $0.54 \pm 0.02$ & $4.18 \pm 0.11$ & $165.24 \pm 0.61$ & $4.05 \pm 0.06$ & $0.14 \pm 0.04$ & $0.21 \pm 0.15$ & $174.38 \pm 0.64$\\
+	\textbf{Z-veto}    						& $0.29 \pm 0.01$ & $0.01 \pm 0.00$ & $0.11 \pm 0.01$ & $0.64 \pm 0.04$ &   $5.61 \pm 0.15$ & $1.45 \pm 0.03$ & $0.09 \pm 0.03$ & $0.10 \pm 0.10$ &   $8.01 \pm 0.19$\\
+	$\mathbf{N_{\mathrm{jet}}\geq2}$ 			& $0.24 \pm 0.01$ & $0.01 \pm 0.00$ & $0.05 \pm 0.01$ & $0.50 \pm 0.04$ &   $0.52 \pm 0.03$ & $0.17 \pm 0.01$ & $0.05 \pm 0.02$ & $0.00 \pm 0.00$ &   $1.30 \pm 0.06$\\
+	$\mathbf{N_{\mathrm{b-jet}}\geq1}$   		& $0.20 \pm 0.01$ & $0.01 \pm 0.00$ & $0.05 \pm 0.01$ & $0.44 \pm 0.04$ &   $0.05 \pm 0.01$ & $0.01 \pm 0.00$ & $0.02 \pm 0.01$ & $0.00 \pm 0.00$ &   $0.57 \pm 0.04$\\
+	\hline
+	\end{tabular}}
+	\label{table:4lepSR}
+	\end{center}
+\end{table}
+
+
+The four lepton inclusive signal region has a predicted signal significance of approximately $\sigma=0.26$, while the SR categorizations discussed in the preceeding sub-sections offer small improvements to this significance. 
+ 
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Lep0Pt.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Lep0Eta.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Lep1Pt.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Lep1Eta.eps}
+  \end{minipage}\hfill
+ \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Lep2Pt.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Lep2Eta.eps}
+  \end{minipage}\hfill
+ \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Lep3Pt.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Lep3Eta.eps}
+  \end{minipage}\hfill
+  \caption{ $p_T$ and $\eta$ distributions for each of the four leptons, ordered in decreasing $p_T$ }
+  \label{fig:4lSR_leppts}
+\end{figure}
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_NElec.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Mllll.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Mll01.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Mll02.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Mll03.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Mll12.eps}
+  \end{minipage}\hfill
+ \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Mll13.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Mll23.eps}
+  \end{minipage}\hfill
+  \caption{ Lepton variable distributions for the four lepton signal region including electron multiplicity, the quadlepton invariant mass and all dilepton invariant mass combinations } 
+  \label{fig:4lSR_leps}
+\end{figure}
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_NJet.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_NJetBTag.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Jet0Pt.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_Jet0Eta.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_SumPtJet.eps}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{Figures/Sec4lep/plotCand_4lep_SR_HT.eps}
+  \end{minipage}\hfill
+  \caption{ Jet variable distributions including multiplicities and $p_T$ and $\eta$ distributions for the highest $p_T$ jet }
+  \label{fig:4lSR_jets}
+\end{figure}
+
+
+
+
+
