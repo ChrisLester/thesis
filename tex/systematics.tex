@@ -25,17 +25,16 @@ First, the factorisation and renormalisation scales $\mu_{0}$ are varied by a fa
 
 Second, the choice of the factorisation and renormalisation scales, dependent on fixed (``static'') parameters in the nominal simulation, is tested comparing its prediction with an alternative (``dynamic''), but still physics motivated choice $\mu_{0} = (m_{T}^{t}m_{T}^{\bar{t}}m_{T}^{H})^{\frac{1}{3}}$, which depends on kinematic variables. This comparison is performed via event reweighting of the nominal static simulation based on weights derived as a function of the \ttbar$H$ transverse momentum~\cite{Guindon:1638000}. In order to take the difference between the choices of scale as systematic uncertainties, a symmetric envelope around the nominal simulation is built applying the weights and also their inverses.
 
-Fig.~\ref{fig:theosyst} shows the impact of the different choices for the factorization and renormalization scales on the jet and b-jet multiplicities in events with 2 SS leptons. Similar variations are seen also in the other event categories. In order to not double-count the variations on the total cross section the predictions from the different QCD scales are normalised to the same total cross section. That means that the observed differences are only coming from the event selection.
-%\begin{figure}[htbp]
-%\begin{center}
-%%\begin{subfigure}[t]{0.55\textwidth}
-%\subfigure[jet multiplicity]{\label{fig:theosyst:a}\includegraphics[width=0.48\textwidth]{Figures/Theory/plot_2l_NJet_ttH_nom.eps}}
-%\subfigure[b-jet multiplicity]{\label{fig:theosyst:b}\includegraphics[width=0.48\textwidth]{Figures/Theory/plot_2l_NJetBTag_ttH_nom.eps}}
-%\caption{Effects on the jet multiplicities in 2 SS lepton \ttbar$H$ events from different choices of the factorization and renormalization scales. ``Static'' refers to the variations by a factor of 2 of the nominal $\mu_{0}$, while ``Dynamic'' refers to the alternative choice of $\mu_{0}$ which depends on the event kinematic. The grey band in the lower panels represents the statistical uncertainty of the nominal sample.}
-%\label{fig:theosyst}
-%\end{center}
-%\end{figure}
-Significant variations on the jet multiplicities can be seen and these translate into different predictions on the signal event yields in the signal regions. Such differences, listed in Table~\ref{tab:theosystttH}, are taken as theoretical systematic uncertainties in addition to the ones affecting the total \ttbar$H$ production cross section. The ``Static'' uncertainties come from the variations by a factor of 2 from the nominal scale and they are correlated with the uncertainties on the total cross section, which are estimated with the same procedure. The ``Dynamic''  uncertainties come from the difference between the nominal and the alternative dynamic scale and are treated as an independent source of theoretical uncertainty. 
+Fig.~\ref{figure:systematics_theosyst} shows the impact of the different choices for the factorization and renormalization scales on the jet and b-jet multiplicities in events with 2 SS leptons. Similar variations are seen also in the other event categories. In order to not double-count the variations on the total cross section the predictions from the different QCD scales are normalised to the same total cross section. That means that the observed differences are only coming from the event selection.
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figs/tth/plot_2l_NJet_ttH_nom}
+\includegraphics[width=0.48\textwidth]{figs/tth/plot_2l_NJetBTag_ttH_nom}
+\caption{Effects on the jet multiplicities in 2 SS lepton \ttbar$H$ events from different choices of the factorization and renormalization scales. ``Static'' refers to the variations by a factor of 2 of the nominal $\mu_{0}$, while ``Dynamic'' refers to the alternative choice of $\mu_{0}$ which depends on the event kinematic. The grey band in the lower panels represents the statistical uncertainty of the nominal sample.}
+\label{figure:systematics_theosyst}
+\end{center}
+\end{figure}
+Significant variations on the jet multiplicities can be seen and these translate into different predictions on the signal event yields in the signal regions. Such differences, listed in Table~\ref{table:systematics_theosystttH}, are taken as theoretical systematic uncertainties in addition to the ones affecting the total \ttbar$H$ production cross section. The ``Static'' uncertainties come from the variations by a factor of 2 from the nominal scale and they are correlated with the uncertainties on the total cross section, which are estimated with the same procedure. The ``Dynamic''  uncertainties come from the difference between the nominal and the alternative dynamic scale and are treated as an independent source of theoretical uncertainty. 
 
 \begin{table}
 \begin{center} 
@@ -47,29 +46,29 @@ Dynamic  & $^{+1.7}_{-0.8}$ & $^{+2.0}_{-2.6}$ & $^{+1.7}_{-1.1}$ & $^{+0.5}_{-0
 \hline
 \end{tabular}
 \end{center}
-\label{tab:theosystttH}
+\label{table:systematics_theosystttH}
 \end{table}%
 
 The uncertainty of the \ttbar$H$ event selection due to the PDF sets is estimated comparing the predictions with three different PDF sets, varying each set within errors and taking the width of the envelope as systematic uncertainty. The recommended sets are \verb+CT10+, \verb+MSTW2008nlo68cl+ and \verb+NNPDF21_100+. 
-We determine the change in the acceptance due to the PDF sets via the formula \ref{Eq:PDFunc} to disentangle it from the change in production cross section.
+We determine the change in the acceptance due to the PDF sets via the formula \ref{equation:systematics_PDFunc} to disentangle it from the change in production cross section.
 
-\begin{equation} \label{Eq:PDFunc}
+\begin{equation} \label{equation:systematics_PDFunc}
 \left(\frac{\textrm{Reweighted yield in SR}}{\textrm{Reweighted total number of events}}\right)\left(\frac{\textrm{Original yield in SR}}{\textrm{Original total number of events}}\right)^{-1}-1
 \end{equation}
-Fig.~\ref{fig:theosystPDF} shows the estimated PDF systematic uncertainties as a function of the jet multiplicity in \ttbar$H$ events with at least two leptons. The uncertainties are compatible with the uncertainty on the production cross section estimated in Ref.~\cite{Heinemeyer:2013tqa} and indicated by the dashed red lines in the lower panel. 
-Table \ref{tab:pdfaccttH} shows the half-width of the envelope of the acceptance under all eigenvector variations of the three PDF sets.
+Fig.~\ref{figure:systematics_theosystPDF} shows the estimated PDF systematic uncertainties as a function of the jet multiplicity in \ttbar$H$ events with at least two leptons. The uncertainties are compatible with the uncertainty on the production cross section estimated in Ref.~\cite{Heinemeyer:2013tqa} and indicated by the dashed red lines in the lower panel. 
+Table \ref{table:systematics_pdfaccttH} shows the half-width of the envelope of the acceptance under all eigenvector variations of the three PDF sets.
 No significant dependence on the event topology is observed, so that the PDF systematic uncertainty on the \ttbar$H$ event selection is neglected.
-%\begin{figure}[htbp]
-%\begin{center}
-%\includegraphics[width=0.6\textwidth]{Figures/Theory/plot_PowhegPythia8_AU2CT10_PowHelttH120inc_ljets_AFII_njets_all_njets_all.eps}
-%\caption{PDF systematic uncertainty on the jet multiplicities in \ttbar$H$ events with at least 2 leptons. The dashed red lines in the lower panel indicate the systematic uncertainty on the \ttbar$H$ production cross section.}
-%\label{fig:theosystPDF}
-%\end{center}
-%\end{figure}
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.6\textwidth]{figs/tth/plot_PowhegPythia8_AU2CT10_PowHelttH120inc_ljets_AFII_njets_all_njets_all}
+\caption{PDF systematic uncertainty on the jet multiplicities in \ttbar$H$ events with at least 2 leptons. The dashed red lines in the lower panel indicate the systematic uncertainty on the \ttbar$H$ production cross section.}
+\label{figure:systematics_theosystPDF}
+\end{center}
+\end{figure}
 
 \begin{table}
 \begin{center}
-\caption{\label{tab:pdfaccttH}Uncertainties on $\ttbar H$ acceptance in signal
+\caption{\label{table:systematics_pdfaccttH}Uncertainties on $\ttbar H$ acceptance in signal
   regions due to PDF variation.}
 \begin{tabular}{r|c|c|c|c}
 Sample & 2l 4j & 2l 5j & 3l & 4l\\
@@ -81,10 +80,46 @@ $\ttbar H$ & 0.3\% & 1.0\% & 0.5\% & 1.4\%\\
 
 
 
+\section{Experimental and Detector Systematic Uncertainties}
 
+Experimental and detector sysetmatics uncertanties arise from the efficiency of identifiying objects and the efficiency of the event selections. These affect only MC models of physics processes, \ttV, \tth, $VV$ . Data-driven backgrounds take into account these effects by construction. We consider systematic effects from a number of sources: the lepton and jet energy and momentum scale measurements, the lepton identification and isolation selections, the efficiency and mis-identification rate associated with tagging b-quark jets, and finally the effects on pile-up energy in the detector. The vast majority of the individual effects neglibly small. The sum total of the systemetic effects are compareable to some of the overal normalization and cross-section uncertanties on some of the physics processes and is shown in Table \ref{}. 
+
+\subsection{Lepton Identification and Energy Scale}
+The electron\cite{ATLAS-CONF-2014-032} and muon identification efficiencies\cite{MuonSF} are measured in data using $Z$ boson and $J/\Psi$ control samples. They are shown in Figure \ref{figure:systematics_lepidsf}. The uncertaintiy on the moun efficiencies are measured as functions of $\eta$ and \pt and are generally less 1\%. The uncertainty on the electron and muon efficiencies are also measured as functions of $\eta$ and \pt and are at the 1 \% level for \pt above 30 \gevc, but become much larger 5-10\% for the lower \pt regimes.   These translate into sub-\% level effects on the \ttV and \tth event counts in the signal regions for the muons and $\sim$ \% level effects for the electrons. The effects become more important with increasing numbers of leptons.  
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.54\textwidth]{figs/systematics/fig_18a}
+\includegraphics[width=0.44\textwidth]{figs/systematics/fig_22a}
+\caption{Muon (left) and electron(right) identification efficiencies in Data and MC as a function of $\eta$ and \pt respectively. For electrons, the {\textsc verytight} likelhood operating point is used and for muons the CB+ST (combined+segment tagged) operating point is used}
+\label{figure:systematics_lepidsf}
+\end{center}
+\end{figure}
+
+The electron\cite{EgammaReco} and muon\cite{MuonSF} energy scale and resolution are also measured using the $Z$-boson control samples in data. The uncertainties related ot the scale and resolution for the leptons affect the overall event acceptance through the lepton momentum cuts primary and have negligble impact on the event count uncertainties in the signal regions.
+
+\subsection{Lepton Isolation and Impact Parameter}
+
+The isolation and impact parameter selections are specific to this analysis and are discussed in depth in Chapter \ref{chapter:selection}. We calculated their combined efficiency with respect to the full lepton identification selection using the $Z$ boson control samples and define data-MC scale factors to correct the efficiency in the simulation. Background are subtracted using shape templates in the di-lepton invariant mass spectrum. The electron template is derived from MC, while the background template is derived from the same-sign control region, with certain object cuts reversed in the electron case. We measure the efficiency scale-factors in bins of lepton momentum. Uncertainties are assigned per-bin to account for the level of statistics and variations caused by the fit parameters. An additional 1\% uncertainty envelope is adde d to both the electron and muon measurementsd to account for trends observed in the dependence of the data-MC efficiency scale-factor as a function of the number of jets. Stability of the efficiency scale-factor as a function of the number of jets is important for this analysis, because event activity in the low jet $Z$ sample where the efficiency is measured is much different from the high jet signal regions where the efficiencies are applied. The dependence of the scale-factor on the number of jets can be seen Figure \ref{figure:systematics_iso}. The isolation scale-factor uncertainties are around 1-3\% depending on the partilce momentum, but these uncertainties propagate to 2-5 \% (some of the largest) effects in the event counts in the signal regions. The uncertainties are more important in the regions with more leptons. 
+
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figs/systematics/MuTP_sf_njet_ALP}
+\includegraphics[width=0.48\textwidth]{figs/systematics/EleTP_sf_njet_ALP}
+\caption{Muon (left) and electron(right) isolation efficiency scale-factors from the $Z$ control sample as a function of the number of jets in the event. An additional systematic uncertainty of 1\% is added to encompass the variation in the number of jets variable}
+\label{figure:systematics_iso}
+\end{center}
+\end{figure}
+
+
+\subsection{Jet Energy Scale}
+\subsection{Trigger}
+\subsection{B-Tagged Jet Effiency}
+\subsection{Pile-up and Jet Vertex Fraction}
+\subsection{Summary}
 \section{Summary of Background Systematic Uncertainties}
 
 
-\section{Summary of Experimental and Detector Systematic Uncertainties}
 
 
