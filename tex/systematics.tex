@@ -1,4 +1,4 @@
-\chapter[Systematic Uncertanties and Statistical Formalism][Systematic Uncertainties and Statistical Formalism]{Systematic Uncertanties and Statistical Formalism}
+\chapter[Summary of Systematic Uncertanties][Summary of Systematic Uncertainties]{Summary of Systematic Uncertainties}
 \label{chapter:systematics} 
 
 This chapter summarizes the various systematic uncertainties that enter the measurement of the limit of \tth multi-lepton analysis, as well as structure of the statistical 
@@ -14,7 +14,7 @@ theoretically predicted production rate of \tth, a parameter called $\mu$. In th
 on $\mu$. The details of this procedure are discussed in the following sections and the results with the observed data are discussed in Chapter \ref{chapter:results}
 
 \section{Systematic Uncertainties on Signal Cross-section and Acceptance}
-
+\label{section:tth}
 The \tth signal is simulated with matrix elements at NLO (next-to-leading order) in QCD with {\textsc Powhel} and is discussed in Chapter \ref{chapter:data}.  
 
 The production cross section and the Higgs boson decay branching fractions together with their theoretical uncertainties from the QCD scale and PDF choice are taken from the NLO theoretical calculations reported in Ref.~\cite{Heinemeyer:2013tqa}. The uncertainty from the QCD scale estimated by varying $\mu_{0}$ by a factor of 2 from the nominal value is $^{+3.8\%}_{-9.3\%}$, while the uncertainty from the PDF set and the value of $\alpha_{\rm S}$ is $\pm 8.1\%$.\\
@@ -37,6 +37,7 @@ Fig.~\ref{figure:systematics_theosyst} shows the impact of the different choices
 Significant variations on the jet multiplicities can be seen and these translate into different predictions on the signal event yields in the signal regions. Such differences, listed in Table~\ref{table:systematics_theosystttH}, are taken as theoretical systematic uncertainties in addition to the ones affecting the total \ttbar$H$ production cross section. The ``Static'' uncertainties come from the variations by a factor of 2 from the nominal scale and they are correlated with the uncertainties on the total cross section, which are estimated with the same procedure. The ``Dynamic''  uncertainties come from the difference between the nominal and the alternative dynamic scale and are treated as an independent source of theoretical uncertainty. 
 
 \begin{table}
+\caption{Theoretical uncertainties of the signal event yields in the signal regions due to the impact of QCD scale uncertainties on the event selection.}
 \begin{center} 
 \begin{tabular}{r|c|c|c|c|}
 QCD scale [\%] & 2l4jets & 2l$\geq$5jets & 3l & 4l \\
@@ -82,10 +83,10 @@ $\ttbar H$ & 0.3\% & 1.0\% & 0.5\% & 1.4\%\\
 
 \section{Experimental and Detector Systematic Uncertainties}
 
-Experimental and detector sysetmatics uncertanties arise from the efficiency of identifiying objects and the efficiency of the event selections. These affect only MC models of physics processes, \ttV, \tth, $VV$ . Data-driven backgrounds take into account these effects by construction. We consider systematic effects from a number of sources: the lepton and jet energy and momentum scale measurements, the lepton identification and isolation selections, the efficiency and mis-identification rate associated with tagging b-quark jets, and finally the effects on pile-up energy in the detector. The vast majority of the individual effects neglibly small. The sum total of the systemetic effects are compareable to some of the overal normalization and cross-section uncertanties on some of the physics processes and is shown in Table \ref{}. 
+Experimental and detector sysetmatics uncertanties arise from the efficiency of identifiying objects and the efficiency of the event selections. These affect only MC models of physics processes, \ttV, \tth, $VV$ . Data-driven backgrounds take into account these effects by construction. We consider systematic effects from a number of sources: the lepton and jet energy scale measurements, the lepton identification and isolation selections, the efficiency and mis-identification rate associated with tagging b-quark jets. Effects due to modelling the energy and objects from additional vertices were studied and found to be neglible. The vast majority of the individual detector systematics effects are small. The sum total of the systemetic effects are compareable to some of the overall normalization and cross-section uncertanties on some of the physics processes and is shown in Table \ref{}.
 
-\subsection{Lepton Identification and Energy Scale}
-The electron\cite{ATLAS-CONF-2014-032} and muon identification efficiencies\cite{MuonSF} are measured in data using $Z$ boson and $J/\Psi$ control samples. They are shown in Figure \ref{figure:systematics_lepidsf}. The uncertaintiy on the moun efficiencies are measured as functions of $\eta$ and \pt and are generally less 1\%. The uncertainty on the electron and muon efficiencies are also measured as functions of $\eta$ and \pt and are at the 1 \% level for \pt above 30 \gevc, but become much larger 5-10\% for the lower \pt regimes.   These translate into sub-\% level effects on the \ttV and \tth event counts in the signal regions for the muons and $\sim$ \% level effects for the electrons. The effects become more important with increasing numbers of leptons.  
+\subsection{Lepton Identification, Energy Scale, and Trigger}
+The electron\cite{ATLAS-CONF-2014-032} and muon identification efficiencies\cite{MuonSF} are measured in data using $Z$ boson and $J/\Psi$ control samples. They are shown in Figure \ref{figure:systematics_lepidsf}. The uncertainty on the moun efficiencies are measured as functions of $\eta$ and \pt and are generally less 1\%. The uncertainty on the electron and muon efficiencies are also measured as functions of $\eta$ and \pt and are at the 1 \% level for \pt above 30 \gevc, but become much larger 5-10\% for the lower \pt regimes.   These translate into sub-\% level effects on the \ttV and \tth event counts in the signal regions for the muons and $\sim$ \% level effects for the electrons. The effects become more important with increasing numbers of leptons.  
 
 \begin{figure}[htbp]
 \begin{center}
@@ -97,6 +98,9 @@ The electron\cite{ATLAS-CONF-2014-032} and muon identification efficiencies\cite
 \end{figure}
 
 The electron\cite{EgammaReco} and muon\cite{MuonSF} energy scale and resolution are also measured using the $Z$-boson control samples in data. The uncertainties related ot the scale and resolution for the leptons affect the overall event acceptance through the lepton momentum cuts primary and have negligble impact on the event count uncertainties in the signal regions.
+
+The efficiencies for muons and electrons to pass muon\cite{ATLAS-CONF-2012-099} and electron triggers\cite{ATLAS-CONF-2012-048} have been calculated with respect to the offline identification operating points using the $Z$ boson control samples. They are in the range of90\% for electron triggers and 70\% for muon triggers, owing to gaps in muon trigger coverage, and have \% level errors. When statistically combined for 2,3,4 and lepton signal regions, the overall trigger efficiency is high and the error on the number of expected events is neglible. 
+
 
 \subsection{Lepton Isolation and Impact Parameter}
 
@@ -113,13 +117,121 @@ The isolation and impact parameter selections are specific to this analysis and 
 \end{figure}
 
 
-\subsection{Jet Energy Scale}
-\subsection{Trigger}
+\subsection{Jet Energy}
+
+The jet energy scale (JES) is calculated using a combination of data-based insitu techniques, where jet transverse momentum is balances with respect to a reference photon or a Z boson, as well as single particle test-stand studies\cite{Aad:2014bia}. Additional smaller effects are taken into account including the b-quark jet specific response, near-by jets, the effects of pile-up and an intercalibration of similar $eta$ regions using di-jet events. The JES systematic errors arises from numerous sources that are diagonalized into eigenvectors so that they can be combined in an uncorrelated way. The combined uncertainty is plotted in Figure \ref{figure:systematics_jes} as a function of jet $\eta$ and \pt\ and is the range 2-4\% for jets used in this analysis. The jet energy resolution is calculated in a similar way with slightly larger errors, 10\% \cite{Aad:2012ag}. Propagated to the event counts in the signal regions, the combined scale and resolution systematics are of non-neglible effects 6-7\%.  
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figs/systematics/fig_61a}
+\includegraphics[width=0.48\textwidth]{figs/systematics/fig_61c}
+\caption{JES systematic uncertainties as a function of jet $\eta$ (for jets \pt $>$ 25 GeV) and \pt (for jets $|\eta|<0.4$). The combined systematic uncertainty is shown with contributions from the largest sources}
+\label{figure:systematics_jes}
+\end{center}
+\end{figure}
+
+
 \subsection{B-Tagged Jet Effiency}
-\subsection{Pile-up and Jet Vertex Fraction}
+
+The $b$-quark tagging efficiency must be calculated separately for charm, light and b-quarks. ATLAS uses three data based control regions: an inclusive jet sample for mis-tagged light quarks\cite{mistagratecalibration}, the \ttbar\ sample for b-quarks\cite{bjetcalibration}, and a sample of $D^{*}$ mesons for charm quarks\cite{cjetcalibration}. These efficiencies and rates are well-measured in MC and the data-based corrections are small. The data-MC efficiency scale-factor shown in Figure \ref{figure:systematics_b} is close to 1 and has an overall systematic uncertainty of around 5\%. The uncertainties are applied to the analyis via a number of eigenvectors. Together these uncertianties have a 4 \% effect in the event expectation in the signal regions. 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figs/systematics/ttbartopo}
+\caption{b-Tagging data-MC efficiency scalefactors versus jet \pt\ calcuated in the \ttbar sample from 2012 data. The uncertainties are combined statistical and systematic.} 
+\label{figure:systematics_b}
+\end{center}
+\end{figure}
+
+
 \subsection{Summary}
-\section{Summary of Background Systematic Uncertainties}
+
+The combined effect of these detector and experimental systematics on the \ttV and \tth is provided in Table \ref{table:systematics_total_detector}. The effects are smaller than the normalization uncertainties on some of the backgrounds. However, since they effect all processes signal and background. They are dominated by the lepton isolation scale-factor measurments and the electron identification with smaller contributions from the JES and b-tagging efficiencies. These detector systematic uncertainties enter the fit individually and their ranking of influence on the overall measurment uncertaintiy can be seen in Figure\ref{}.
+
+\begin{table}
+\begin{center}
+\begin{tabular}{r|cc|cc|cc|cc|}
+Total Systematic & \multicolumn{2}{c|}{2ee4j} & \multicolumn{2}{c|}{2ee5jincl} & \multicolumn{2}{c|}{2em4j} & \multicolumn{2}{c|}{2em5jincl} \\ 
+Uncertainty & \multicolumn{2}{c|}{Down-Up} & \multicolumn{2}{c|}{Down-Up} & \multicolumn{2}{c|}{Down-Up} & \multicolumn{2}{c|}{Down-Up} \\ 
+\hline 
+ttH & -4.68 & 5.84 & -8.24 & 6.14 & -5.10 & 3.50 & -5.52 & 6.40   \\ 
+ttW & -7.20 & 5.45 & -8.72 & 11.30 & -3.63 & 6.22 & -9.72 & 7.95 \\ 
+ttZ & -9.68 & 5.07 & -5.87 & 10.98 & -4.07 & 6.16 & -8.37 & 4.99 \\ 
+\hline 
+Total Systematic & \multicolumn{2}{c|}{2mm4j}& \multicolumn{2}{c|}{2mm5jincl} & \multicolumn{2}{c|}{3l} & \multicolumn{2}{c|}{4l} \\ 
+Uncertainty & \multicolumn{2}{c|}{Down-Up} &\multicolumn{2}{c|}{Down-Up} & \multicolumn{2}{c|}{Down-Up} & \multicolumn{2}{c|}{Down-Up} \\ 
+\hline 
+ttH &-5.20 & 7.51& -7.28 & 6.75 & -5.84 & 5.59 & -6.54 & 6.54\\ 
+ttW &-4.54 & 5.23& -8.63 & 6.88 &  6.36 & 8.16 & --- & --- \\ 
+ttZ &-5.24 & 8.69& -9.73 & 8.18 & -6.14 & 6.66 & -9.58 & 6.94\\ 
+\end{tabular} 
+\caption{Sum in quadrature of all the systematic uncertainties on the number of event yields per channel.}
+\label{table:systematics_total_detector} 
+\end{center} 
+\end{table} 
 
 
+\section{Summary of Background and Signal Normalization Uncertainties}
+
+Tab.\ref{table:systematics_summary} gives the summary of the systematic uncetainties that are included in the analysis for the normalization and acceptance of each process. The relative importance of these uncertainties to the final fit can be seen in Figure. 
+
+
+\begin{table}[htbp]
+  \begin{center}
+    {\small     
+    \begin{tabular}{|llll|}
+      \hline
+      Type       & Description & Name  &  Uncertainty  \\
+     \hline
+      \multicolumn{4}{|c|}{Signal (ttH)}\\
+     \hline
+         &  & &               \\
+      QCD Scale                    & Cross Section (Dynamic Scale)&    QCDscale$\_$XS$\_$ttH             &    $+3.8\%$  $-9.3\%$   (Section~\ref{section:tth}      \\
+                                            & Analyses Acceptance &    QCDscale$\_$Acceptance$\_$ttH             &    $0.$-$2.6\%$       \\
+         & &  &              \\
+      PDF+$\alpha_S$     &   Cross Section  &    pdf$\_$ttH         &     $\pm$ 8.1$\%$      \\
+                                      &   Analyses Acceptance  &    pdf$\_$Acceptance$\_$ttH         &     Negligible       \\
+         & &  &              \\
+     \hline
+      \multicolumn{4}{|c|}{ttW (Irreducible background)}\\
+     \hline
+         &  & &               \\
+      QCD Scale                    & Cross Section (Dynamic Scale)&    QCDscale$\_$XS$\_$ttW             &    $\pm15\%$  (Section~\ref{section:ttV} )       \\
+                                            & Analyses Acceptance &    QCDscale$\_$Acceptance$\_$ttW             &    $0.4$-$3.5\%$        \\
+         & &  &              \\
+      PDF+$\alpha_S$     &   Cross Section  &    pdf$\_$ttW         &     $\pm$ 13$\%$      \\
+                                      &   Analyses Acceptance  &    PDF$\_$Acceptance$\_$ttW         &    $1.1$-$4.8\%$      \\
+         & &  &               \\
+     \hline
+      \multicolumn{4}{|c|}{ttZ (Irreducible background)}\\
+     \hline
+         &  & &                \\
+      QCD Scale                    & Cross Section (Dynamic Scale)&    QCDscale$\_$XS$\_$ttZ             &    $\pm12\%$     (Section~\ref{section:ttV})\\
+                                            & Analyses Acceptance &    QCDscale$\_$Acceptance$\_$ttZ             &    $0.1$-$3.1\%$          \\
+         & &  &               \\
+      PDF+$\alpha_S$     &   Cross Section  &    pdf$\_$ttZ         &     $\pm$ 9$\%$       \\
+                                      &   Analyses Acceptance  &    PDF$\_$Acceptance$\_$ttZ         &     $0.9$-$2.7\%$      \\
+         & &  &               \\
+     \hline
+      \multicolumn{4}{|c|}{VV Backgrounds}\\
+     \hline
+         &   & &              \\
+      Cross Sections             &   WZ,ZZ Processes       &    WZxsec,ZZxsec        &     $\pm$ 50$\%$   (Section~\ref{section:wz})   \\
+          &  &  &             \\
+     \hline
+      \multicolumn{4}{|c|}{Data-Driven Backgrounds}\\
+     \hline
+          &  &  &             \\
+           Normalization Uncertainty                 &         &    Jet Fakes       &     $\pm$ 30-50$\%$ (Section~\ref{section:fakes})  )   \\
+           Normalization Uncertainty                 &         &    Charge MisID    &     $\pm$ 20-30$\%$ (Section~\ref{section:qmis})      \\
+          &  &  &             \\
+     \hline
+    \end{tabular}
+    }
+    \caption{ Summary of systematiscs for processes present in the signal regions in the analysis, with their
+    type, description, name, values and uncertainties, and status of inclusion in the final results.}
+    \label{table:systematics_summary}
+    \end{center}
+    \end{table} 
 
 

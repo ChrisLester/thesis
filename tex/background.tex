@@ -34,7 +34,7 @@ $s/\sqrt{b} \oplus 0.3{\rm fake(DD)} \oplus 0.2{\rm ttV}$  & $0.27$  & $0.53$ & 
 
 
 \section{Vector Boson ($W^{\pm}$, $Z$) production in association with top quarks: \ttV, \tZ}  
-
+\label{section:ttV}
 This section describes the estimation  and \ttV productions. 
 Production of top quarks plus vector boson is an important background in all multilepton channels.   A large part of the \ttV component, arising from on-shell $Z\to\ell\ell$, can be removed via a $Z$ mass veto on like-flavour, opposite sign leptons.  However the $Z \to \tau\tau$ and $\gamma^*$ components remain. The \ttW and \tZ processes generally require extra jets to reach the multiplicity of our signal regions.  Uncertainties from the choice of the factorization ($\mu_{\rm F}$) and renormalisation $\mu_{\rm R}$ scales as well as from the PDF sets are considered evaluating their impacts on both the production cross sections and on the event selection efficiencies (particularly resulting from effects on the shape of number of jets spectrum). 
 
@@ -98,6 +98,7 @@ The region defined by this is predicted to be 67\% \ttZ, 17\% $WZ$, and 13\% \tZ
 
 \section{Di-boson Background Estimation: \WZ,\ZZ }
 
+\label{section:wz}
 $W^{\pm}Z$ and $ZZ$ di-boson production with additional and b-tagged jets constitute small contributions to 
 the 3- and 4-lepton channels respectively. In the 3-lepton case $W^{\pm}Z$ comprises $\sim$ 1 event of $\sim$ 10 
 total background events while the $ZZ$ contribution accounts for approximately 10\% of the total background in the 
@@ -245,7 +246,7 @@ that in case, as it was in the $W^{\pm}Z$ case above, the true origin of the b-j
 
 
 \section{Charge-Misidentification Background }
-
+\label{section:qmis} 
 Charge-misidentification contributes to the background for 2l SS case and only for flavor channels, which include electrons. The same-sign require is useful in removing large SM opposite sign-backgrounds, but because of their size even small charge mis-identification rates result in contamination in same-sign regions. For the 2l SS signal regions and low NJet control regions, charge-misidentification backround arise primarly from \ttbar di-lepton events with a smaller contribution from leptonic $Z$ decays. 
 
 In general, charge-misidentification can arise in two ways. The first occurs for ultra-high energy electrons and muons, which leave tracks in the detector that are too straight for the fit detetermine the direction of curvature with high confidence. This type of charge mis-identification is not a concern to the \tth multi-lepton analysis, as most of the leptons have momentum $>$ 150 \gevc. The second source of charge misidentification is from 'tridents', which only occurs for electrons, because their low mass allows for high rate bremmstrahlung in the detector material. In some cases, after an electron releases a photon through bremstrahlung, the photon may convert nearby resulting in three electron tracks. The reconstruction algorithms may sometimes match the wrong track to the calorimeter energy deposit, resulting in a possible charge mis-identifcation. As discussed in the selection, tight track-cluster geometric and energy matching requirements are applied on the electron candidates to reduce the overall rate and the electron acceptance is narrowed to ($|\eta| < 1.37$), since most of the material is concentrated more forward in the detector. For this reason, muon charge-misidentification is considered neglibible for this analysis.
@@ -371,7 +372,7 @@ We apply the rates to estimate the charge mis-identification background in the 2
 
 
 \section{Fake Lepton Backgrounds}
-
+\label{section:fakes}
 Fake Leptons, from the mis-identification of jets as either electrons or muons, primarly arise from \ttbar and single top processes in the 2l SS, 3l and 4l channels. Smaller contributions come from $Z$+jet events. These backgrounds are sub-dominant but important in the 2lSS and 3l channels. They are extremely small in the 4l channels. Truth studies suggest that these mis-identified leptons arise overwhelmingly from b-quark initiated jets. The general method for estimating fakes in all channels is to define a reversed object selection region (usually isolation) for each lepton flavor with otherwise identical signal region selection ($N^e_{CR}$, $N^{\mu}_{CR}$). This region is fake-dominated with small contributions from prompt backgrounds, which are subtracted from the data. The total number of fake events in this region is then scaled by a transfer factor ($\theta$) to estimate the number of fake events of the appropriate flavor in the siganl region. The transfer factor is defined in Equations \ref{equation:background_theta} and the simple formula for determining fakes is defined in Equations \ref{equation:background_total}.  'd' refers to anti-identified electrons, and 'p' refers to anti-identified muons.  
 
 
@@ -545,7 +546,7 @@ Anti-tight electrons and muons are defined in slightly different ways, compared 
 
 \item {\bf anti-tight muon(p)}: muons must pass identification but the \pt cuts is lowered to 6 \gevc, the overlap removal with jets and isolation cuts are released.
 \end{itemize} 
-The transfer factors, $\theta_e$ and $\theta_{\mu}$, extracted from MC, is defined as the ratio of the number of top (\ttbar + single-top) events in the signal region, to the number of \ttbar events in the anti-tight regions. The factors are calculated in separate flavor regions to ensure that the electron jet fakes and muon jet fakes are calculated separately. The calculation follows the same for as in Equation \ref{eqation:background_theta}, but now lep0, which by construction is almost never a fake is allowed to be either electron or muon in both cases, denoted below in Equation \ref{equation:background_theta_3l}.  
+The transfer factors, $\theta_e$ and $\theta_{\mu}$, extracted from MC, is defined as the ratio of the number of top (\ttbar + single-top) events in the signal region, to the number of \ttbar events in the anti-tight regions. The factors are calculated in separate flavor regions to ensure that the electron jet fakes and muon jet fakes are calculated separately. The calculation follows the same for as in Equation \ref{equation:background_theta}, but now lep0, which by construction is almost never a fake is allowed to be either electron or muon in both cases, denoted below in Equation \ref{equation:background_theta_3l}.  
 
 \begin{equation}
 \theta_e = \frac{N_{xee}}{N_xed}, \theta_{\mu} = \frac{N_{x\mu\mu}}{N_{x\mu p}}

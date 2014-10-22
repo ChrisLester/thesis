@@ -1,0 +1,88 @@
+
+@article{Aad:2014bia,
+      author         = "Aad, Georges and others",
+      title          = "{Jet energy measurement and its systematic uncertainty in
+                        proton-proton collisions at $\sqrt{s}=7$ TeV with the
+                        ATLAS detector}",
+      collaboration  = "ATLAS Collaboration",
+      year           = "2014",
+      eprint         = "1406.0076",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2013-222",
+      SLACcitation   = "%%CITATION = ARXIV:1406.0076;%%",
+}
+@article{Aad:2012ag,
+      author         = "Aad, Georges and others",
+      title          = "{Jet energy resolution in proton-proton collisions at
+                        $\sqrt{s}=7$ TeV recorded in 2010 with the ATLAS
+                        detector}",
+      collaboration  = "ATLAS Collaboration",
+      journal        = "Eur.Phys.J.",
+      volume         = "C73",
+      pages          = "2306",
+      doi            = "10.1140/epjc/s10052-013-2306-0",
+      year           = "2013",
+      eprint         = "1210.6210",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2012-191",
+      SLACcitation   = "%%CITATION = ARXIV:1210.6210;%%",
+}
+@article{EgammaReco,
+      author         = "Aad, Georges and others",
+      title          = "{Electron and photon energy calibration with the ATLAS
+                        detector using LHC Run 1 data}",
+      collaboration  = "ATLAS Collaboration",
+      journal        = "Eur.Phys.J.",
+      number         = "10",
+      volume         = "C74",
+      pages          = "3071",
+      doi            = "10.1140/epjc/s10052-014-3071-4",
+      year           = "2014",
+      eprint         = "1407.5063",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-153",
+      SLACcitation   = "%%CITATION = ARXIV:1407.5063;%%",
+}
+@article{MuonSF,
+      author         = "Aad, Georges and others",
+      title          = "{Measurement of the muon reconstruction performance of
+                        the ATLAS detector using 2011 and 2012 LHC proton-proton
+                        collision data}",
+      collaboration  = "ATLAS Collaboration",
+      year           = "2014",
+      eprint         = "1407.3935",
+      archivePrefix  = "arXiv",
+      primaryClass   = "hep-ex",
+      reportNumber   = "CERN-PH-EP-2014-151",
+      SLACcitation   = "%%CITATION = ARXIV:1407.3935;%%",
+}
+@techreport{Guindon:1638000,
+      author        = "Guindon, S and Shabalina, E and Adelman, J and Alhroob, M
+                       and Amor dos Santos, S and Basye, A and Bouffard, J and
+                       Casolino, M and Connelly, I and Cortes Gonzalez, A and Dao,
+                       V and D'Auria, S and Doyle, A and Ferrari, P and Filthaut,
+                       F and Goncalo, R and de Groot, N and Henkelmann, S and
+                       Jain, V and Juste, A and Kirby, G and Kar, D and Knue, A
+                       and Kroeninger, K and Liss, T and Le Menedeu, E and Montejo
+                       Berlingen, J and Moreno Llacer, M and Nackenhorst, O and
+                       Neep, T and Onofre, A and Owen, M and Pinamonti, M and Qin,
+                       Y and Quadt, A and Quilty, D and Schwanenberger, C and
+                       Serkin, L and St Denis, R and Thomas-Wilsker, J and
+                       Vazquez-Schroeder, T",
+      title         = "{Search for the Standard Model Higgs boson produced in
+                       association with top quarks and decaying to $b\bar{b}$ in
+                       pp collisions at $\sqrt {s}$= 8 TeV with the ATLAS detector
+                       at the LHC}",
+      institution   = "CERN",
+      address       = "Geneva",
+      number        = "ATL-COM-PHYS-2013-1659",
+      month         = "Dec",
+      year          = "2013",
+      note          = "The note contains internal documentation of the ttH(bb)
+                       analysis approved as a preliminary result
+                       (ATLAS-CONF-2014-011)",
+}
+
