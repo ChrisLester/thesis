@@ -1,13 +1,13 @@
 \chapter[Background Estimation][Background Estimation]{Background Estimation}
 \label{chapter:background}
 
-The \tth multi-lepton signal regions discussed in Chapter \ref{chapter:analysis} are contaminted by background contributions at a similar order of magnitude to the signal. The dominant background for each region is vector boson production in association with top quarks (\ttV). Sub-dominant but important backgrounds include the production of vector boson pairs in associated with jets and b-quark jets (VV) and \ttbar production with a jet misidentified as a lepton (fakes). The 2l SS regions possesses a unique background of charge misidentification from Z and top events. The methods for estimating these backgrounds are discussed in this chapter. Monte Carlo simulation is used for the prompt \ttV and VV contributions. Systematic uncerainties on the overall normalization of these backgrounds in the signal region are provided from theoretical studies and past ATLAS analyses and are verified in data-based validation regions. The non-prompt backgrounds from \ttbar jet-misidentification and charge-misidentification are estimated using data-driven methods. 
+The \tth multi-lepton signal regions discussed in Chapter \ref{chapter:analysis} are contaminated by background contributions at a similar order of magnitude to the signal. The dominant background for each region is vector boson production in association with top quarks (\ttV). Sub-dominant but important backgrounds include the production of vector boson pairs in associated with jets and b-quark jets (VV) and \ttbar production with a jet misidentified as a lepton (fakes). The 2$\ell$ SS regions possesses a unique background of charge misidentification from Z and top events. The methods for estimating these backgrounds are discussed in this chapter. Monte Carlo simulation is used for the prompt \ttV and VV contributions. Systematic uncertainties on the overall normalization of these backgrounds in the signal region are provided from theoretical studies and past ATLAS analyses and are verified in data-based validation regions. The non-prompt backgrounds from \ttbar jet-misidentification and charge-misidentification are estimated using data-driven methods. 
 
 For reference, Table \ref{table:background_summary} provides a summary of the \tth signal and background expectation for each of the signal regions, including the data-driven estimates discussed in this section. For each region, the background contribution exceeds the size of the signal. 
 
 
 \begin{sidewaystable}[htbp]
-\caption{Expected number of signal and backgroudn events in 2l SS, 3l and 4l signal regions. For data-driven backgrounds, monte-carlo only numbers are given for reference. The expected sensitivy $\frac{s}{\sqrt{s+b}}$ is provided for data-driven, mc only and for the inclusion of ad-hoc systematic uncertainties (20\% for \ttV and 30\% for \ttbar fake).}  
+\caption{Expected number of signal and background events in 2$\ell$ SS, 3$\ell$ and 4$\ell$ signal regions. For data-driven backgrounds, Monte Carlo only numbers are given for reference. The expected sensitivity $\frac{s}{\sqrt{s+b}}$ is provided for data-driven, mc only and for the inclusion of ad-hoc systematic uncertainties (20\% for \ttV and 30\% for \ttbar fake).}  
 \resizebox{1.0\textwidth}{!}{
 \begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}\hline 
                                        & \multicolumn{6}{c|}{Same-sign}                                         &  3 leptons    & \multicolumn{2}{c|}{4 leptons} \\
@@ -36,17 +36,17 @@ $s/\sqrt{b} \oplus 0.3{\rm fake(DD)} \oplus 0.2{\rm ttV}$  & $0.27$  & $0.53$ & 
 \section{Vector Boson ($W^{\pm}$, $Z$) production in association with top quarks: \ttV, \tZ}  
 \label{section:ttV}
 This section describes the estimation  and \ttV productions. 
-Production of top quarks plus vector boson is an important background in all multilepton channels.   A large part of the \ttV component, arising from on-shell $Z\to\ell\ell$, can be removed via a $Z$ mass veto on like-flavour, opposite sign leptons.  However the $Z \to \tau\tau$ and $\gamma^*$ components remain. The \ttW and \tZ processes generally require extra jets to reach the multiplicity of our signal regions.  Uncertainties from the choice of the factorization ($\mu_{\rm F}$) and renormalisation $\mu_{\rm R}$ scales as well as from the PDF sets are considered evaluating their impacts on both the production cross sections and on the event selection efficiencies (particularly resulting from effects on the shape of number of jets spectrum). 
+Production of top quarks plus vector boson is an important background in all multi-lepton channels.   A large part of the \ttV component, arising from on-shell $Z\to\ell\ell$, can be removed via a $Z$ mass veto on like-flavor, opposite sign leptons.  However the $Z \to \tau\tau$ and $\gamma^*$ components remain. The \ttW and \tZ processes generally require extra jets to reach the multiplicity of our signal regions.  Uncertainties from the choice of the factorization ($\mu_{\rm F}$) and renormalisation $\mu_{\rm R}$ scales as well as from the PDF sets are considered evaluating their impacts on both the production cross sections and on the event selection efficiencies (particularly resulting from effects on the shape of number of jets spectrum). 
 
 Monte Carlo events for these processes are generated with MadGraph 5 and showered with Pythia 6.  \ttW events are generated with up to two extra partons at matrix element level, while for \ttZ up to one extra parton at matrix-element level is produced.  The \tZ process is simulated without extra partons.  The next-to-leading-order (NLO) cross sections are implemented by applying a uniform $k$-factor to the leading-order (LO) events for each process.  For \ttZ, there is a large component of off-shell production, and for the 3 and 4 $\ell$ channels low mass $\gamma^*/Z \to \ell\ell$ is an important background after on-shell production is removed with a $Z$ veto.  In this case the $k$-factor is determined by comparing LO and NLO cross sections for on-shell $Z$ production only.   
 
 The \ttV uncertainties are calculated
-using the internal QDC scale and PDF reweighting that is available with
+using the internal QDC scale and PDF re-weighting that is available with
 {\tt MadGraph5\_aMC@NLO}. The prescription for the scale envelope is taken from
 \cite{Garzelli:2012bn}: the central value $\mu=\mu_{R}=\mu_{F}=m_t+m_V/2$
 and the uncertainty envelope is $[\mu_{0}/2,2\mu_{0}]$. The PDF
 uncertainty prescription used is the recipe from
-\cite{Campbell:2012dh}: calculate the PDF uncertaintly using the {\tt
+\cite{Campbell:2012dh}: calculate the PDF uncertainty using the {\tt
 MSTW2008nlo}~\cite{Martin:2009iq} PDF for the central value and then the final PDF
 uncertainty envelope is derived from three PDF error sets each with
 different $\alpha_S$ values (the central value and the upper and lower
@@ -62,7 +62,7 @@ uncertainties are given in Table~\ref{tab:ttVXSunc}.
 \hline
 Process & $\sigma_{NLO}$ [$fb$] & \multicolumn{2}{c|}{Scale
 Uncertainty [\%]} & \multicolumn{2}{c|}{PDF Uncertainty [\%]} & Total
-symmetrised uncertainty [\%] \\
+symmetrized uncertainty [\%] \\
 \hline
 \hline
 $t\bar{t}W^{+}$ & 144.9 & +10 & -11 & +7.7 & -8.7 & 13.3 \\
@@ -80,7 +80,7 @@ The \tZ process is normalized to NLO based on the calculation in Ref.~\cite{Camp
 
 \subsection{\ttZ Validation Region}
 
-Unlike \ttW, a \ttZ validation region can be obtained by simply inverting the veto on same-flavor opposite sign lepton pairs near the Z pole in the 3 lepton signal region. This region thus requires 3 leptons (with momentum and identification cuts discussed in Chapter \ref{chapter:selection}, at least one opposite sign, same-flavor pair of leptons within 10 \gevcc of the Z mass, and either 4 jets and at least 1 b-tagged jet or exacly 3 jet and 2 or more b-tagged jets. The resulting region has low statistics and is not used as a control region but is instead used as a validation to demonstrate that the normalization uncertainty, discussed above, is properly evaluated. 
+Unlike \ttW, a \ttZ validation region can be obtained by simply inverting the veto on same-flavor opposite sign lepton pairs near the Z pole in the 3 lepton signal region. This region thus requires 3 leptons (with momentum and identification cuts discussed in Chapter \ref{chapter:selection}, at least one opposite sign, same-flavor pair of leptons within 10 GeV of the Z mass, and either 4 jets and at least 1 b-tagged jet or exactly 3 jet and 2 or more b-tagged jets. The resulting region has low statistics and is not used as a control region but is instead used as a validation to demonstrate that the normalization uncertainty, discussed above, is properly evaluated. 
 
 The region defined by this is predicted to be 67\% \ttZ, 17\% $WZ$, and 13\% \tZ.  We predict $19.3 \pm 0.5$ events and observe 28, giving a observed-to-predicted ratio of $1.45 \pm 0.27 \pm 0.03$ (where the errors are from data and simulation statistics, respectively).Given the large errors, the region is still in agreement with the predictions to within 1-1.5 $\sigma$.  Distributions of various variables are shown in Fig.~\ref{figure:background_ttZCRA}.  
 
@@ -121,7 +121,7 @@ of $\sim$ 30\%.
 In the following two sections the uncertainty assignments for each of these two di-boson processes will be reviewed in turn. 
 
 \subsection{$W^{\pm}Z$ Uncertainty} 
-The \tth analyses has two validation regions to test the Sherpa agreement with data for $W^{\pm}Z$: one inclusive 3 lepton region, using the three-lepton channel object and \pt\ cuts; and a $W^{\pm}Z+b$ region with 1 b-tagged jet, fewer than 4 jets (to remove \ttV), and a requirement that at least one same-flavor opposite sign pair have an invariant mass within 10 \gevcc of the Z mass. Figure \ref{figure:background_wz_incl} shows kinematic varibles for the inclusive region \footnote{the fakes are taken directly from MC}. The NJet spectrum shows good agreement within statistics across the full spectrum, giving confidence about the Sherpa high NJet SR extrapolation. Figure \ref{figure:background_wz_z_b} shows NJet spectrum for the $W^{\pm}Z+b$ validation region with good agreement in the 1 and 2 jet bins, but a slight data-MC discrepancy in the 3 jet bin. The region has low stats and around $\sim$ 60\% purity. 
+The \tth analyses has two validation regions to test the Sherpa agreement with data for $W^{\pm}Z$: one inclusive 3 lepton region, using the three-lepton channel object and \pt\ cuts; and a $W^{\pm}Z+b$ region with 1 b-tagged jet, fewer than 4 jets (to remove \ttV), and a requirement that at least one same-flavor opposite sign pair have an invariant mass within 10 GeV of the Z mass. Figure \ref{figure:background_wz_incl} shows kinematic variables for the inclusive region \footnote{the fakes are taken directly from MC}. The NJet spectrum shows good agreement within statistics across the full spectrum, giving confidence about the Sherpa high NJet SR extrapolation. Figure \ref{figure:background_wz_z_b} shows NJet spectrum for the $W^{\pm}Z+b$ validation region with good agreement in the 1 and 2 jet bins, but a slight data-MC discrepancy in the 3 jet bin. The region has low stats and around $\sim$ 60\% purity. 
 
 We assign a conservative 50\% systematic error to cover MC modeling based on these distributions and the agreement seen in similar $W+b$ and $Z+b$ analyses and use the MC central value for the final $W^{\pm}Z$ in the SR. 
 
@@ -185,11 +185,11 @@ A cross-check is undertaken by examining the $W^{\pm}Z$ truth origins of the b-j
 
 In order to investigate the MC agreement with data in the $ZZ$ case, two validation regions similar to the $W^{\pm}Z$ case are defined. 
 Firstly, a 4 lepton $ZZ$ region is constructed using the object selections for the 4-lepton channel and requiring exactly two pairs of 
-opposite sign-same flavour leptons with a di-lepton invariant mass within 10 \gevcc of the $Z$ mass. Additionally, the $ZZ+b$ process 
+opposite sign-same flavor leptons with a di-lepton invariant mass within 10 GeV of the $Z$ mass. Additionally, the $ZZ+b$ process 
 is investigated directly using a similar validation region which again requires exactly two Z-candidate lepton pairs as well as at least 
 1 b-tagged jet. Some kinematic distributions are shown in Figures \ref{figure:background_zz_incl} and \ref{figure:background_zz_z_b}, and particular attention should be paid to the NJet spectrum 
 which shows good data-MC agreement in the high-jet bins, with a slight discrepancy in the 1-jet bin. The agreement for the region with at least 
-2 jets yields confidence in the NJet MC modelling in this region which lies close to the 4-lepton signal region. 
+2 jets yields confidence in the NJet MC modeling in this region which lies close to the 4-lepton signal region. 
 
 \begin{figure}[htbp]
   \begin{minipage}[h]{0.5\textwidth}
@@ -224,7 +224,7 @@ which shows good data-MC agreement in the high-jet bins, with a slight discrepan
  
 Recall that in the $W^{\pm}Z$ case an overall systematic uncertainty of 50\% was assigned to cover the MC modeling. Based on the study of the $ZZ$ and 
 $ZZ+b$ validation regions and the overall agreement noted with the $Z+b$ analysis, we expect a similar error to be appropriate in the $ZZ$ case.  
-A similar truth origin study is undertaken in MC to demonstate a similar b-jet origin to the $W^{\pm}Z$ case. The true origin of the leading (highest energy) b-tagged jet is shown in 
+A similar truth origin study is undertaken in MC to demonstrate a similar b-jet origin to the $W^{\pm}Z$ case. The true origin of the leading (highest energy) b-tagged jet is shown in 
 Table \ref{table:zz_truth} for the 4-lepton signal region as well as the $ZZ+b$ validation region described above divided into jet bins. It can be seen 
 that in case, as it was in the $W^{\pm}Z$ case above, the true origin of the b-jet in $ZZ+b$ is dominated by $c$ and $b$.
 
@@ -247,16 +247,16 @@ that in case, as it was in the $W^{\pm}Z$ case above, the true origin of the b-j
 
 \section{Charge-Misidentification Background }
 \label{section:qmis} 
-Charge-misidentification contributes to the background for 2l SS case and only for flavor channels, which include electrons. The same-sign require is useful in removing large SM opposite sign-backgrounds, but because of their size even small charge mis-identification rates result in contamination in same-sign regions. For the 2l SS signal regions and low NJet control regions, charge-misidentification backround arise primarly from \ttbar di-lepton events with a smaller contribution from leptonic $Z$ decays. 
+Charge-misidentification contributes to the background for 2$\ell$ SS case and only for flavor channels, which include electrons. The same-sign require is useful in removing large SM opposite sign-backgrounds, but because of their size even small charge mis-identification rates result in contamination in same-sign regions. For the 2$\ell$ SS signal regions and low NJet control regions, charge-misidentification background arise primarily from \ttbar di-lepton events with a smaller contribution from leptonic $Z$ decays. 
 
-In general, charge-misidentification can arise in two ways. The first occurs for ultra-high energy electrons and muons, which leave tracks in the detector that are too straight for the fit detetermine the direction of curvature with high confidence. This type of charge mis-identification is not a concern to the \tth multi-lepton analysis, as most of the leptons have momentum $>$ 150 \gevc. The second source of charge misidentification is from 'tridents', which only occurs for electrons, because their low mass allows for high rate bremmstrahlung in the detector material. In some cases, after an electron releases a photon through bremstrahlung, the photon may convert nearby resulting in three electron tracks. The reconstruction algorithms may sometimes match the wrong track to the calorimeter energy deposit, resulting in a possible charge mis-identifcation. As discussed in the selection, tight track-cluster geometric and energy matching requirements are applied on the electron candidates to reduce the overall rate and the electron acceptance is narrowed to ($|\eta| < 1.37$), since most of the material is concentrated more forward in the detector. For this reason, muon charge-misidentification is considered neglibible for this analysis.
+In general, charge-misidentification can arise in two ways. The first occurs for ultra-high energy electrons and muons, which leave tracks in the detector that are too straight for the fit determine the direction of curvature with high confidence. This type of charge mis-identification is not a concern to the \tth multi-lepton analysis, as most of the leptons have momentum $>$ 150 GeV. The second source of charge misidentification is from 'tridents', which only occurs for electrons, because their low mass allows for high rate bremsstrahlung in the detector material. In some cases, after an electron releases a photon through bremsstrahlung, the photon may convert nearby resulting in three electron tracks. The reconstruction algorithms may sometimes match the wrong track to the calorimeter energy deposit, resulting in a possible charge mis-identification. As discussed in the selection, tight track-cluster geometric and energy matching requirements are applied on the electron candidates to reduce the overall rate and the electron acceptance is narrowed to ($|\eta| < 1.37$), since most of the material is concentrated more forward in the detector. For this reason, muon charge-misidentification is considered negligible for this analysis.
 
-We estimate the contribution of charge-misidentification events in our 2l SS signal regions and relevant control regions by appling a weight per electron in the opposite-sign region with otherwise same cuts. The weight is related to the charge-misidentification rates and is estimated using a likelihood method in the opposite-sign and same-sign $Z\rightarrow ee$ control regions. The rate measured from these control regions is binned in electron \pt and $\eta$, to account for dependencies in these variables. The method, validations and associated errors are discussed in detail in the following sub-sections.
+We estimate the contribution of charge-misidentification events in our 2$\ell$ SS signal regions and relevant control regions by applying a weight per electron in the opposite-sign region with otherwise same cuts. The weight is related to the charge-misidentification rates and is estimated using a likelihood method in the opposite-sign and same-sign $Z\rightarrow ee$ control regions. The rate measured from these control regions is binned in electron \pt and $\eta$, to account for dependencies in these variables. The method, validations and associated errors are discussed in detail in the following sub-sections.
 
 
 \subsection{Likelihood Method}
 
-The number of reconstruted same-sign ($N_{ss}$) and opposite sign ($N_os$) $Z\rightarrow ee$ events are related to number of produced $Z\rightarrow ee$ opposite sign events ($N$) via factors related to the charge mis-identification rate. For a single per-electron charge mis-identification rate ($\epsilon$, these quantities are related as follows (with the assumption that $\epsilon$ is very small: 
+The number of reconstructed same-sign ($N_{ss}$) and opposite sign ($N_os$) $Z\rightarrow ee$ events are related to number of produced $Z\rightarrow ee$ opposite sign events ($N$) via factors related to the charge mis-identification rate. For a single per-electron charge mis-identification rate ($\epsilon$, these quantities are related as follows (with the assumption that $\epsilon$ is very small: 
 
 \begin{itemize}
 \item $N^{os} = (1-2\epsilon+2\epsilon^2) N$ opposite-sign events,
@@ -274,7 +274,7 @@ where $\epsilon_i$ and $\epsilon_j$ are the charge mis-identification rates for 
 different electrons.
 
 
-Althought it is impossible from a typical same-sign $Z\rightarrow ee$ to know which electron's charge was mis-identified, we can use a likelihood method over the whole sample to measure charge mis-identification rate ($\epsilon$) depends on the electron \pt and \eta.  The likelihood method assumes that  the mis-identification rates of the electron charge are independent for different pseudorapidity regions. Therefore, the probability to have a number of same-sign events ($N^{ij}_{ss}$) with electrons in $|\eta|$ region $i$ and $j$ can be written as a function of the number of events $N^{ij}$ as follows:
+Although it is impossible from a typical same-sign $Z\rightarrow ee$ to know which electron's charge was mis-identified, we can use a likelihood method over the whole sample to measure charge mis-identification rate ($\epsilon$) depends on the electron \pt and \eta.  The likelihood method assumes that  the mis-identification rates of the electron charge are independent for different pseudo-rapidity regions. Therefore, the probability to have a number of same-sign events ($N^{ij}_{ss}$) with electrons in $|\eta|$ region $i$ and $j$ can be written as a function of the number of events $N^{ij}$ as follows:
 \begin{equation}
 N^{ij}_{ss}=N^{ij}(\epsilon_i+\epsilon_j).
 \end{equation}
@@ -304,7 +304,7 @@ The events are selected within the $Z$ peak and stored --with the electron order
 electron pairs with all $|\eta|$ combinations, which allows to use the full available statistics  getting therefore lower statistical uncertainties. Moreover, it does not bias the kinematical properties of the
 electrons, compared to other methods like tag-and-probe.
 
-The likelihood  method can be easily extended to measure the charge mis-identification rates as a function of  two parameters. In this study, the interest lies not only on the measurement of the rates   as a function of the pseudorapidity, but also transverse momentum. Thus, the probability to find a same-sign event given the rates for each electron is ($\epsilon_{i,k}+\epsilon_{j,l}$), where the two indices represent binned $|\eta|$- and $p_{\rm T}$-dependence. Thus, the Eq.~\ref{eq:like} transforms into
+The likelihood  method can be easily extended to measure the charge mis-identification rates as a function of  two parameters. In this study, the interest lies not only on the measurement of the rates   as a function of the pseudo-rapidity, but also transverse momentum. Thus, the probability to find a same-sign event given the rates for each electron is ($\epsilon_{i,k}+\epsilon_{j,l}$), where the two indices represent binned $|\eta|$- and $p_{\rm T}$-dependence. Thus, the Eq.~\ref{eq:like} transforms into
 \begin{equation}
 -\ln L(\epsilon|N_{ss},N)\approx \sum_{i,j,k,l}\ln[N^{ij,kl}(\epsilon_{i,k}+\epsilon_{j,l})]N^{ij,kl}_{ss}-N^{ij,kl}(\epsilon_{i,k}+\epsilon_{j,l}).
 \end{equation}   
@@ -319,7 +319,7 @@ N_Z=n_B-\frac{n_A+n_C}{2}.
 
 \subsection{Results}
 
-The charge mis-identification rate is calculated in 7 $|\eta|$ bins [0.0, 0.6, 1.1, 1.37, 1.52, 1.7, 2.3, 2.47] by 4 \pt bins [15,60,90,130,1000]. For \pt bins above 130 \gevc, the $Z$ dataset becomes too small and the rates are calculated using \ttbar MC, scaled by the data-MC ratio of the rates in the lower \pt bins, [90-130] \gevc. Figure \ref{figure:background_cf} shows the extracted rates in all bins.
+The charge mis-identification rate is calculated in 7 $|\eta|$ bins [0.0, 0.6, 1.1, 1.37, 1.52, 1.7, 2.3, 2.47] by 4 \pt bins [15,60,90,130,1000]. For \pt bins above 130 GeV, the $Z$ dataset becomes too small and the rates are calculated using \ttbar MC, scaled by the data-MC ratio of the rates in the lower \pt bins, [90-130] GeV. Figure \ref{figure:background_cf} shows the extracted rates in all bins.
 
 \begin{figure}[ht!]
 \centering
@@ -340,7 +340,7 @@ To validate the likelihood approach, we apply the full method to the $Z$ MC samp
 \end{minipage}\hfill
   \caption{Closure test on simulated $Z\rightarrow e^+e^-+jets$ events (a)   and data (b). 
       The black circles show the distribution of same-sign events while the blue histograms
-      show the distribution of the reweighted opposite-sign events together with the statistical and systematic uncertainties. The distributions are not
+      show the distribution of the re-weighted opposite-sign events together with the statistical and systematic uncertainties. The distributions are not
     expected to overlay exactly, due to the loss of energy of the trident electrons for the
     same-sign peak. \label{figure:background_clMll}}
 \end{figure}
@@ -348,7 +348,7 @@ To validate the likelihood approach, we apply the full method to the $Z$ MC samp
 
 \subsection{Systematic and Statistical Uncertainties}
 
-Statistical uncertainties dominate the combined uncertainty on the charge mis-identification estimate. The statistical uncertainties come primarly from the size of the $Z$ same-sign sample in data and are especially large for central, material-poor regions where the charge mis-identification rate is extremely low. Additionaly systematic uncertainties are included for a comparison between the positron and electron rate, the per-bin MC closure test discussed above in the Results section, and for the effect of varying the invariant mass window used for the background subtraction for three different cases. The high \pt extrapolation induces a statistical error only in the last \pt bin. This bins is essentially irrelevant to the energy scales considered in this analysis. Figure \ref{figure:background_qmissyst} shows the relative bin uncertanties for all rate bins.
+Statistical uncertainties dominate the combined uncertainty on the charge mis-identification estimate. The statistical uncertainties come primarily from the size of the $Z$ same-sign sample in data and are especially large for central, material-poor regions where the charge mis-identification rate is extremely low. Additionally systematic uncertainties are included for a comparison between the positron and electron rate, the per-bin MC closure test discussed above in the Results section, and for the effect of varying the invariant mass window used for the background subtraction for three different cases. The high \pt extrapolation induces a statistical error only in the last \pt bin. This bins is essentially irrelevant to the energy scales considered in this analysis. Figure \ref{figure:background_qmissyst} shows the relative bin uncertainties for all rate bins.
 
 
 
@@ -368,12 +368,12 @@ Statistical uncertainties dominate the combined uncertainty on the charge mis-id
 
 
 
-We apply the rates to estimate the charge mis-identification background in the 2l SS signal regions, and find  $\sim$ 25\% contamination in the \ee regions and a $\sim$ 10\% contribution to the \emu regions with a 10\% systematic error overall. The low overall error can be attributed to the fact that the statistical error is lowest where the bulk of charge misidentifications occur.  
+We apply the rates to estimate the charge mis-identification background in the 2$\ell$ SS signal regions, and find  $\sim$ 25\% contamination in the \ee regions and a $\sim$ 10\% contribution to the \emu regions with a 10\% systematic error overall. The low overall error can be attributed to the fact that the statistical error is lowest where the bulk of charge misidentifications occur.  
 
 
 \section{Fake Lepton Backgrounds}
 \label{section:fakes}
-Fake Leptons, from the mis-identification of jets as either electrons or muons, primarly arise from \ttbar and single top processes in the 2l SS, 3l and 4l channels. Smaller contributions come from $Z$+jet events. These backgrounds are sub-dominant but important in the 2lSS and 3l channels. They are extremely small in the 4l channels. Truth studies suggest that these mis-identified leptons arise overwhelmingly from b-quark initiated jets. The general method for estimating fakes in all channels is to define a reversed object selection region (usually isolation) for each lepton flavor with otherwise identical signal region selection ($N^e_{CR}$, $N^{\mu}_{CR}$). This region is fake-dominated with small contributions from prompt backgrounds, which are subtracted from the data. The total number of fake events in this region is then scaled by a transfer factor ($\theta$) to estimate the number of fake events of the appropriate flavor in the siganl region. The transfer factor is defined in Equations \ref{equation:background_theta} and the simple formula for determining fakes is defined in Equations \ref{equation:background_total}.  'd' refers to anti-identified electrons, and 'p' refers to anti-identified muons.  
+Fake Leptons, from the mis-identification of jets as either electrons or muons, primarily arise from \ttbar and single top processes in the 2$\ell$ SS, 3$\ell$ and 4$\ell$ channels. Smaller contributions come from $Z$+jet events. These backgrounds are sub-dominant but important in the 2$\ell$SS and 3$\ell$ channels. They are extremely small in the 4$\ell$ channels. Truth studies suggest that these mis-identified leptons arise overwhelmingly from b-quark initiated jets. The general method for estimating fakes in all channels is to define a reversed object selection region (usually isolation) for each lepton flavor with otherwise identical signal region selection ($N^e_{CR}$, $N^{\mu}_{CR}$). This region is fake-dominated with small contributions from prompt backgrounds, which are subtracted from the data. The total number of fake events in this region is then scaled by a transfer factor ($\theta$) to estimate the number of fake events of the appropriate flavor in the signal region. The transfer factor is defined in Equations \ref{equation:background_theta} and the simple formula for determining fakes is defined in Equations \ref{equation:background_total}.  'd' refers to anti-identified electrons, and 'p' refers to anti-identified muons.  
 
 
 \begin{equation}
@@ -387,11 +387,11 @@ N_{fake} = \theta_e * N^e_{CR} + \theta_{\mu} * N^{\mu}_{CR}
 \end{equation}
 
 
-This approach factorizes the background model into two separate measurements. $N_{CR}$ is sensitive the overall \ttbar production rate, especially in the presence of additional jets from QCD ratio, as well as the object-level misidentification of a jet as a lepton. The transfer factor $\theta$ is sensitive to only the object level properties of the mis-identified jet, and in particular only the variables which are reversed in the anti-tight indentification. 
+This approach factorizes the background model into two separate measurements. $N_{CR}$ is sensitive the overall \ttbar production rate, especially in the presence of additional jets from QCD ratio, as well as the object-level misidentification of a jet as a lepton. The transfer factor $\theta$ is sensitive to only the object level properties of the mis-identified jet, and in particular only the variables which are reversed in the anti-tight identification. 
 
-The transfer factor is obtained in a different way for each channel, due to unique issues with statistics and contamination, but each method relies heavily on the data-based control regions with fewer jets. Figure \ref{figure:background_njetr} shows a truth study of the stability of the transfer factor for the 2l SS and 3l cases as a function of the number of jets in the event for events with one-btagged jet. This suggest that the regions with fewer jets are a good model of the fakes in the signal regions with more jets and is expected because of the homogeneity of origin of the fakes across all jet bins.  
+The transfer factor is obtained in a different way for each channel, due to unique issues with statistics and contamination, but each method relies heavily on the data-based control regions with fewer jets. Figure \ref{figure:background_njetr} shows a truth study of the stability of the transfer factor for the 2$\ell$ SS and 3$\ell$ cases as a function of the number of jets in the event for events with one-b-tagged jet. This suggest that the regions with fewer jets are a good model of the fakes in the signal regions with more jets and is expected because of the homogeneity of origin of the fakes across all jet bins.  
 
-The details of the methods for each channel are discussed in depth in the following sections. For all methods, the overall systematic uncertainty on the normalization of the fake estimate is in the range 30\%-50\% and arise primarly from statistics and the closure on assumptions used to obtain the transfer factor.
+The details of the methods for each channel are discussed in depth in the following sections. For all methods, the overall systematic uncertainty on the normalization of the fake estimate is in the range 30\%-50\% and arise primarily from statistics and the closure on assumptions used to obtain the transfer factor.
 
 \begin{figure}[htbp]
 \begin{minipage}[h]{0.5\textwidth}
@@ -404,20 +404,20 @@ The details of the methods for each channel are discussed in depth in the follow
 \label{figure:background_njetr}
 \end{figure}
 
-Because these methods do provide a per-object transfer-factor that depends on the properties of the faking object, we must use the MC to model the shapes of the fake kinematic distributions in the signal regions. This is not an essential issue, since the analysis only cconsiders only the total number of events in each signal region in the final measurement of \tth production.
+Because these methods do provide a per-object transfer-factor that depends on the properties of the faking object, we must use the MC to model the shapes of the fake kinematic distributions in the signal regions. This is not an essential issue, since the analysis only considers only the total number of events in each signal region in the final measurement of \tth production.
 
-\subsection{2l SS Fakes}
-The 2l SS fake method follows the procedure outlined in general above. We define anti-tight electron and muon control regions with reversed particle identification criteria for each signal region, including the 6 flavor and jet-counting sub regions. The anti-tight muon and electron criteria are provided below:
+\subsection{2$\ell$ SS Fakes}
+The 2$\ell$ SS fake method follows the procedure outlined in general above. We define anti-tight electron and muon control regions with reversed particle identification criteria for each signal region, including the 6 flavor and jet-counting sub regions. The anti-tight muon and electron criteria are provided below:
   
 \begin{itemize}
 
-\item {\bf anti-tight electron (d)}: fails to verify the {\textsc verytight} likelihood operating point, but still verifies the {\textsc veryloose} opoperating point. fails relative tracking and calorimeter isolation, $\rm E_{T}^{rel}>0.05$ and $\rm p_{T}^{rel}>0.05$.
+\item {\bf anti-tight electron (d)}: fails to verify the {\textsc verytight} likelihood operating point, but still verifies the {\textsc veryloose} operating point. fails relative tracking and calorimeter isolation, $\rm E_{T}^{rel}>0.05$ and $\rm p_{T}^{rel}>0.05$.
 
-\item {\bf anti-tight muon (p}: 6 \gevc $<$ \pt\ $<$ 10 \gevc
+\item {\bf anti-tight muon (p}: 6 GeV $<$ \pt\ $<$ 10 GeV
 
 \end{itemize}
 
-The electron and muon transfer factors, $\theta_e$ and $\theta_{\mu}$, are calculated in the region with signal region selection but fewer jets, $NJet == 2$ or $NJet ==3$ and are defined as the ratio of the number of events for two fully identified leptons to the number of events with one fully identified lepton and one anti-identified lepton, after the prompt and charge mis-identification bakgrounds are subtracted. Only same-flavor channels are used to ensure that muon and electron transfer factors maybe estimated separately:
+The electron and muon transfer factors, $\theta_e$ and $\theta_{\mu}$, are calculated in the region with signal region selection but fewer jets, $NJet == 2$ or $NJet ==3$ and are defined as the ratio of the number of events for two fully identified leptons to the number of events with one fully identified lepton and one anti-identified lepton, after the prompt and charge mis-identification backgrounds are subtracted. Only same-flavor channels are used to ensure that muon and electron transfer factors maybe estimated separately:
 on every region, the prompt and charge-misidentification backgrounds are subtracted from the data. 
 
  \begin{equation}
@@ -431,13 +431,13 @@ on every region, the prompt and charge-misidentification backgrounds are subtrac
  \begin{equation}
  \theta_{\mu} = \frac{N_{\mu\mu}}{N_{\mu p}}= \frac{ N_{\mu\mu}^{Data} - N^{\rm
  Prompt~SS}_{\mu\mu}}{ N_{\mu p}^{Data} - N^{\rm
- Promt~SS}_{\mu p} } 
+ Prompt~SS}_{\mu p} } 
 \end{equation}
 \label{equation:ss_def_thmm}
 
 The 2,2 jet anti-tight regions used in obtaining the transfer factors are shown in Figure \ref{figure:background_23jets} and the 4,5 jet
 anti-tight regions, scaled by the transfer factors to get the fake estimates in the SR are shown in Figure \ref{figure:background_45jets}. 
-The \ttbar MC is included in the plots for reference, althougth it is not included in the measurements. 
+The \ttbar MC is included in the plots for reference, although it is not included in the measurements. 
 
   % Figures
 \begin{figure}[htbp]
@@ -455,7 +455,7 @@ The \ttbar MC is included in the plots for reference, althougth it is not includ
     \centering \includegraphics[width=\textwidth]{figs/fake/TaT-23jets-1b_nb_mm}
   \end{minipage}\hfill
 
-  \caption{2,3 Jet SS 2l  $ed$ (above) and $\mu p$ control regions with at least one b-tagged jet. This region
+  \caption{2,3 Jet SS 2$\ell$  $ed$ (above) and $\mu p$ control regions with at least one b-tagged jet. This region
     and the associated tight-id regions are used to determine $\theta_e$ and $\theta_{\mu}$ The \ttbar MC (red) is
   used for reference and not used in the actual calculation}
   \label{figure:background_23jets}
@@ -476,8 +476,8 @@ The \ttbar MC is included in the plots for reference, althougth it is not includ
     \centering \includegraphics[width=\textwidth]{figs/fake/TaT-23jets-1b_nb_mm}
   \end{minipage}\hfill
 
-  \caption{4,5 Jet SS 2l  $ed$ (above) and $\mu p$ control regions with at least one b-tagged jet. After subtraction of prompt and charge mis-identification backgrounds, these regions
-    are scaled by the tranfer factors, $\theta_e$ and $\theta_{\mu}$ to obtain the final number of fake events in the CR.The \ttbar MC (red) is
+  \caption{4,5 Jet SS 2$\ell$  $ed$ (above) and $\mu p$ control regions with at least one b-tagged jet. After subtraction of prompt and charge mis-identification backgrounds, these regions
+    are scaled by the transfer factors, $\theta_e$ and $\theta_{\mu}$ to obtain the final number of fake events in the CR.The \ttbar MC (red) is
   used for reference and not used in the actual calculation}
   \label{figure:background_45jets}
  \end{figure}
@@ -516,13 +516,13 @@ and the final contribution of fake events to the signal region are show in Table
 
     &  $\Delta\theta_{e}^{\rm syst}$ (closure) & 21.8 & -- & 7.8 & 26.7 & -- & 12.5 \\ \cline{2-8}
 Systematics    &  $\Delta\theta_{\mu}^{\rm syst}$ (closure) & -- & 23.3 & 18.4 & -- & 31.2 & 19.7 \\ \cline{2-8}
-    & Q Mis Id ($\ell antti-\ell$) & 2.2 & -- & 1.5 & 2.4 & -- & 1.5 \\ \hline
+    & Q Mis Id ($\ell anti-\ell$) & 2.2 & -- & 1.5 & 2.4 & -- & 1.5 \\ \hline
 
 \multicolumn{2}{|c|}{Total} &\bf 45.7 &\bf 38.5 (36.3) &\bf 35.7 &\bf 48.5 &\bf 47.8 (43.9) &\bf 39.6 \\ \hline
 Systematic    & Q Mis Id ($\ell\ell$) & 24.0 & -- & 8.6 & 24.0 & -- & 11.3 \\ \hline
 \hline \end{tabular}}
 \caption{ Summary of the uncertainties (in \%) in \ee (reverse Id + reverse isolation
-  method), \mumu and \emu. Statistical uncertainty is splitted into statistical
+  method), \mumu and \emu. Statistical uncertainty is split into statistical
   uncertainties on $\theta_{e}$ and $\theta_{\mu}$ and uncertainty due to the
   Control Region size ($\Delta N_{\ell anti-{\ell}}(n~ {\rm jets})$). For channels with muons, uncertainties
   between parenthesis are obtained when anti-tight muons are defined such as
@@ -536,15 +536,15 @@ Systematic    & Q Mis Id ($\ell\ell$) & 24.0 & -- & 8.6 & 24.0 & -- & 11.3 \\ \h
 
 
 
-\subsection{3l Fakes}
+\subsection{3$\ell$ Fakes}
 
-The 3l fake method follows the same general strategy as the 2l SS case. Transfer factors are used extrapolate from an anti-tight, fake-rich control region in data into the signal region.  However, the equivalent low jet control regions are too low in statistics to provide the transfer factors from data directly, as above. Instead, the transfer factors are obtained directly from the \ttbar simulation and data control regions are used to determine the modeling of the identification and isolation variables, used in the transfer factor extrapolation. The low jet regions are still employed in a low statistics validation of the entire fake procedure. 
+The 3$\ell$ fake method follows the same general strategy as the 2$\ell$ SS case. Transfer factors are used extrapolate from an anti-tight, fake-rich control region in data into the signal region.  However, the equivalent low jet control regions are too low in statistics to provide the transfer factors from data directly, as above. Instead, the transfer factors are obtained directly from the \ttbar simulation and data control regions are used to determine the modeling of the identification and isolation variables, used in the transfer factor extrapolation. The low jet regions are still employed in a low statistics validation of the entire fake procedure. 
 
-Anti-tight electrons and muons are defined in slightly different ways, compared to the 2l SS case:
+Anti-tight electrons and muons are defined in slightly different ways, compared to the 2$\ell$ SS case:
 \begin{itemize}
 \item {\bf anti-tight electron (d)}: fails to verify the {\textsc verytight} likelihood operating point, but still verifies the {\textsc veryloose} operating point. the isolation selection is released $\rm E_{T}^{rel}>0.05$,  $\rm p_{T}^{rel}>0.05$.
 
-\item {\bf anti-tight muon(p)}: muons must pass identification but the \pt cuts is lowered to 6 \gevc, the overlap removal with jets and isolation cuts are released.
+\item {\bf anti-tight muon(p)}: muons must pass identification but the \pt cuts is lowered to 6 GeV, the overlap removal with jets and isolation cuts are released.
 \end{itemize} 
 The transfer factors, $\theta_e$ and $\theta_{\mu}$, extracted from MC, is defined as the ratio of the number of top (\ttbar + single-top) events in the signal region, to the number of \ttbar events in the anti-tight regions. The factors are calculated in separate flavor regions to ensure that the electron jet fakes and muon jet fakes are calculated separately. The calculation follows the same for as in Equation \ref{equation:background_theta}, but now lep0, which by construction is almost never a fake is allowed to be either electron or muon in both cases, denoted below in Equation \ref{equation:background_theta_3l}.  
 
@@ -553,7 +553,7 @@ The transfer factors, $\theta_e$ and $\theta_{\mu}$, extracted from MC, is defin
 \label{equation:background_theta_3l}
 \end{equation}
 
-The MC modeling of the variables invovled in the transfer factor can be verified when another variable fails. For instance, the MC modeling of the electron isolation variable can be compared to data when the particl identification variable fails and vice-versa. The modeling of muon-jet $\Delta R$, involved in the overlap removal, can be compared when either the isolation variable or the \pt fails. The comparison of the eelectron variables in this manner can be seen in Figure \ref{figure:background_electron_dataMC} and the muon variables in Figure \ref{figure:background_muon_dataMC}. The regions used have the same selection as the signal region with an added missing transverse energy requirement, $>$ 60 \gevc, to ensure only top fakes. 20\% and 21\% systematic uncertainties are assigned to the muon and electron transfer factors, respectively, to account for data-MC discrepancies. This method for evaluating data-MC agreement for individual electron and muon variables in turn relies on the assumption that these variables are largely un-correlated and that the transfer factor itself is factorizable into pieces for each variable. This factorized and fully correlated transfer factors have therefore been compared using MC and shown to have differences than the systematic quotes, suggesting that these assumptions are reasonable. 
+The MC modeling of the variables involved in the transfer factor can be verified when another variable fails. For instance, the MC modeling of the electron isolation variable can be compared to data when the particle identification variable fails and vice-versa. The modeling of muon-jet $\Delta R$, involved in the overlap removal, can be compared when either the isolation variable or the \pt fails. The comparison of the electron variables in this manner can be seen in Figure \ref{figure:background_electron_dataMC} and the muon variables in Figure \ref{figure:background_muon_dataMC}. The regions used have the same selection as the signal region with an added missing transverse energy requirement, $>$ 60 GeV, to ensure only top fakes. 20\% and 21\% systematic uncertainties are assigned to the muon and electron transfer factors, respectively, to account for data-MC discrepancies. This method for evaluating data-MC agreement for individual electron and muon variables in turn relies on the assumption that these variables are largely un-correlated and that the transfer factor itself is factorizable into pieces for each variable. This factorized and fully correlated transfer factors have therefore been compared using MC and shown to have differences than the systematic quotes, suggesting that these assumptions are reasonable. 
 
 
 \begin{figure}[!htbp]
@@ -589,7 +589,7 @@ The MC modeling of the variables invovled in the transfer factor can be verified
 \end{figure} 
 %
 
-The electron and muon anti-tight control regions, which are scaled by the transfer factors are shown in Figure \ref{figure:background_3lcr}. The prompt MC subtracted data in these regions are scaled by the transfer factors to obtain the overall contribution of fake electron and muon events in the signal region. The systematic uncertainties are split between the statistical error on the transfer factor and normalization of the anti-tight control regions and the data-MC comparisons outlined above. For muon fakes the total systmatic uncertainty is 25\% and for electrons it is 34\%. The numbers and uncertainties involved in the calculation are shown in Table \ref{table:background_3l_summary}.  
+The electron and muon anti-tight control regions, which are scaled by the transfer factors are shown in Figure \ref{figure:background_3lcr}. The prompt MC subtracted data in these regions are scaled by the transfer factors to obtain the overall contribution of fake electron and muon events in the signal region. The systematic uncertainties are split between the statistical error on the transfer factor and normalization of the anti-tight control regions and the data-MC comparisons outlined above. For muon fakes the total systematic uncertainty is 25\% and for electrons it is 34\%. The numbers and uncertainties involved in the calculation are shown in Table \ref{table:background_3l_summary}.  
 
 
 \begin{figure}[!htbp]
@@ -608,7 +608,7 @@ The electron and muon anti-tight control regions, which are scaled by the transf
 
   
   \caption{Muon-xxp (above) and electron-xxd (below) anti-tight control regions: jet variables. Note: the \ttbar and top MC in the plots is used only as comparison, but is not included
-  in the fake measurment}
+  in the fake measurement}
   \label{figure:background_3lcr}
   \end{figure} 
 
@@ -630,7 +630,7 @@ The electron and muon anti-tight control regions, which are scaled by the transf
 \end{table}
 
 
-Finally, the low jet region (1,2,3j) is used as a validation for the method, described above. The \ttbar and single top fakes are estimated using the procedure above, but instead using the lower jet region. Similar systematics are assessed. This region with the fake estimate is plotted in Figure \ref{figure:background_3lvaldiation}. The agreement of data and summed prediction for the fakes and prompt backgrounds is well within the systematic and statistical uncertainties. The figure also shows the same region with relaxed \pt cuts on all leptons to 10 \gevcc. This increases the purity of fakes in the region as well as the statistics. The data and summed fake and prompt predictions are also well within the statistical and systematic uncertainties.
+Finally, the low jet region (1,2,3j) is used as a validation for the method, described above. The \ttbar and single top fakes are estimated using the procedure above, but instead using the lower jet region. Similar systematics are assessed. This region with the fake estimate is plotted in Figure \ref{figure:background_3lvaldiation}. The agreement of data and summed prediction for the fakes and prompt backgrounds is well within the systematic and statistical uncertainties. The figure also shows the same region with relaxed \pt cuts on all leptons to 10 GeV. This increases the purity of fakes in the region as well as the statistics. The data and summed fake and prompt predictions are also well within the statistical and systematic uncertainties.
 
 
 \begin{figure}[!htbp]
@@ -646,14 +646,14 @@ Finally, the low jet region (1,2,3j) is used as a validation for the method, des
   \begin{minipage}[h]{0.5\textwidth}
     \centering \includegraphics[width=\textwidth]{figs/fake/plotCand_3lep_LowNJet_NElec}
   \end{minipage}\hfill
-  \caption{ 3l fake validation regions for nominal \pt selection (above) and relaxed \pt selection, $>$ 10 \gevc, (below). Plotted are the number of jets and the number of electrons in each event. The data and MC ratio below each plot agree with 1 within the statistics of the region and the overall systematic assigned for the fake component (red)}  
+  \caption{ 3$\ell$ fake validation regions for nominal \pt selection (above) and relaxed \pt selection, $>$ 10 GeV, (below). Plotted are the number of jets and the number of electrons in each event. The data and MC ratio below each plot agree with 1 within the statistics of the region and the overall systematic assigned for the fake component (red)}  
   \label{figure:background_3lvaldiation}
 \end{figure} 
 
 
 
-\subsection{4l Fakes}
+\subsection{4$\ell$ Fakes}
 
-We will not discuss the 4l fakes in depth, as it is a very small background - at the \% level and will have almost no impact on the final result. It is important, however, to carry out the measurment using the data to ensure that this is indeed the case. The fake method used in the the 4l case is similar to the 2l and 3l cases discussed above. All fakes arise from \ttbar and single-top events, where {\it two} jets are mis-identified as leptons. To measure the contribution of this background, control regions with 2 fully identified and 2 anti-identified leptons are created. These control regions do not have a number of jets requirement in order to increase statistics.  From these control regions, two extrapolations are made. First, a transfer factor is applied to extrapolate from the anti-tight to tight regions for electrons and muons. The regions are defined with identifical object identification selection and reversal as the 3l case, and the same transfer factors can be used. They must be used twice however, because there are two anti-identified leptons in each event. Second, the jet inclusive regions are extrapolated into the 2-jet signal region, using as a second extrapolation factor derived from \ttbar events. Since, the majority of fake leptons arise from b-quark initiated jets, the jet spectrum \ttbar\ events with the additional requirement of 2-btagged jets from data are used as a model for the jet extrapolation. The overall systematic uncertainty on this measurement arises from the statistics in the control regions and MC based assessments of non-closure and are 35\%-50\% depending on the sub-channel. 
+We will not discuss the 4$\ell$ fakes in depth, as it is a very small background - at the \% level and will have almost no impact on the final result. It is important, however, to carry out the measurement using the data to ensure that this is indeed the case. The fake method used in the the 4$\ell$ case is similar to the 2$\ell$ and 3$\ell$ cases discussed above. All fakes arise from \ttbar and single-top events, where {\it two} jets are mis-identified as leptons. To measure the contribution of this background, control regions with 2 fully identified and 2 anti-identified leptons are created. These control regions do not have a number of jets requirement in order to increase statistics.  From these control regions, two extrapolations are made. First, a transfer factor is applied to extrapolate from the anti-tight to tight regions for electrons and muons. The regions are defined with identical object identification selection and reversal as the 3$\ell$ case, and the same transfer factors can be used. They must be used twice however, because there are two anti-identified leptons in each event. Second, the jet inclusive regions are extrapolated into the 2-jet signal region, using as a second extrapolation factor derived from \ttbar events. Since, the majority of fake leptons arise from b-quark initiated jets, the jet spectrum \ttbar\ events with the additional requirement of 2-b-tagged jets from data are used as a model for the jet extrapolation. The overall systematic uncertainty on this measurement arises from the statistics in the control regions and MC based assessments of non-closure and are 35\%-50\% depending on the sub-channel. 
 
 

@@ -1,4 +1,4 @@
-\chapter[Results and Statistical Model][Results and Statsitical Model]{Results and Statistical Model} 
+\chapter[Results and Statistical Model][Results and Statistical Model]{Results and Statistical Model} 
 \label{chapter:results} 
 
 
@@ -11,38 +11,38 @@ NEED TO DEFINE MU IN ANALYSIS SUMMARY CHAPTER
 
 
 We use the above results to make two sets of measurements: an upper confidence limit on $\mu$, the signal strength parameter, and a measurement of $\mu$. These measurements are done for each channel individually and then combined. 
-The interpretation of the results in the form of a statsitical model follow the procedure, discussed here \cite{asym}. We interpret the results as counting experiments in each signal region. Therefore agreement in kinematic shapes do not affect the statistical procedure. 
+The interpretation of the results in the form of a statistical model follow the procedure, discussed here \cite{asym}. We interpret the results as counting experiments in each signal region. Therefore agreement in kinematic shapes do not affect the statistical procedure. 
 
 
 
 
 \subsection{The Likelihood} 
-The observed and expected event yields in the signal regions are analyzed using a binned likelihood function ($\mathcal{L}$), built from product of Poission models of expected event counts for each bin, where the bins for our case are the separate signal regions:
+The observed and expected event yields in the signal regions are analyzed using a binned likelihood function ($\mathcal{L}$), built from product of Poisson models of expected event counts for each bin, where the bins for our case are the separate signal regions:
 \begin{equation}
 \mathcal{L}\ \alpha\  \prod_{i=0}^{N_{ch}} P(N_{obs}^{i}| \mu \cdot s_{exp}^{i} + b_{exp}^{i})
 \end{equation}
-where $s_{exp}^i$ is the SM signal expectation in the signal region, $b_{exp}^i$ are the background expectations, $i$ counts over the signal regions, and P is the Poisson distribution. The signal strength parameter is the paramter of interest in the model (POI) and acts as a simple scale-factor to the SM \tth production rate and is common to all channels. Setting $\mu$ to 0 corresponds to the background only scenario. The background paramter, $b$, is a sum over all background processes. 
+where $s_{exp}^i$ is the SM signal expectation in the signal region, $b_{exp}^i$ are the background expectations, $i$ counts over the signal regions, and P is the Poisson distribution. The signal strength parameter is the parameter of interest in the model (POI) and acts as a simple scale-factor to the SM \tth production rate and is common to all channels. Setting $\mu$ to 0 corresponds to the background only scenario. The background parameter, $b$, is a sum over all background processes. 
 
-The signal and background expectations ,$s$ and $b$, depend on sysetmatic errors. These are included in the likelihood function in the form of a vector nuissance parameters, $\vec{\theta}$, which are constrained to fluctuate within Gaussian distributions. These flucations affect the background and signal expectations by response functions, $\nu(\vec{\theta})$, set by uncertainties measured in the previous section. For instance, the \WZ normalization uncertainty is 50\% from Section~\ref{section:wz} and is included inthe fit as its own unit gaussian,$G(\theta|0,1)$. The fluctuations of the gaussian, $\theta_{WZ}$ scale the background contribution via the form, $0.5\cdot(1+\theta_{WZ})\cdot b_{WZ}$. For many of the detector systematics, the uncertainties are two sided and are included as peicewise Gaussians. We add correlations to various uncertainties by hand, when appropriate. With these nuissance parameters, the likelihood takes this form:
+The signal and background expectations ,$s$ and $b$, depend on systematic errors. These are included in the likelihood function in the form of a vector nuisance parameters, $\vec{\theta}$, which are constrained to fluctuate within Gaussian distributions. These fluctuations affect the background and signal expectations by response functions, $\nu(\vec{\theta})$, set by uncertainties measured in the previous section. For instance, the \WZ normalization uncertainty is 50\% from Section~\ref{section:wz} and is included in the fit as its own unit gaussian,$G(\theta|0,1)$. The fluctuations of the gaussian, $\theta_{WZ}$ scale the background contribution via the form, $0.5\cdot(1+\theta_{WZ})\cdot b_{WZ}$. For many of the detector systematics, the uncertainties are two sided and are included as piecewise Gaussians. We add correlations to various uncertainties by hand, when appropriate. With these nuisance parameters, the likelihood takes this form:
 \begin{equation}
 \mathcal{L}(\mu,\vec{\theta})\ =  \left( \prod_{i=0}^{N{ch}} P(N_{obs}^{i}; \mu \cdot \nu_{s}(\vec{\theta})\cdot s_{exp}^{i} + \nu_{b}(\vec{\theta})\cdot b_{exp}^{i}) \right) \times \prod_{j}^{N_{\theta}}G(\theta_j; 1,0)
 \end{equation}
 
 
-\subsection{Test Statistic and Profile Likelhood}
+\subsection{Test Statistic and Profile Likelihood}
 
 Values of $\mu$ are tested with the negative log quantity, $q_{\mu}= -2$ln$(\lambda(\mu))$, where $\lambda(\mu)$ is the test statistic.
 $\lambda(\mu)$ is defined as:
 \begin{equation}
 \lambda(\mu) \equiv \frac{\mathcal{L}(\mu,\hat{\vec{\theta_{\mu}}})}{\mathcal{L}(\hat{\mu},\hat{\vec{\theta}})}
 \end{equation}
-where $\hat{\vec{\theta_{\mu}}}$ are values of the nuissance parameter vector that maximize the likelihood for a given value of $\mu$ and $\hat{\mu}$ and $\hat{\vec{\theta}}$ are the fitted values of signal strength and nuissance parameters that maximize the likelihood overall. $\mu$ is constrained to be positive.  
+where $\hat{\vec{\theta_{\mu}}}$ are values of the nuisance parameter vector that maximize the likelihood for a given value of $\mu$ and $\hat{\mu}$ and $\hat{\vec{\theta}}$ are the fitted values of signal strength and nuisance parameters that maximize the likelihood overall. $\mu$ is constrained to be positive.  
 
 \subsection{ CL$_{s}$ Method}
 
-Exclusions limits on the signal strength are calculated with the test statistic using a modified frequentist method, called the CL$_{s}$ method\cite{0954-3899-28-10-313}. CL$_{s}$ is defined as a ratio of two frequentist quantities. The numerator quantifies the probability of finding the observerd data given the signal $+$ background hypothesis. The denominator quantifies the probability of the data given the background only hypothesis.
+Exclusions limits on the signal strength are calculated with the test statistic using a modified frequentist method, called the CL$_{s}$ method\cite{0954-3899-28-10-313}. CL$_{s}$ is defined as a ratio of two frequentist quantities. The numerator quantifies the probability of finding the observed data given the signal $+$ background hypothesis. The denominator quantifies the probability of the data given the background only hypothesis.
 
-Using the numerator alone has the undesirable proprety that, if the data fluctuates below the expectation, an exclusion limit can be reached that is far beyond the sensitivity of the experiment. Normalizing to the background only hypothesis penalizes these low sensitivity cases.
+Using the numerator alone has the undesirable property that, if the data fluctuates below the expectation, an exclusion limit can be reached that is far beyond the sensitivity of the experiment. Normalizing to the background only hypothesis penalizes these low sensitivity cases.
 
 The probability of obtaining an observation as extreme as the data given a particular signal $+$ background hypothesis is given by the p-value,$p_{\mu}$ defined as:
 \begin{equation}
@@ -60,7 +60,7 @@ where $f(q_{\mu})$ is the distribution of $q_{\mu}$ for all possible observation
 
 \subsection{Exclusion Limits}
 
-Table \ref{} shows {\textit expected} exclusion limits for all channels, including the analysis uncertainties cumulativly. It shows the relative importance of the statistical and sysetematic uncertainties to the analysis sensitivity. The {\textit observed} limits using observed data and predictions can be seen in Figures~\ref{}-\ref{} for spliting and combining the subchannels and in Table XX by numbers. We expect a combined limit of XXX (background only) and XXX (signal injected) and see a limit of XXX. The channel sensitivty is dominated by the 2l and 3l channels.
+Table \ref{} shows {\textit expected} exclusion limits for all channels, including the analysis uncertainties cumulatively. It shows the relative importance of the statistical and systematic uncertainties to the analysis sensitivity. The {\textit observed} limits using observed data and predictions can be seen in Figures~\ref{}-\ref{} for splitting and combining the sub-channels and in Table XX by numbers. We expect a combined limit of XXX (background only) and XXX (signal injected) and see a limit of XXX. The channel sensitivity is dominated by the 2$\ell$ and 3$\ell$ channels.
 
 \begin{table}[htbp]
 \begin{center}
@@ -68,15 +68,15 @@ Table \ref{} shows {\textit expected} exclusion limits for all channels, includi
 \hline 
 \multicolumn{2}{|c|}{ Channels} &  Stat &  +Fakes Unc.  & +Theory  & + Experimental\\ 
 \hline 
-2l       & 2lee  & 7.44 & 8.52 & 8.82 &8.94 \\ 
-         & 2lem   &3.46 & 3.81 & 4.07 &4.18 \\ 
-        & 2lmm   & 4.03 & 4.14 & 4.47 &4.57 \\ 
-        & 2ltau   &8.08 & 8.92 & 10.00 &10.03 \\ 
+2$\ell$       & 2$\ell$ee  & 7.44 & 8.52 & 8.82 &8.94 \\ 
+         & 2$\ell$em   &3.46 & 3.81 & 4.07 &4.18 \\ 
+        & 2$\ell$mm   & 4.03 & 4.14 & 4.47 &4.57 \\ 
+        & 2$\ell$tau   &8.08 & 8.92 & 10.00 &10.03 \\ 
         &  All   & 2.16 & 2.44 & 2.81 &2.90 \\ 
 \hline 
-\multicolumn{2}{|c|}{ 3l }  &3.40 & 3.43 & 3.59 &3.66 \\ 
+\multicolumn{2}{|c|}{ 3$\ell$ }  &3.40 & 3.43 & 3.59 &3.66 \\ 
 \hline 
-\multicolumn{2}{|c|}{ 4l }  & 15.16 & 15.16 & 15.44 &15.55 \\ 
+\multicolumn{2}{|c|}{ 4$\ell$ }  & 15.16 & 15.16 & 15.44 &15.55 \\ 
 \hline 
 \multicolumn{2}{|c|}{ 1l2tau }  & 10.41 & 13.84 & 14.20 &14.22 \\ 
 \hline 
@@ -98,11 +98,11 @@ Table \ref{} shows {\textit expected} exclusion limits for all channels, includi
 
 \subsection{$\mu$ Measurements}
 
-In addition to setting a limit on the signal strength, we also fit the best value of the signal strength for $\mu$. We do this by minimizing the negative log likelihood value, $q_{\mu}$ or conversely maximizing the likelihood. The 1-$\sigma$ error band is set via a profile likeihood scan, where the value $q_{\mu}$ is scanned as a function of $\mu$. Values of $\mu$ that increase $q^min_{\mu}$ by 1 form the edges of the error band. The fitted values of $\mu$ with errors are provided in Table XXX for each subchannel fit as well as the combined fit. 
+In addition to setting a limit on the signal strength, we also fit the best value of the signal strength for $\mu$. We do this by minimizing the negative log likelihood value, $q_{\mu}$ or conversely maximizing the likelihood. The 1-$\sigma$ error band is set via a profile likelihood scan, where the value $q_{\mu}$ is scanned as a function of $\mu$. Values of $\mu$ that increase $q^min_{\mu}$ by 1 form the edges of the error band. The fitted values of $\mu$ with errors are provided in Table XXX for each sub-channel fit as well as the combined fit. 
 
-\subsection{Nuissance Parameter Impact on the Signal Strength}
+\subsection{Nuisance Parameter Impact on the Signal Strength}
 
-Finally, we examine the post-fit impact of the various nuissance parameters on the final fit. We expect to have measured the various anaylsis uncertainties well and do not expect the fit to have much futher constraint. For that reason, we expect the pulls of the nuissance parameters to be close to 0 and the measured uncertainties on those parameters to be consistent with the input uncertainties. 
+Finally, we examine the post-fit impact of the various nuisance parameters on the final fit. We expect to have measured the various analysis uncertainties well and do not expect the fit to have much further constraint. For that reason, we expect the pulls of the nuisance parameters to be close to 0 and the measured uncertainties on those parameters to be consistent with the input uncertainties. 
 Figures XXXX show. 
 
 
