@@ -17,9 +17,9 @@ it its own right and is documented in detail here \cite{1748-0221-3-08-S08001,Pe
 The LHC is a circular machine capable of accelerating beams of protons and colliding them at center of mass 
 energies up to $\sqrt{s} = 14$ TeV at 4 collision sites around the ring, where 4 experiments
 are housed (ATLAS\cite{ATLAS_detector}, CMS\cite{1748-0221-3-08-S08004}, LHCb\cite{1748-0221-3-08-S08005}, and ALICE\cite{1748-0221-3-08-S08002}). Figure \ref{figure:lhc_lhc} is a diagram
-of the layout of the LHC and its experiments\cite{Team:40525}. The LHC also operates in a modes with beams of 
+of the layout of the LHC and its experiments\cite{Team:40525}. The LHC also operates in a mode with beams of 
 heavy ions. The LHC is composed of thousands of super-conducting Niobium-Titantium 
-magnets, cooled to 2.7$^\circ$ C with liquid Helium, which steer and focus the 
+magnets, cooled to 1.9$^\circ$ K with liquid Helium, which steer and focus the 
 particle beams, and a superconducting resonant-frequency (RF) cavity, which boosts the beam
 to higher energies. 
 
@@ -27,8 +27,8 @@ to higher energies.
 \begin{figure}[!t]
 \centering 
 \includegraphics[width=0.75\textwidth]{figs/lhc/lhc.pdf}
-\caption{ Diagram of the Large Hadron collider and location of the 4 main experiments (ATLAS, CMS, LHCb, and ALICE). Around
-  the ring. The diagram also shows the location of the SPS, the final booster ring the accelerator complex that accelerates
+\caption{ Diagram of the Large Hadron collider and location of the 4 main experiments (ATLAS, CMS, LHCb, and ALICE) around
+  the ring. The diagram also shows the location of the SPS, the final booster ring in the accelerator complex that accelerates
     the protons to 450 GeV before injection into the LHC. 
 }
 \label{figure:lhc_lhc}
@@ -50,13 +50,13 @@ that were important in past physics discoveries and have been re-purposed for us
 \subsection{Beam Parameters and Collisions} 
 
 For the physics studied at the ATLAS experiment, the two most important parameters of
-the collisions are the center of mass energy and instantaneous luminosity.
+the collisions are the center of mass energy (CME)  and instantaneous luminosity ($\mathcal{L}$).
 High center of mass energies are necessary for the production
 of new high mass particles, and, because the constituents of the actual collisions
 are the partons of the proton, the CME of the collisions must in general
-be much higher than the mass of the particles needed to be produced. 
+be much higher than the mass of the particles produced. 
 
-The instantaneous luminosity of the collisions, $\mathcal{L}$, is a measure of the
+The instantaneous luminosity of the collisions is a measure of the
 collision rate. The integrated luminosity over time is a measure of the size
 of the dataset and when multiplied by the cross-section of a particular process
 gives the total number of expected events produced for that process.
@@ -66,8 +66,8 @@ frequency, and the normalized transverse spread of the beam in momentum and posi
 phase space, called the emittance, and the transverse beam size. The LHC has the
 option for colliding beams with 2808 bunches of protons, each with around $10^{11}$ protons,
 at a rate of one bunch collision every 25 ns, or 40 MHz. These parameters correspond
-to a design luminosity of around $10^34$ cm$^{2}$ s$^{-1}$ or 10 nb$^{-1}$ s$^{-1}$,
-or 1 Higgs every 5 seconds.    
+to a design luminosity of around $10^{34}$ cm$^{2}$ s$^{-1}$ or 10 nb$^{-1}$ s$^{-1}$,
+equivalent to 1 Higgs every 5 seconds.    
 
 \section{The ATLAS Experiment}
 
@@ -87,7 +87,7 @@ around the beam-line at increasing distance. From closest to the beam outward, t
 
 \begin{itemize}
 
-\item \textbf{Inner Detector:} The inner detector (ID)\cite{IDTDR1,IDTDR2} is immersed in a solenoidal magnetic field\cite{MagnetTDR} and provides measurements of charge particle tracks, through three subsystems: the Pixel Detector\cite{PixelTDR,PixelSensor}, the Semi-Conductor Tracker (SCT)\cite{SCTBarrel,SCTEndcap}, and Transition Radiation Tracker \cite{TRTStraws, TRTBarrel,trtelec}. 
+\item \textbf{Inner Detector:} The inner detector (ID)\cite{IDTDR1,IDTDR2} is immersed in a solenoidal magnetic field\cite{MagnetTDR} and provides measurements of charge particle tracks, through three subsystems: the Pixel Detector\cite{PixelTDR,PixelSensor}, the Semi-Conductor Tracker (SCT)\cite{SCTBarrel,SCTEndcap}, and Transition Radiation Tracker(TRT) \cite{TRTStraws, TRTBarrel,trtelec}. 
 
 \item \textbf{Calorimeter:} The calorimeters measure the energy of particles that participate in the electromagnetic (photons, electrons) and hadronic interactions (pions, protons, neutrons, etc.), by forcing them to shower in dense material. The hermeticity of the calorimeters allows for missing transverse energy measurements. The calorimeter is composed of the liquid argon electromagnetic calorimeter (LAr)\cite{LArTDR:1996fq}, the hadronic tile calorimeter\cite{TileTDR}, the liquid argon hadronic endcap calorimeter, and the forward calorimeters.
 
@@ -114,17 +114,17 @@ ATLAS uses a right-handed  coordinate system centered at the nominal proton inte
 
 Because ATLAS possesses a rough cylindrical symmetry, cylindrical and polar coordinates are used to describe particle trajectories and detector positions. The radial coordinate, $R$, describes transverse distances from the beam line. An azimuthal angle, $\phi$, describes angles around the $z$-axis, and a polar coordinate $\theta$ describes angles away from the $z$-axis. The polar angle is often expressed in terms of pseudo-rapidity, defined as $\eta=-$ln(tan($\theta/2$)). Distances in $\eta-\phi$ space are often used to describe the proximity of objects in the detector, $\Delta R = \sqrt{\eta^2 + \phi^2}$.
 
-The 'barrel' and 'endcap' are classifications that are used to label the position of sub-detectors. Barrel sub-detectors occupy positions more central to the detector at $|\eta|$ values roughly less than 1-2, while the endcap calorimeters extend farther in $|\eta|$. The barrel-endcap transition region contains detector services. Also, the orientation of the detector elements are often different in the barrel and endcap to have optimal particle flux.  
+The `barrel' and `endcap' are classifications that are used to label the position of sub-detectors. Barrel sub-detectors occupy positions more central to the detector at $|\eta|$ values roughly less than 1-2, while the endcap calorimeters extend farther in $|\eta|$. The barrel-endcap transition region contains detector services. Also, the orientation of the detector elements are often different in the barrel and endcap to have optimal particle flux.  
 
 \subsection{The Inner Detector}
 
-The ID makes measurements of the position of charged particles as they move through the detectors 3 sub-systems (Pixel, TRT, SCT). The individual position measurements can be strung together to form a particle track. The entire ID is immersed in a 2T solenoidal magnetic field allowing for measurements of particle momenta through the curvature of the tracks. The ID is contained with a radius of 1.15 m and has a total length of 7m, allowing for particle tracking out to $|\eta| < 2.5$ . Figures~\ref{figure:lhc_id_barrel} and~\ref{figure:lhc_id_endcap} show the placement of the ID sub-systems in the $R-\phi$ and $R-z$ planes.  
+The ID makes measurements of the position of charged particles as they move through the detectors 3 sub-systems (Pixel Detector, SCT, TRT). The individual position measurements can be strung together to form a particle track. The entire ID is immersed in a 2T solenoidal magnetic field allowing for measurements of particle momenta through the curvature of the tracks. The ID is contained with a radius of 1.15 m and has a total length of 7m, allowing for particle tracking out to $|\eta| < 2.5$ . Figures~\ref{figure:lhc_id_barrel} and~\ref{figure:lhc_id_endcap} show the placement of the ID sub-systems in the $R-\phi$ and $R-z$ planes.  
 
 
 \begin{figure}[!t]
 \centering 
 \includegraphics[width=0.9\textwidth]{figs/lhc/IDBarrel-eps-converted-to}
-\caption{ Diagram of the ATLAS ID in the $R-\phi$ plane showing the barrel view of the Pixel, SCT, and TRT detectors.
+\caption{ Diagram of the ATLAS ID in the $R-\phi$ plane showing the barrel view of the Pixel Detector, SCT, and TRT.
 }
 \label{figure:lhc_id_barrel}
 \end{figure}
@@ -132,24 +132,24 @@ The ID makes measurements of the position of charged particles as they move thro
 \begin{figure}[!t]
 \centering 
 \includegraphics[width=0.9\textwidth]{figs/lhc/IDEndcap-eps-converted-to}
-\caption{ Diagram of the ATLAS ID in the $R-z$ plane showing the endcap view of the Pixel, SCT, and TRT detectors. Only one side of the endcap is shown. 
+\caption{ Diagram of the ATLAS ID in the $R-z$ plane showing the endcap view of the Pixel Detector, SCT, and TRT. Only one side of the endcap is shown. 
 }
 \label{figure:lhc_id_endcap}
 \end{figure}
 
-The Pixel detector has 80 million silicon read out channels (pixels) and is closest to the interaction point with the finest granularity. As charged particles traverse the silicon, they create electron-hole pairs, which subsequently drift in an electric field and can be captured and registered as a current pulse. The detector has three concentric layers of pixels in the barrel (to $|\eta| < 1.9$) and three endcap disks on each side of the barrel (to $|\eta| < 2.5$). The closest barrel layer to the beam pipe is called the b-layer. The pixels provide excellent hit resolution ($R-\phi$ accuracy of 10 $\mu$m and $z$($R$) accuracy of 115 $\mu$m in the barrel (endcap)).
+The Pixel Detector has 80 million silicon read out channels (pixels) and is closest to the interaction point with the finest granularity. As charged particles traverse the silicon, they create electron-hole pairs, which subsequently drift in an electric field and can be captured and registered as a current pulse. The detector has three concentric layers of pixels in the barrel (to $|\eta| < 1.9$) and three endcap disks on each side of the barrel (to $|\eta| < 2.5$). The closest barrel layer to the beam pipe is called the b-layer. The pixels provide excellent hit resolution ($R-\phi$ accuracy of 10 $\mu$m and $z$($R$) accuracy of 115 $\mu$m in the barrel (endcap)).
 
 The SCT uses similar silicon technology to the pixels, but the each SCT layer contains a double layer of silicon strips, which are much longer in length than width. The SCT has 4 million read out channels and is comprises 4 barrel layers and 9 endcap layers with coverage to $|\eta| < 2.5$. The double layers are inclined slightly with respect to each other so that these 1D sensors have 2D resolution for coincident hits. The resolutions are 580 $\mu$m in $z$($R$) for the barrel(endcap) and 17 $\mu$m in $R-\phi$ .
 
-The TRT is comprised of straw drift tubes filled with a gas mixture, containing mostly Xenon gas. Particles traversing the straws ionize the gas, and the liberated electrons drift to a wire at the center of the straw, which has an applied voltage, and induce an signal on the wire. The TRT has $\sim$300,000 straws . The barrel straws are arranged cylindrically along the $z$ direction out to $\sim \eta < 1$ and the endcap straws point radially outward in the $R$ direction. For this reason, the barrel(endcap) straws provide no measurement in the $R$($z$) directions. The drift tubes provide individual position measurements with resolutions of $\sim$ 130 $\mu$. Each particle track has on average a large number, 35, hits. 
+The TRT is comprised of straw drift tubes filled with a gas mixture, containing mostly Xenon gas. Particles traversing the straws ionize the gas, and the liberated electrons drift to a wire at the center of the straw, which has an applied voltage, and induce an signal on the wire. The TRT has $\sim$300,000 straws. The barrel straws are arranged cylindrically along the $z$ direction out to $\sim \eta < 1$ and the endcap straws point radially outward in the $R$ direction. For this reason, the barrel(endcap) straws provide no measurement in the $R$($z$) directions. The drift tubes provide individual position measurements with resolutions of $\sim$ 130 $\mu$m. Each particle track has on average 35 hits, which is large compared to the Pixel and SCT tracks, which have on average 7 hits. 
 
 The TRT is unique in that it also provides particle identification measurements via transition radiation. Charged particles emit transition radiation when traversing a boundary between materials of different dielectric constants. The volume between the straws is filled with a radiator material, a polymer foil or foam, to provide this boundary condition. Transition radiation photons are emitted in the direction of the particle trajectory in the keV range and cause a much larger signal amplitude within the straw. Hits that cause a signal at a higher threshold are thus indicative of transition radiation.  The probability for emission transition radiation depends on the relativistic $\gamma$ of the traversing particle. Because electrons are much lighter than any other charged particle, their $\gamma$-factors tend to be high enough to induce transition radiations, as opposed to pions, muons and other particles. 
 
-Combined tracking of particles through the 3 sub-detectors results track momentum measurements from 500 MeV, the minimum energy need to leave the ID due to the magnetic field, and a few TeV. The track \pt\ resolution is roughly 0.05\%$\cdot$\pt\ $\oplus$ 1\%.  
+Combined tracking of particles through the 3 sub-detectors results in track momentum measurements from 500 MeV, the minimum energy need to leave the ID due to the magnetic field, to a few TeV. The track \pt\ resolution is roughly 0.05\%$\cdot$\pt\ $\oplus$ 1\%.  
 
 \subsection{The Calorimeter}
 
-The ATLAS calorimeters measure the energy of electron, photons and hadrons with $|\eta|<4.5$. They induce a particle shower via electro-magnetic and nuclear interactions with the detector material and are deep enough to ensure that all or most of the shower energy remains contained. Muons are minimum ionizing particle that do not participate in the strong interaction and therefore pass through the ATLAS calorimeters leaving relatively little energy behind. ATLAS calorimeters are sampling calorimeters meaning that the active material of the detector only measures a small fraction of the energy produced by the shower. The overall shower energy is inferred from this fractional measurement. The rest of the material is inactive, dense material, designed to induce showers. The calorimetry system is grossly divided longitudinally (radially) into electro-magnetic(EM) and then hadronic segments, operated with different technologies. Figure~\ref{figure:lhc_calo} diagrams the layout of the calorimeter system.
+The ATLAS calorimeters measure the energy of electrons, photons and hadrons with $|\eta|<4.5$. They induce a particle shower via electro-magnetic and nuclear interactions with the detector material and are deep enough to ensure that all or most of the shower energy remains contained. Exceptioanlly, muons pass through the ATLAS calorimeters leaving relatively little energy behind. ATLAS calorimeters are sampling calorimeters meaning that the active material of the detector only measures a small fraction of the energy produced by the shower. The overall shower energy is inferred from this fractional measurement. The rest of the material is inactive, dense material, designed to induce showers. The calorimetry system is grossly divided longitudinally (radially) into electro-magnetic (EM) and then hadronic segments, operated with different technologies. Figure~\ref{figure:lhc_calo} diagrams the layout of the calorimeter system.
 
 \begin{figure}[!t]
 \centering 
@@ -159,7 +159,7 @@ The ATLAS calorimeters measure the energy of electron, photons and hadrons with 
 \end{figure}
 
 
-The EM calorimeter (LAr), which is located directly outside of the solenoid magnet but within the same cryostat, has a accordion design with lead absorber and liquid argon active material. The accordion design ensures uniform coverage in $\phi$. The barrel and endcap LAr extend to $|\eta| < 2.47$. The LAr provides highly granular measurements in $\eta-\phi$ with 4 longitudinal segments, totaling $\sim$25-35 radiation lengths with the exception of the barrel/endcap transition region ($1.37<|\eta|<1.52$).  The geometry of the barrel LAr calorimeter can be seen in Figure~\ref{}. The first longitudinal segment is called the pre-sampler, composed of a thin layer of active liquid argon, designed to detect early particle showers. The second segment is the most highly granular segment called the 'strips', as it is composed of thin liquid argon cells. The strips have a size of $0.025/8$ x $0.1$ in $\eta-\phi$ in the barrel with similar sizes in the endcap and are designed to be able to resolve single and double particle showers. This resolution is particularly useful in distinguishing $\pi^0\rightarrow\gamma\gamma$ signatures from electron and photon signatures. The bulk of the radiation lengths and therefore the primary energy measurement come from the the third layer\footnote{this layer is actually called 'layer 2', since the pre-sampler is referred to as 'layer 0'}. Each cell in this layer is $0.025$x$0.025$ in $\eta-\phi$. The final layer is coarser in thinner and designed to estimate energy leaking out of the EM calorimeter. The forward EM calorimeters extend the $\eta$ range and use the same technology, but are not used in this analysis. The energy resolution of the EM calorimeters is $\sigma_E/E = 10\%/\sqrt{E}\oplus0.7\%$, measured in test beam data and confirmed in collision data. 
+The EM calorimeter (LAr), which is located directly outside of the solenoid magnet but within the same cryostat, has a accordion design with lead absorber and liquid argon active material. The accordion design ensures uniform coverage in $\phi$. The barrel and endcap LAr extend to $|\eta| < 2.47$. The LAr provides highly granular measurements in $\eta-\phi$ with 4 longitudinal segments, totaling $\sim$25-35 radiation lengths with the exception of the barrel/endcap transition region ($1.37<|\eta|<1.52$).  The geometry of the barrel LAr calorimeter can be seen in Figure~\ref{figure:lhc_calo_em}. The first longitudinal segment is called the pre-sampler, composed of a thin layer of active liquid argon, designed to detect early particle showers. The second segment is the most highly granular segment called the `strips', as it is composed of thin liquid argon cells. The strips have a size of $0.025/8$ x $0.1$ in $\eta-\phi$ in the barrel with similar sizes in the endcap and are designed to be able to resolve single and double particle showers. This resolution is particularly useful in distinguishing $\pi^0\rightarrow\gamma\gamma$ signatures from electron and photon signatures. The bulk of the radiation lengths and therefore the primary energy measurement come from the the third layer\footnote{this layer is actually called 'layer 2', since the pre-sampler is referred to as 'layer 0'}. Each cell in this layer is $0.025$ x $0.025$ in $\eta-\phi$. The final layer is coarser, thinner and designed to estimate energy leaking out of the EM calorimeter. The forward EM calorimeters extend the $\eta$ range and use the same technology, but are not used in this analysis. The energy resolution of the EM calorimeters is $\sigma_E/E = 10\%/\sqrt{E}\oplus0.7\%$, measured in test beam data and confirmed in collision data. 
 
 \begin{figure}[!t]
 \centering 
@@ -171,11 +171,11 @@ The EM calorimeter (LAr), which is located directly outside of the solenoid magn
 
 
 
-The hadronic calorimeter is located directly behind the EM calorimeter and composed of tiles of iron absorber and plastic scintillator  in the barrel ($|\eta| < 1.6$), called the TileCal,  and copper-liquid argon in the endcap ($1.5<|\eta| <3.2$), called the HEC. The calorimeters contain $\sim$10-19 hadronic interactions lengths with multiple longitudinal segments to contain showers induced by the nuclear interaction of hadronic particles. The energy resolution of the hadronic calorimeters is $\sigma_E/E = 50\%/\sqrt{E}\oplus3\%$. The intrinsic resolution of hadron calorimeters is much worse than electro-magnetic calorimeters, because much of the energy is lost to the inelasticity of the nuclear interactions. 
+The hadronic calorimeter is located directly behind the EM calorimeter. It is composed of tiles of iron absorber and plastic scintillator  in the barrel ($|\eta| < 1.6$), called the TileCal,  and copper-liquid argon in the endcap ($1.5<|\eta| <3.2$), called the HEC. The calorimeters contain $\sim$10-19 hadronic interactions lengths with multiple longitudinal segments to contain showers induced by the nuclear interaction of hadronic particles. The energy resolution of the hadronic calorimeters is $\sigma_E/E = 50\%/\sqrt{E}\oplus3\%$. The intrinsic resolution of hadron calorimeters is much worse than electro-magnetic calorimeters, because much of the energy is lost to the inelasticity of nuclear break-up. 
 
 \subsection{The Muon Spectrometer} 
 
-The MS measures the trajectory of particles outside of the calorimeters, using multiple different technologies. All charged particles except for muons are stopped by the calorimeter, and therefore the majority of particles in the MS are muons, with the exception of rare cases of hadronic punch-through. Particle momentum spectroscopy is made possible by an air-core toroidal magnet system, imbedded in the MS in the barrel ($|\eta| < 1.4$), and two smaller end cap toroids that provide fields out to $|\eta| < 2.7$. 
+The MS measures the trajectory of particles outside of the calorimeters, using multiple different technologies. Generally, all charged particles except for muons are stopped by the calorimeter, and therefore the majority of particles in the MS are muons, with the exception of rare cases of hadronic punch-through. Particle momentum spectroscopy is made possible by an air-core toroidal magnet system, embedded in the barrel MS ($|\eta| < 1.4$), and two smaller end cap toroids that provide fields out to $|\eta| < 2.7$. 
 
 In the barrel region, the muon chambers are arranged in three cylindrical layers around the beam, while the in the endcap-regions the the layers are arranged perpendicular to the beam in wheels. The arrangement is depicted in Figure \ref{figure:lhc_muon}.
 
@@ -204,28 +204,28 @@ The second and third stages L2 and EF are software based. The L2 algorithms perf
 
 \subsection{Reconstruction: Jets, Muons and Electrons}
 
-Physicists analyze the collision event as a collection of identified objects, expressed as momentum 4-vectors. The process of converting the disparate detector signatures and signals into a unified 4-momentum description of individual objects is called reconstruction. These objects arise from the final state particles in the event, which can be combined and counted to infer properties of the hard scatter. The particles that make detectable signatures are those that are stable enough to pass through the detector: muons, electrons, photons, and quarks and gluons. Jets and b-tagged jets, muons, and electron, are used in the \tth analysis to define our search regions and to separate the Higgs signal from backgrounds. Other analyses may used photons, taus and missing energy\footnote{missing energy is the presence of momentum imbalance in the transverse plane of the calorimeter due to escaping neutrinos}, but these are not discussed in depth here. Figure~\ref{figure:lhc_particles} shows an $R-\phi$ schematic of the interaction of various particle signatures in the ATLAS detector.  
+Physicists analyze the collision event as a collection of identified objects, expressed as momentum 4-vectors. The process of converting the disparate detector signatures and signals into a unified 4-momentum description of individual objects is called reconstruction. These objects arise from the final state particles in the event, which can be combined and counted to infer properties of the hard scatter. The particles that make detectable signatures are those that are stable enough to pass through the detector: muons, electrons, photons, and quarks and gluons. Jets and b-tagged jets, muons and electrons are used in the \tth\ analysis to define our search regions and to separate the Higgs signal from backgrounds. Other analyses may used photons, taus and missing energy\footnote{missing energy is the presence of momentum imbalance in the transverse plane of the calorimeter due to escaping neutrinos}, but these are not discussed in depth here. Figure~\ref{figure:lhc_particles} shows an $R-\phi$ schematic of the interaction of various particle signatures in the ATLAS detector.  
 
  
 
 \subsubsection{Tracks and Clusters}
 
-The basic components of reconstruction are sensor measurements, or hits, in trackers (ID, MS) and energy measurements in the calorimeter. Hits in the ID and MS undergo pattern recognition, which identifies hits that belong to a single track, and fitting, which fits a curve to the track to assess the particle trajectory. Charged particle trajectories are generally helical in a magnetic field, but the fitting algorithm takes into more detailed information about energy loss to material along the tracks length. The result of the fitting is an estimation of particle momentum 3-vector. Electron, photon, and hadronic particles leave clustered deposits of energy in the EM and hadronic calorimeters from their showers. Electron and photon showers are primarily contained with the EM calorimeter, while hadronic showers are deposit most of their energy in the hadronic calorimeters. The process of associating individual read-out cells of energy in the calorimeter to clusters of energy from the showers of individual particles is called clustering. From the basic pieces of tracks and clusters, more complex objects can be created. 
+The basic components of reconstruction are sensor measurements, or hits, in trackers (ID, MS) and energy measurements in the calorimeter. Hits in the ID and MS undergo pattern recognition, which identifies hits that belong to a single track, and fitting, which fits a curve to the track to assess the particle trajectory. Charged particle trajectories are generally helical in a magnetic field, but the fitting algorithm takes into more detailed information about energy loss to material along the tracks length. The result of the fitting is an estimation of particle momentum 3-vector. Electrons, photons and hadronic particles leave clustered deposits of energy in the EM and hadronic calorimeters from their showers. Electron and photon showers are primarily contained with the EM calorimeter, while hadronic showers are deposit most of their energy in the hadronic calorimeters. The process of associating individual read-out cells of energy in the calorimeter to clusters of energy from the showers of individual particles is called clustering. From the basic pieces of tracks and clusters, more complex objects can be created. 
 
 \subsubsection{Electrons}
 
 Electrons leave both a track in the ID and a narrow and isolated cluster of energy in the EM calorimeter, $\Delta R < 0.1$. Electron reconstruction proceeds using a sliding window algorithm, which scans a fixed size rectangle in $\eta-\phi$ space over the EM calorimeter cells to find relative maxima of energy in the window\cite{ATLAS-CONF-2014-032}. These maxima seed the clustering algorithms. Because electrons are light, they both lose energy to the material gradually through scattering and more catastrophically through the emission of a high energy photon, through interaction with nuclei. This process is called bremsstrahlung. Tracks for electrons are reconstructed differently because they must include the hypothesis that the electron loses significant energy through bremsstrahlung. Generally, the emitted photon is contained within the same energy cluster and therefore the sliding window algorithm is always wider in the direction of bending, $\phi$. A single track is then matched to the cluster within certain minimum matching requirements in $\eta$,$\phi$,and \pt. Electrons are distinguished from photon conversions, which also have a track, by lack of association with conversion vertices, found with a dedicated algorithm.
 
-Electron have many lever arms for further identification to suppress backgrounds from fake sources. The narrowness of the shower shape, quality of track, and presence of transition radiation are used by cut-based and multivariate algorithms are used by identification algorithms. This is discussed in depth in Chapter \ref{chapter:electron}. Electrons are reliably reconstructed and identified with energies above 7 GeV. 
+Electron have many lever arms for further identification to suppress backgrounds from fake sources. The narrowness of the shower shape, quality of track, and presence of transition radiation are used by cut-based and multivariate identification algorithms. This is discussed in depth in Chapter \ref{chapter:electron}. Electrons are reliably reconstructed and identified with energies above 7 GeV. 
 
 \subsubsection{Muons}
 
-Muons are reconstructed from a combination of ID and MS tracks, when possible. The two tracks must meet matching criteria to ensure they are from the same particle. The muon momentum 3-vector comes from the combined ID/MS fit. Muons leave little energy in the calorimeters and are generally isolation from other particle, when produced from electro-weak bosons. Identification algorithms make requirements on the number of tracking hits in the ID and MS and the quality of the matching of the two tracks. Muons are reliably reconstructed and identified with energies above 5 GeV. More about muon reconstruction and identification can be found here~\cite{MCP2012}.
+Muons are reconstructed from a combination of ID and MS tracks, when possible. The two tracks must meet matching criteria to ensure they are from the same particle. The muon momentum 3-vector comes from the combined ID/MS fit. Muons leave little energy in the calorimeters and are generally isolated from other particles, when produced from electro-weak bosons. Identification algorithms make requirements on the number of tracking hits in the ID and MS and the quality of the matching of the two tracks. Muons are reliably reconstructed and identified with energies above 5 GeV. More about muon reconstruction and identification can be found here~\cite{MCP2012}.
 
 
 \subsubsection{Jets}
 
-Quarks and gluons are colored objects that cannot exist alone. When emitted, they undergo a process called hadronization, in which the convert into 'jets' of colorless hadrons that emerge collimated from the interaction point. The majority of these hadrons are charged and neutral pions, though other hadrons are often present. Jets are reconstructed using conglomerations of calorimeter energy clusters chosen via an anti-k$_t$ algorithm, with a radius of $\Delta R <$0.4 ~\cite{Cacciari:2008gp}. The algorithm has been shown to be infrared safe, meaning the jet quantities are not sensitive to low energy, small angle radiative divergences. Jets at ATLAS are reconstructed from 10 GeV, calibration of the energy scale and resolution are only available for energies greater than 20-25 GeV. 
+Quarks and gluons are colored objects that cannot exist alone on the time scales of detector measurements, due to confinement, a property of the strong force . When emitted, they undergo a process called hadronization, in which the convert into 'jets' of colorless hadrons that emerge collimated from the interaction point. The majority of these hadrons are charged and neutral pions, though other hadrons are often present. Jets are reconstructed using conglomerations of calorimeter energy clusters chosen via an anti-k$_t$ algorithm, with a radius of $\Delta R <$0.4 ~\cite{Cacciari:2008gp}. The algorithm has been shown to be infrared safe, meaning the jet quantities are not sensitive to low energy, small angle radiative divergences. Jets at ATLAS are reconstructed from 10 GeV, calibration of the energy scale and resolution are only available for energies greater than 20-25 GeV. 
 
 \subsubsection{B-Tagged Jets}
 Generally, the flavor of the initiating quark is not known from the reconstructed jet, although gluon initiated jets and quark initiated jets have slightly different properties. B-quark jets, however, are unique in that the long life-time of the produced b-mesons allow for measurable decays in flight. This property is used to tag b-quark initiated jets. This analysis uses the MV1 tagging algorithm \cite{ATLAS-CONF-2011-102}, which is a neural network based algorithm that looks for secondary displaced decay vertices inside the event and takes into account jet track parameters and energy flow with respect to these vertices. B-quark jets often involve b-meson decays to leptons, especially muons, which can be used to tag an orthogonal b-jet sample for studying tagging efficiencies.

@@ -1,47 +1,44 @@
-%% \chapter[htoc-titlei][hhead-titlei]{htitlei}
-%% -----------------------------------------------------------------------------
 \chapter[Electrons][Electrons]{Electrons}
 \label{chapter:electron} 
-This chapter details the contributions I made to electron identification and efficiency measurments. It is not essential to continuity of the thesis in general but provides in depth documentation of the work I completed for the experiment. I focus on the electorn identification
 
-\section{Electrons at Hadron Colliders}
-
-High energy electron signatures are important elements of seaches and measurements at hadron colliders. The overwhemling majority of collisions that deposit energy in the detectors are the result of strong-force mediate interactions of the constituent partons. These collisions result in the production of high energy jets in the detector. Figure XX shows the cross-sections of various processes as a function of the center of mass energy of the collision. Physics invovling the electroweak interaction or even strong production of massive states occur many orders of magnitdue less frequently than the total inelastic cross-section. 
-Interesting physics signatures, both stardard model and beyond, often involve the production of light leptons as a result of the decay of massive particles. Choosing events that have high energy electrons or muons targets events that contain electroweak vertices and dramatically reduce the background from the more copiously produced strong physics. Electron and muon energy and momenta are also relatively well-measured compared to jets. This allows for the use of well-resovled kinematic shapes used discriminate the sigantures of different processes in analyses. 
-
-At ATLAS, the primary datasets for most analyses are collected with electron and muon triggers. Electron triggers are particularly important, because the muon triggers system has a 20\% small acceptance than the electrons. The challenge in identifying electrons is distguising the production of electrons from direct production of W and Z decays from electrons produced in the more copiuously produced b-meson decays, fake-electron signatures from rare jet fragmentations into charged and neutral pions, and photon conversions in the inner detector. The identification of electrons, the precise measurement of the identification efficien, and the measurement of the rate of fake electron signatures lead are often the most important and challengin peices of an analyis. The following sections discuss the identification of electrons for the primary electron trigger and offline physics analyses as well as the measurement of the electron identification efficiency in 2012. Because I had a major role in these projects, I will at times discuss their historical evolution and not simply focus of the particular measurement relevant to the \tth analysis.  
-
-
-%\section{Reconstruction of Electron at ATLAS}
-%
-%High-energy electrons are charged particles that produced both a track in the inner detector and cluster of energy in the calorimeter. The electron reconstruction algorithm is discussed in detail in XXXX. Electrons are seeded by their clusters of energy in the liquid argon calorimeter (LAr). A sliding window algorithm uses rectangular regions in $\phi$ and $\eta$ of a fixed number of calorimeter cells and translates in both directions to maximize the amount of energy in window. For the barrel and endcap calorimeters ($|\$eta| < 2.47$, the windows are 3x7 and 5x5 cles respectively ($\eta$x$\phi$). They are wider in phi to allow for energy smearing in phi due to bremstrahlung and the curvature of electron track in the magnetic field. The exact cell sizes are give in section XXXX. Windows containing at least $E_T < 2.5$ GeV of energy in the second layer of the calorimeter. 
-%
-%To distinguish from photons, which undergo the same seeding algorithm (albiet with a different window size), electron energy cluster must match to a reconstructed track within a window of 0.05×0.10 ($\eta$x$\phi$) and with loosely matching calorimeter energy and track momentum $E/p$ < 10. Photons, however, often convern in the inner detector material. To resolve the ambiguity, electrons that match to tracks that are already identified as part of a conversion vertex during the previously run conversion re-construction are removed from the electron candidate container. 
-%
-%Material in front of the calorimeter makes electron reconstruction difficult due to electron energy loss through bremmstrahlung. Standard track fitting is accomplished via a least squares fit to linearlized helical model with accounting for the accumlated scattering of pion or muon-like particle. This sort of fitting fails to adqueatly describe the change in curvature from abrupt energy losses during bremmstrahlung that occur for the much lighter electron. This results in non-insigificant inefficiencies of matching tracks to electron clusters when the standard tracking algorithms are used for electron candidates, especially lower energy electron candidates, whose tracks bend more in the magnetic field. Moreover, as shown in Figure XXXX the material profile of the inner detector has a strong eta dependence due to the TRT and SCT services. This results in large eta dependencies in the resolution of electron track parameters.
-%
-%For reconstruction of data collected in 2012, a new fitting techique was introduced that incorporataed bremstrahlung energy losses through a Gassiun Sum Filter (GSF) XXXX. Figures XXXXa and XXXXb show the improvement in the electron reconstruction efficiency from 2011 to 2012, achieved through the introduction of this filter and the improvement in a the track impact parameter resolution for electron tracks. Because the fitting is cpu intensive, it is not run online during data collection.  
-%
-%Electrons are recalculated %Energy cluster, 4 vectors%
-%%%%% Material plots 
-%%%%% GSF plots 
+High energy electron signatures are important elements of seaches and measurements at hadron colliders, because they signal the presence of important electo-weak processes in the event. Requiring well-identified electrons in collision events quickly suppresses the overwhelming rate of strong-force mediated scattering and allows for the collection of a manageably-sized dataset with intersting physics for study. For this reason, electron signatures form one of the two pillars of the HLT trigger at ATLAS, as discussed in Chapter~\ref{chatper:lhc} and rigorous electron identification is an important peice of many ATLAS analyses. This section summarizes the development of ATLAS electron identification for the high luminosity 2011 and 2012 datasets and discusses the techqniues invovled in measuring the electron identification efficiency. 
 
 \section{Identification of Electrons at ATLAS}
 
-Electron reconstruction 
+%picutres and example figures
 
+Electron reconstruction is discussed briefly in Chapter~\ref{chatper:lhc} and, in depth here~\cite{}. The result of electron reconstruction is called an electron candidate, which is comprised of a narrow calorimeter energy cluster with $|\eta| < 2.47$ and inner detector track that matches loosely in $\eta$ and $\phi$. If the electron has $|\eta| < 2.01$, the the inner detector track is fiducial to the TRT has has the possibility of having high-threshold hits, indicative of transition radiation (TR). Electron cluster recontruction is extremely efficient. The track-matching requirement is less efficient, because the presence of hard bremsstrahlung may in certain cases cause the electron cluster and emitted photon cluster to have a wide separation in the calorimeter\cite{}. 
+
+Objects that are not isolated electrons are often reconstructed as electrons, as the reconstruction requirements are quite loose. Objects that often `fake' isolated electrons are light quark and gluon jets, heavy flavor jets that include real decays to electrons and converted photons. Light quark and gluon jets fragment into a number of collimated hadronic particles. In rare cases, the jet may fragment most of its energy into a single charged pion, which showers early in the EM calorimeter. In other rare cases, the jet may fragment mostly into a neutral pion, which subsequently decays into a pair of photons. If one of these photons converts, a track will point to the EM energy cluster. These cases would result in a reconstructed electron candidate. Although the probability for this to happen is small, the enormous jet production rate means that it is a significant background. In general, light quark and gluon jet `fakes' have larger transverse shower profiles and more energy leakage into the hadronic calorimeter. For the neutral pion case, there are generally two separated showers for lower energy decays. For both cases, there are often other particle signatures nearby.  
+On the other hand, heavy-flavor jet decays and photon conversions contain real electrons. However, heavy flavor decays also involve the production of additional hadronic particles within the jet and both photon conversion and heavy flavor decays involved secondary vertices displaced from the primary interaction point. 
+
+In order to distinguish these fake signatures from real isolated electrons, electron identification algorithms use a number of reconstructed variables describing the electron shower in the detector and the electron track. The details of the calculated variables can be found here~\cite{}. In general, the calorimeter variables take advantage of the narrowness of isolated electron shower in the transverse plane and lack of energy deposition in the hadronic calorimeter. The transverse variables include measurements of the shower width in both layer 2 and the strips, where more refined measurements are possible. In fact, the strips were designed to separate single photon and eletron showers from multiple showers from neutral pion decays, shown in Figure \ref{}. The shower width variables are generally measured mostly in $\eta$ as bremstrahlung tends to smear the electron energy in $\phi$. Electron tracks are required to have an adequate number of hits in the Pixel Detector, SCT and TRT. These hit requirements, especially the b-layer requirment suppress electron conversions which occur in the detector material. Track-cluster matching and geometric impact parameter variables require ID tracks to match the calorimeter energy well and to arise from the primary interaction point, respectively. Electrons with tracks explictly associated with a conversion vertex may be rejected. Finally, the high threshold fraction of hits on the track, made by transition radiation is an uncorrelated discrimator of pion and electron tracks.
+
+
+Electron identification algorithms make selections in 9 bins of $|\eta|$, [0.10, 0.60, 0.80, 1.10. 1.37, 1.52, 1.81, 2.01, 2.37, 2.47] and bins of \pt, [7, 10, 15, 20, 30, 40, 50, 60, 70, 80$+$]. The $|\eta|$ binning changes with the calorimeter geometry, which in turn affect the shower shape distributions. The shape of most of the identification variable distributions, tracking and calorimeter, are \pt\ dependent.  
+
+
+\begin{figure}
+
+\end{figure}
 
 \subsection{Pile-up and Electron identifiation}
 
-Plots of pile up differences in distributions 
+\subsection{2011 Menu}
 
-\subsection{2011 Menu and Trigger}
+Electron identification in 2011 was accomplished through rectangular cuts on the identification variables at 3 operating points: Loose, Medium and Tight. The medium operating point was used online as the primary electron trigger. At the bbeginning of the 2011 run, the 3 operating points possessed the same cuts, but tighter operating points had cuts on more variables. The Loose operating point only cut on shower shape variables in layer 2 and hadronic leakage, the medium operating point added cuts on shower width variables in the strips, and tight added TR cuts, strict-track cluster matching, conversion rejection and a b-layer requirement. This menu, called the `IsEM' menu, was the first fully data-optmized cut menu for electrons. 
 
-\subsection{2012 Menu and Trigger}
+The demands of increasing luminostiy demanded a tightening of the medium operating point midway through the data-taking, in order to main a EF trigger rate of around 20-25 Hz on the primary electron trigger. To accomplish this, variables cut on at the tight operating point were added to the medium operating point, and the entire set of cuts was optimized to provide the targeted rejection and reduction in the rates at the highest possible efficiency. The same procedure was applied to the loose operating point, where the target was to provide efficiencies of 95\% and the highest possible rejection. The re-inventing of the menu in this way allowed for not only better performance, due to the inclusion of more variable, but a more stable tightening of the backgrounds from loose to medium to tight, where the same backgrounds types were targeted at each level. The new menu was called the `IsEM$++$' menu and the operating points were renamed `Loose$++$', `Medium$++$' and `Tight$++$'. Figure \ref{} shows.
+
+\subsection{2012 Menu and Pile-up}
+
+
 
 \subsection{Electron Likelihood}
 
+
 \section{Measurement of Electron Efficiency at ATLAS}
+
 
 \subsection{Techniques}
 
