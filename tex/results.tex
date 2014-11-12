@@ -22,7 +22,7 @@ The observed and expected event yields in the signal regions are analyzed using 
 \end{equation}
 where $s_{exp}^i$ is the SM signal expectation in the signal region, $b_{exp}^i$ are the background expectations, $i$ counts over the signal regions, and P is the Poisson distribution. The signal strength parameter is the parameter of interest in the model (POI) and acts as a simple scale-factor to the SM \tth production rate and is common to all channels. Setting $\mu$ to 0 corresponds to the background only scenario. The background parameter, $b$, is a sum over all background processes. 
 
-The signal and background expectations, $s$ and $b$, depend on systematic errors. These are included in the likelihood function in the form of a vector nuisance parameters, $\vec{\theta}$, which are constrained to fluctuate within Gaussian distributions. These fluctuations affect the background and signal expectations by response functions, $\nu(\vec{\theta})$, set by systematic uncertainties measured in the previous section. For instance, the \WZ normalization uncertainty is 50\% from Section~\ref{section:wz} and is included in the fit as its own unit gaussian,$G(\theta|0,1)$. The fluctuations of the gaussian, $\theta_{WZ}$ scale the background contribution via the form, $0.5\cdot(1+\theta_{WZ})\cdot b_{WZ}$. For many of the detector systematics, the uncertainties are two sided and are included as piecewise Gaussians. We add correlations to various uncertainties by hand, when appropriate. With these nuisance parameters, the likelihood takes this form:
+The signal and background expectations, $s$ and $b$, depend on systematic errors. These are included in the likelihood function in the form of a vector nuisance parameters, $\vec{\theta}$, which are constrained to fluctuate within Gaussian distributions. These fluctuations affect the background and signal expectations by response functions, $\nu(\vec{\theta})$, set by systematic uncertainties measured in the previous section. For instance, the \WZ normalization uncertainty is 50\% from Section~\ref{section:wz} and is included in the fit as its own unit Gaussian,$G(\theta|0,1)$. The fluctuations of the Gaussian, $\theta_{WZ}$, scale the background contribution via the form, $0.5\cdot(1+\theta_{WZ})\cdot b_{WZ}$. For many of the detector systematics, the uncertainties are two sided and are included as piecewise Gaussians. We add correlations to various uncertainties by hand, when appropriate. With these nuisance parameters, the likelihood takes this form:
 \begin{equation}
 \mathcal{L}(\mu,\vec{\theta})\ =  \left( \prod_{i=0}^{N{ch}} P(N_{obs}^{i}; \mu \cdot \nu_{s}(\vec{\theta})\cdot s_{exp}^{i} + \nu_{b}(\vec{\theta})\cdot b_{exp}^{i}) \right) \times \prod_{j}^{N_{\theta}}G(\theta_j; 1,0)
 \end{equation}
@@ -43,19 +43,19 @@ Exclusions limits on the signal strength are calculated with the test statistic 
 
 Using the numerator alone has the undesirable property that, if the data fluctuates below the expectation, an exclusion limit can be reached that is far beyond the sensitivity of the experiment. Normalizing to the background only hypothesis penalizes these low sensitivity cases.
 
-The probability of obtaining an observation as extreme as the data given a particular signal $+$ background hypothesis is given by the p-value,i $p_{\mu}$ defined as:
+The probability of obtaining an observation as extreme as the data given a particular signal $+$ background hypothesis is given by the p-value, $p_{\mu}$ defined as:
 \begin{equation}
  p_{\mu} = \int_{q_{\mu}^{obs}}^{\infty} f(q_{\mu}) dq_{\mu}
 \end{equation}
-and the probability of obtaining an observation as extreme as the data given the background hypothesis, $p_b$ is:
+, and the probability of obtaining an observation as extreme as the data given the background hypothesis, $p_b$ is:
 \begin{equation}
  p_{b} = \int_{q_{\mu=0}^{obs}}^{\infty} f(q_{\mu=0}) dq_{\mu=0}
 \end{equation}
-where $f(q_{\mu})$ is the distribution of $q_{\mu}$ for all possible observations for a given $\mu$ and $q$ is defined above. Therefore,
+, where $f(q_{\mu})$ is the distribution of $q_{\mu}$ for all possible observations for a given $\mu$ and $q$ is defined above. Therefore,
 \begin{equation}
  CL_{s} = \frac{p_{\mu}}{1-p_b}
 \end{equation}
-. A $\mu$ value is considered excluded at 95\% confidence when CL$_{s}$ is less than 5\%. 
+A $\mu$ value is considered excluded at 95\% confidence when CL$_{s}$ is less than 5\%. 
 
 \subsection{Exclusion Limits}
 

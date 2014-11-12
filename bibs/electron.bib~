@@ -1,0 +1,17 @@
+@techreport{ATLAS-CONF-2012-047,
+   title         = "{Improved electron reconstruction in ATLAS using the
+                            Gaussian Sum Filter-based model for bremsstrahlung}",
+   institution   = "CERN",
+   collaboration = "ATLAS Collaboration",
+   address       = "Geneva",
+   number        = "ATLAS-CONF-2012-047",
+   month         = "May",
+   year          = "2012",
+}
+@CONFERENCE{Chamonix,
+  author = {Jorg Wenniger},
+  title = {Strategy for 2012},
+  booktitle = {Chamonix 2012 Workshop on LHC Performance},
+  year = {2012}
+}
+
