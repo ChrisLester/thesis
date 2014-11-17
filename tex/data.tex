@@ -49,8 +49,8 @@ which is also dropped about 36 GeV.
 
 Simulation samples are used to determine the 
 overall event selection acceptance and efficiency and model the number of events in the signal regions
-for prompt backgrounds and signal. The simulated samples are created using parton distribution function (PDF) and
-use Monte Carlo (MC) techniques to model the hard parton scatter, underlying event activity and parton showering and hadronization. 
+for prompt backgrounds and signal. The simulated samples are created using standard PDF sets
+use Monte Carlo (MC) techniques to model the hard parton scatter, underlying event activity, parton showering, and hadronization. 
 The samples are then passed through a full ATLAS detector simulation\cite{Aad:2010ah} based on \textsc{GEANT4} \cite{Agostinelli:2002hh}.
 Small corrections are then applied to re-scale object identification efficiencies,
 energy scales, and the pile-up based on control regions from data. These corrections are discussed in Chapter~\ref{chapter:systematics}. 
@@ -59,7 +59,7 @@ energy scales, and the pile-up based on control regions from data. These correct
 
 
 The \ttbar$H$ production is modeled using matrix elements obtained from the HELAC-Oneloop package~\cite{Helac} that corresponds to the next-to-leading order (NLO) QCD accuracy. Powheg BOX~\cite{powheg,powbox1,powbox2} serves as an interface to the parton shower Monte Carlo programs. The samples created using this approach are referred to as {\textsc PowHel} samples. {\textsc CT10NLO} PDF sets are used and the factorization ($\mu_{\rm F}$) and renormalization ($\mu_{\rm R}$) scales are set to $\mu_{0} = \mu_{\rm F} = \mu_{\rm R} = m_{t}+\mH/2$. Pile-up and the underlying events are simulated by {\textsc Pythia} 8.1~\cite{PythiaManual8} with the {\textsc CTEQ61L} set of parton distribution functions and AU2 underlying event tune. The Higgs boson mass is set to $125\gev$ and the top quark mass is set to $172.5\gev$.\\
-The signal Monte Carlo samples are summarized in Table~\ref{table:data_mcsignal}.
+The signal MC samples are summarized in Table~\ref{table:data_mcsignal}.
 These large samples are generated with inclusive Higgs boson decays with
 branching fractions set to the LHC Higgs Cross Section Working Group (Yellow Report)
 recommendation for $m_H = 125$ GeV \cite{Heinemeyer:2013tqa}. The inclusive cross section (129.3
