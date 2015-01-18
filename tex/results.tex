@@ -2,17 +2,266 @@
 \label{chapter:results} 
 
 
-\section{Results in Signal Regions}
+The predicted number of background and signal events and the observed data for each of the signal regions (including sub-channels) are provided in Table~\ref{table:results}. We observe an excess of events in many of the 2$\ell$ and 3$\ell$ channels over the expected background. We provide a preliminary measurement of $\mu$, which is a ratio of the observed \tth\ production rate to the predicted SM production rate. We also interpret the results as a 95\% exclusion level on possible $\mu$ values. The statistical model used to make these measurements is discussed in depth below.
 
-\subsection{2$\ell$ SS}
-\subsection{3$\ell$}
-\subsection{4$\ell$}
+
+\begin{table}[h!]
+
+\caption{Results in the 2$\ell$, 3$\ell$, and 4$\ell$ signal regions with flavor and jet sub-channels for 2$\ell$ and SFOS and non-SFOS sub-channels for 4$\ell$. The results included normalization systematic uncertainties from theory and for fakes and charge misidentification. Detector and experimental uncertainties are not included}
+\resizebox{1.0\textwidth}{!}{%
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|}
+\hline
+                & \tth              & \ttV               & \tZ               & VV                     & Fakes           & QMis            & Sum Background         & Data   \\
+\hline
+\textbf{2$\ell$ SS}    &  $6.74 \pm 0.61$ &   $31.00 \pm 4.03$ &  $1.59 \pm 0.21$ &        $5.30 \pm 2.65$ & $24.65 \pm 4.40$ & $4.87 \pm 1.08$ &       $67.41 \pm 6.62$ &    $98$\\
+\hline
+2ee4j     &  $0.45 \pm 0.04$ &    $2.86 \pm 0.37$ &  $0.20 \pm 0.03$ &        $0.89 \pm 0.45$ & $3.45 \pm 1.75$ & $0.55 \pm 0.34$ &        $7.95 \pm 1.87$ &    $9$\\
+2ee5jincl     &  $0.74 \pm 0.07$ &    $2.46 \pm 0.32$ &  $0.13 \pm 0.02$ &        $0.60 \pm 0.30$ & $2.33 \pm 2.90$ & $1.39 \pm 0.56$ &        $6.91 \pm 2.99$ &     $10$\\
+2em4j     &  $1.18 \pm 0.11$ &    $7.90 \pm 1.03$ &  $0.59 \pm 0.08$ &        $1.78 \pm 0.89$ & $8.80 \pm 1.55$ & $1.11 \pm 0.44$ &       $20.18 \pm 2.11$ &    $26$\\
+2em5jincl     &  $2.17 \pm 0.20$ &    $7.21 \pm 0.94$ &  $0.29 \pm 0.04$ &        $0.64 \pm 0.32$ & $4.80 \pm 1.25$ & $1.82 \pm 0.73$ &       $14.76 \pm 1.75$ &    $22$\\
+2mm4j     &  $0.76 \pm 0.07$ &    $5.63 \pm 0.73$ &  $0.23 \pm 0.03$ &        $0.56 \pm 0.28$ & $3.47 \pm 1.73$ &  0    & $9.90 \pm 1.90$ &    $20$\\
+2mm5jincl     &  $1.44 \pm 0.13$ &    $4.94 \pm 0.64$ &  $0.14 \pm 0.02$ &        $0.83 \pm 0.42$ & $1.80 \pm 0.96$ & 0&       $7.71 \pm 1.23$ &    $11$\\
+\hline
+\textbf{3$\ell$}    &  $2.39 \pm 0.21$ &    $6.56 \pm 0.85$ &  $0.58 \pm 0.07$ &        $1.81 \pm 0.91$ & $2.62 \pm 0.50$ &  0&     $11.57 \pm 1.34$ &    $18$\\
+\hline
+\textbf{4$\ell$}    &  $0.20 \pm 0.02$ &    $0.45 \pm 0.06$ &  $0.05 \pm 0.01$ &        $0.05 \pm 0.01$ &      $0.03 \pm 0.01$ & 0&                 $0.57 \pm 0.06$ &     $1$\\
+\hline
+\end{tabular}%
+}
+\label{table:results}
+\end{table}
+
+
+\section{Results in Signal Regions}
+Plots of event variables are shown in Figures \ref{figure:results_2l_event} - \ref{figure:results_2l_jet} for the 2$\ell$ SS signal region, Figures \ref{figure:results_3l_event} - \ref{figure:results_3l_jet} for the 3 $\ell$ signal
+region, and Figures \ref{figure:results_4l_event} - \ref{figure:results_4l_jet} for the 4$\ell$ signal region. The statistics of the backgrounds models are too poor in the sub-channels of the  2$\ell$ signal region. The inclusive region is shown instead. The results are shown instead for the inclusive 2$\ell$ signal region. The charge misidentification and fake backgrounds take their normalizations from the measurements in Chapter~\ref{chapter:background}, while their shapes are directly from MC. The plots show the combined statistical uncertainties and systematic uncertainties from theory and background normalizations but not from experimental and detector effects. 
+
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_NJet}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_NJetBTag}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_NJet10}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_NElec}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_MET}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_HT}
+  \end{minipage}\hfill
+\caption{Plots of the 2$\ell$ SS inclusive signal region: number of Jets, number of b-tagged jets, 10$\cdot$ number of b-tagged jets + number of jets, number of electrons, missing energy and scalar sum of jet, leptons and missing energies ($H_T$) } 
+\label{figure:results_2l_event}
+\end{figure} 
+
+
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Mll01}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Lep0Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Lep1Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Lep0Eta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Lep1Eta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_LeptonChargeSum}
+  \end{minipage}\hfill
+\caption{Plots of the 2$\ell$ SS inclusive signal region: dilepton invariant mass, leading (0) and sub-leading (1) lepton transverse momentum and $\eta$, and lepton charge sum} 
+\label{figure:results_2l_lep}
+\end{figure} 
+
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Jet0Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Jet1Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Jet0Eta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_2lep_Jet1Eta}
+  \end{minipage}\hfill
+\caption{Plots of the 2$\ell$ SS inclusive signal region: leading (0) and sub-leading (1) jet momentum}  
+\label{figure:results_2l_jet}  
+\end{figure} 
+
+
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_NJet}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_NJetBTag}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_NJet10}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_NElec}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_MET}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_HT}
+  \end{minipage}\hfill
+\caption{Plots of the 3$\ell$ signal region: number of Jets, number of b-tagged jets, 10$\cdot$ number of b-tagged jets + number of jets, number of electrons, missing energy and scalar sum of jet, leptons and missing energies ($H_T$) } 
+\label{figure:results_3l_event}
+\end{figure} 
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Mll01}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Mlll}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Mll02}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_LeptonChargeSum}
+  \end{minipage}\hfill
+\caption{Plots of the 3$\ell$ signal region: dilepton invariant mass for 0,1 and 0,2 pairs and lepton charge sum. Lepton ordering is discussed in Chapter~\ref{chapter:selection}.} 
+\label{figure:results_3l_mass}
+\end{figure} 
+
+
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Lep0MLPt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Lep1MLPt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Lep2MLPt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Lep0MLEta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Lep1MLEta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Lep2MLEta}
+  \end{minipage}\hfill
+\caption{Plots of the 3$\ell$ signal region: lepton transverse momentum and $\eta$} 
+\label{figure:results_3l_lep}
+\end{figure} 
+
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Jet0Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Jet1Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Jet0Eta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_3lep_Jet1Eta}
+  \end{minipage}\hfill
+\caption{Plots of the 3$\ell$ signal region: leading (0) and sub-leading (1) jet momentum}  
+\label{figure:results_3l_jet}  
+\end{figure} 
+
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_NJet}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_NJetBTag}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_NJet10}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_NElec}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_MET}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_HT}
+  \end{minipage}\hfill
+\caption{Plots of the 4$\ell$  inclusive signal region: number of Jets, number of b-tagged jets, 10$\cdot$ number of b-tagged jets + number of jets, number of electrons, missing energy and scalar sum of jet, leptons and missing energies ($H_T$) } 
+\label{figure:results_4l_event}
+\end{figure} 
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Mllll}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Mll01}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Lep0Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Lep1Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Lep0Eta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Lep1Eta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    
+  \end{minipage}\hfill
+
+  \caption{Plots of the 4$\ell$ inclusive signal region: 4-lepton invariant mass leading (0) and sub-leading(1) lepton transverse momentum and $\eta$. Lepton ordering is discussed in Chapter~\ref{chapter:selection}.} 
+\label{figure:results_4l_mass}
+\end{figure} 
+
+
+\begin{figure}[!htbp]
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Jet0Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Jet1Pt}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Jet0Eta}
+  \end{minipage}\hfill
+  \begin{minipage}[h]{0.5\textwidth}
+    \centering \includegraphics[width=\textwidth]{figs/results/plotCand_4lep_Jet1Eta}
+  \end{minipage}\hfill
+\caption{Plots of the 4$\ell$ signal region: leading (0) and sub-leading (1) jet momentum}  
+\label{figure:results_4l_jet}  
+\end{figure} 
+
+
 
 \section{Statistical Model}
 
-
-We use the above results to make two sets of measurements: an upper confidence limit on $\mu$, the signal strength parameter, and a measurement of $\mu$. These measurements are done for each channel individually and then combined. 
-The interpretation of the results in the form of a statistical model follow the procedure, discussed here \cite{asym}. We interpret the results as counting experiments in each signal region. Therefore agreement in kinematic shapes do not affect the statistical procedure. 
+We use the above results to make two sets of measurements: an upper confidence limit on $\mu$, the signal strength parameter, and a measurement of $\mu$. These measurements are done for each channel individually and then combined. The interpretation of the results in the form of a statistical model follow the procedure, discussed here \cite{asym}. We interpret the results as counting experiments in each signal region. Therefore agreement in kinematic shapes do not affect the statistical procedure. 
 
 
 \subsection{The Likelihood} 
@@ -59,50 +308,70 @@ A $\mu$ value is considered excluded at 95\% confidence when CL$_{s}$ is less th
 
 \subsection{Exclusion Limits}
 
-Table \ref{} shows \textit{expected} exclusion limits for all channels, including the analysis uncertainties cumulatively. It shows the relative importance of the statistical and systematic uncertainties to the analysis sensitivity. The \textit{observed} limits using observed data and predictions can be seen in Figures~\ref{}-\ref{} for splitting and combining the sub-channels and in Table XX by numbers. We expect a combined limit of XXX (background only) and XXX (signal injected) and see a limit of XXX. The channel sensitivity is dominated by the 2$\ell$ and 3$\ell$ channels.
+Figure~\ref{figure:results_limits} and table \ref{table:limits} show the expected and observed exclusion limits for all channels.
 
-\begin{table}[htbp]
+
+\begin{table}[h!]
+\centering
+\caption{Expected and observed 95\% CL$_s$ limits on $\mu$ for the combined and split signal regions}
+\begin{tabular}{|c|c|c|c|}
+\hline
+& Expected Limit & Expected SM Signal Injected Limit  & Observed Limit\\ 
+\hline
+\textbf{Combined} & 2.76& 3.33& 6.45\\
+\hline 
+\textbf{2$\ell$ SS} & 3.19 &3.60 & 7.91 \\  
+\hline
+2$\ell$ee &8.85 &9.80 &11.93\\   
+2$\ell$em &4.40 &5.33 &9.20\\
+2$\ell$mm &4.77 &5.73 &10.14\\
+\hline
+\textbf{3$\ell$}  &3.65 &4.63 &6.84\\  
+\hline
+\textbf{4$\ell$}  &15.56 &17.03 &23.07\\  
+\hline
+\end{tabular}
+\label{table:limits}
+\end{table}
+
+\begin{figure}[htbp]
 \begin{center}
-\begin{tabular}{|c|c|c|c|c|c|}
-\hline 
-\multicolumn{2}{|c|}{ Channels} &  Stat &  +Fakes Unc.  & +Theory  & + Experimental\\ 
-\hline 
-2$\ell$       & 2$\ell$ee  & 7.44 & 8.52 & 8.82 &8.94 \\ 
-         & 2$\ell$em   &3.46 & 3.81 & 4.07 &4.18 \\ 
-        & 2$\ell$mm   & 4.03 & 4.14 & 4.47 &4.57 \\ 
-        & 2$\ell$tau   &8.08 & 8.92 & 10.00 &10.03 \\ 
-        &  All   & 2.16 & 2.44 & 2.81 &2.90 \\ 
-\hline 
-\multicolumn{2}{|c|}{ 3$\ell$ }  &3.40 & 3.43 & 3.59 &3.66 \\ 
-\hline 
-\multicolumn{2}{|c|}{ 4$\ell$ }  & 15.16 & 15.16 & 15.44 &15.55 \\ 
-\hline 
-\multicolumn{2}{|c|}{ 1l2tau }  & 10.41 & 13.84 & 14.20 &14.22 \\ 
-\hline 
-\multicolumn{2}{|c|}{ All } & 1.68 & 1.85 & 2.14 &2.22 \\ 
-\hline 
-\end{tabular} 
-\caption{\label{table:results_cumulative} 95$\%$CL limits on $\mu$ for all channels and combination with cumulative uncertainties.}
-\end{center} 
-\end{table} 
-
-%\begin{figure}[htbp]
-%   \centering
-%      \includegraphics[width=0.48\textwidth]{figs/results/Limits} 
-%      \includegraphics[width=0.48\textwidth]{figs/results/Limits_simple} 
-%  \caption{Summary of limits results per channel.}
-%  \label{figure:results_limits}
-% \end{figure}
+\includegraphics[width=0.7\textwidth]{figs/results/Limits_Obs.pdf}
+\caption{Plot of the 2$\ell$ SS, 3$\ell$, 4$\ell$, and combined 95\% CL$_{s}$ observed limits on $\mu$. The expected 1-$\sigma$ (green) and 2-$\sigma$ (yellow) error bands are shown around
+the expected limit. The expected limit with SM signal injection ($\mu=1$) is included as well.}
+\label{figure:results_limits}
+\end{center}
+\end{figure}
 
 
-\subsection{$\mu$ Measurements}
 
-In addition to setting a limit on the signal strength, we also fit the best value of the signal strength for $\mu$. We do this by minimizing the negative log likelihood value, $q_{\mu}$ or conversely maximizing the likelihood. The 1-$\sigma$ error band is set via a profile likelihood scan, where the value $q_{\mu}$ is scanned as a function of $\mu$. Values of $\mu$ that increase $q^{min}_{\mu}$ by 1 form the edges of the error band. The fitted values of $\mu$ with errors are provided in Table XXX for each sub-channel fit as well as the combined fit. 
+\subsection{$\mu$ Measurement}
+
+In addition to setting a limit on the signal strength, we also fit the best value of the signal strength for $\mu$. We do this by minimizing the negative log likelihood value, $q_{\mu}$ or conversely maximizing the likelihood. The 1-$\sigma$ error band is set via a profile likelihood scan, where the value $q_{\mu}$ is scanned as a function of $\mu$. Values of $\mu$ that increase $q^{min}_{\mu}$ by 1 form the edges of the error band. The fitted value of $\mu$ for all channels combined is 3.624 $+$ 1.582 $-$ 1.385. The error is dominated by the statistical uncertainty of the sample. 
+
 
 \subsection{Nuisance Parameter Impact on the Signal Strength}
 
-Finally, we examine the post-fit impact of the various nuisance parameters on the final fit. We expect to have measured the various analysis uncertainties well and do not expect the fit to have much further constraint. For that reason, we expect the pulls of the nuisance parameters to be close to 0 and the measured uncertainties on those parameters to be consistent with the input uncertainties. 
-Figures XXXX show. 
+Finally, we examine the post-fit impact of the various nuisance parameters in Figure~\ref{figure:results_nuisance}.  The fake nuisance parameters are divided for 2$\ell$ into the systematic uncertainty on the transfer factors for electrons and muons (alpha\_Theta\_mm, alpha\_Theta\_ee) and the systematic uncertainties on the number of events in the anti-tight control regions (e.g alpha\_Fakes\_2lem5j). The 3$\ell$ fake uncertainties are contained in a single parameter (alpha\_Fakes\_3l). The theory cross-section (XS) uncertainties are divided into PDF and scale nuisance parameters separately for each background (\ttW,\ttZ,\tth). The most important nuisance parameters associated with the detector and experimental uncertainties are the JES, the b-tag scale-factor weights, and the lepton isolation.  
 
+We have measured the various analysis uncertainties well and do not expect the fit to have much further constraint. For that reason, we expect the pulls of the nuisance parameters to be close to 0 and the measured uncertainties on those parameters to be consistent with the input uncertainties. This is true for all but the 4$\ell$ fake transfer factor which is pulled slightly high by the excess in the $\mu$ channels. The pull is well within the uncertainty. The uncertainties that dominate this fit are those associated with the \ttV\ cross-section and the fake estimates. 
+
+\begin{figure}[htbp]
+\begin{center}
+\includegraphics[width=0.7\textwidth]{figs/results/nuisance.pdf}
+\caption{Figure of the post- and pre-fit impacts of the top nuisance parameters on the combined $\mu$ measurements}
+\label{figure:results_nuisance}
+\end{center}
+\end{figure}
+
+
+
+\section{Discussion of Results and Significance of the Excess}
+
+The results show an overall excess of events over the background-only hypothesis. An excess is observed in both the 2$\ell$ and 3$\ell$ channels. The statistical significance of the excess is measured as the probability of the backgrounds to fluctuate to the observed number of events (combined over all channels) and found to be 0.002, which corresponds to 2.86 $\sigma$. The probability of a background fluctuation matching the size of an included standard model signal ($\mu=1$) is 0.18, or 0.91 $\sigma$. These probabilities take into account the full systematic uncertainties from theory, detector and non-prompt backgrounds. The significance is peculiar but not large enough to suggest an observation of either \tth\ or new physics\footnote{It is customary to consider 3$\sigma$ as the threshold for observation and 5 $\sigma$ the threshold for discovery}. 
+
+A first suspicion would be that two domianant backgrounds are not well modeled: \ttV\ and fake. The fake backgrounds from top have been validated in low jet control regions, and the extrapolation to higher number of jets is constrained by simulation. The anti-tight control regions, shown in Chapter~\ref{chapter:background}, which are enriched in fake events do not show a similar shape to the excesses in the tight signal regions. The \ttV\ cross-section is constrained only by theoretical methods and the \ttZ\ validation region used does show an excess of data events. A rescaling of the \ttV\ by the data/MC ratio show in the \ttZ\ validation regions would not explain the size or shape of the excess, though the significance of the excess would decrease. The \ttZ\ validation region excess is compatible with a statistical fluctuation of the backgrounds, as discussed in Section~\ref{section:ttV}. Indeed, an public ATLAS measurement of the \ttZ\ rate in this 3$\ell$ region shows a deficit of events \cite{ATLAS-CONF-2012-126} using the same MC models. It is therefore not clear that re-scaling the the \ttV\ cross-section is warranted. 
+
+The overall excess of events has peculiar properties: it is found predominantly in events with a large-number of jets and b-tagged jets.  For the 2$\ell$ channel, the excess is found primarily in the $\mu\mu$ and $e-\mu$ flavor bins. Events with large numbers of b-tagged jets and flavor asymmetry are difficult to describe with the standard model backgrounds, even including a standard model Higgs hypothesis. The high \pt\ scale of the excess for sub-leading leptons suggest that the fakes are well understood and the agreement in the 1 b-tagged jet bin suggest that the combined \ttV\ and fakes are under control. 
 
 
