@@ -1,0 +1,1 @@
+tex/lhc.dvi tex/lhc.d : tex/lhc.tex   figs/lhc/lhc.pdf.eps figs/lhc/ATLAS-eps-converted-to.pdf.eps figs/lhc/IDBarrel-eps-converted-to.eps figs/lhc/IDEndcap-eps-converted-to.eps figs/lhc/Calorimeter-eps-converted-to.eps figs/lhc/LARG3-TDR-barrelM-eps-converted-to.eps figs/lhc/MuonSystem-eps-converted-to.eps figs/lhc/particles.jpeg.eps 

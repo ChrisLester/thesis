@@ -1,4 +1,4 @@
-# The mother of all Makefiles for LaTeX
+
 #     The Makefile that automatically does what you want for (pdf)latex.
 # 
 # SYNOPSIS
